@@ -8,4 +8,4 @@ The missing scripts are already contained in the XML configuration files, but ar
 
 ## Copy the directories into your opensim/bin directory.
 
-assetconfig.py is a helper script to create XML files for OpenSimulator.
+assetconfig.py is a extern helper script to create XML files for OpenSimulator.
