@@ -4,7 +4,7 @@ OpenSimulator OSSL examples as they can be seen on the OpenSimulator wiki http:/
 
 This is already functional.
 
-The missing scripts are already contained in the XML configuration files, but are commented out.
+The missing scripts from OpenSimulator wiki are already contained in the XML configuration files, but are commented out.
 
 ## Copy the directories into your opensim/bin directory.
 
