@@ -9,3 +9,5 @@ The missing scripts from OpenSimulator wiki are already contained in the XML con
 ## Copy the directories into your opensim/bin directory.
 
 assetconfig.py is a extern helper script to create XML files for OpenSimulator.
+
+oops osAgentSaveAppearance not copy
