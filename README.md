@@ -1,4 +1,4 @@
-# opensim ossl example scripts
+# opensim ossl example scripts for OpenSim 0.9.2.0 Dev
 
 OpenSimulator OSSL examples as they can be seen on the OpenSimulator wiki.
 
