@@ -557,7 +557,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-<!--     <Section Name="osReplaceAgentEnvironment">
+     <Section Name="osReplaceAgentEnvironment">
       <Key Name="inventoryID" Value="81305ee4-1040-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1040-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0001-000100bba000"/>
@@ -565,7 +565,7 @@
       <Key Name="name" Value="osReplaceAgentEnvironment" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section> -->
+    </Section>
     <Section Name="osIsNpc">
       <Key Name="inventoryID" Value="81305ee4-1101-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1101-9e0a-69a4-76ed57df0c8f" />
@@ -1942,7 +1942,7 @@
       <Key Name="name" Value="osSetPrimFloatOnWater" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section>
+    </Section> -->
     <Section Name="osResetAllScripts">
       <Key Name="inventoryID" Value="81305ee4-2201-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-2201-9e0a-69a4-76ed57df0c8f" />
@@ -1951,7 +1951,7 @@
       <Key Name="name" Value="osResetAllScripts" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section> -->
+    </Section>
     <Section Name="osFormatString">
       <Key Name="inventoryID" Value="81305ee4-2301-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-2301-9e0a-69a4-76ed57df0c8f" />
