@@ -965,12 +965,12 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osRequestURL.lsl" />
   </Section>
-<!--   <Section Name="osSetContentType">
+   <Section Name="osSetContentType">
     <Key Name="assetID" Value="81305ee4-1603-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osSetContentType" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osSetContentType.lsl" />
-  </Section> -->
+  </Section>
   <Section Name="osParcelJoin">
     <Key Name="assetID" Value="81305ee4-1701-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osParcelJoin" />
