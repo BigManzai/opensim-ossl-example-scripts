@@ -1502,7 +1502,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-<!--     <Section Name="osSetContentType">
+     <Section Name="osSetContentType">
       <Key Name="inventoryID" Value="81305ee4-1603-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1603-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0007-000100bba000"/>
@@ -1510,7 +1510,7 @@
       <Key Name="name" Value="osSetContentType" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section> -->
+    </Section>
     <Section Name="osParcelJoin">
       <Key Name="inventoryID" Value="81305ee4-1701-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1701-9e0a-69a4-76ed57df0c8f" />
