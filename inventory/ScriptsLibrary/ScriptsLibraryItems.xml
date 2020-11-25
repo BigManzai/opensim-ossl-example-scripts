@@ -314,7 +314,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-<!--     <Section Name="osForceAttachToAvatarFromInventory">
+     <Section Name="osForceAttachToAvatarFromInventory">
       <Key Name="inventoryID" Value="81305ee4-1013-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1013-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0001-000100bba000"/>
@@ -322,7 +322,7 @@
       <Key Name="name" Value="osForceAttachToAvatarFromInventory" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section> -->
+    </Section>
     <Section Name="osForceAttachToOtherAvatarFromInventory">
       <Key Name="inventoryID" Value="81305ee4-1014-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1014-9e0a-69a4-76ed57df0c8f" />
@@ -332,7 +332,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-<!--     <Section Name="osForceDetachFromAvatar">
+    <Section Name="osForceDetachFromAvatar">
       <Key Name="inventoryID" Value="81305ee4-1015-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1015-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0001-000100bba000"/>
@@ -358,7 +358,7 @@
       <Key Name="name" Value="osForceDropAttachmentAt" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section> -->
+    </Section>
     <Section Name="osForceOtherSit">
       <Key Name="inventoryID" Value="81305ee4-1018-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1018-9e0a-69a4-76ed57df0c8f" />
@@ -458,7 +458,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-<!--     <Section Name="osInviteToGroup">
+     <Section Name="osInviteToGroup">
       <Key Name="inventoryID" Value="81305ee4-1029-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1029-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0001-000100bba000"/>
@@ -466,7 +466,7 @@
       <Key Name="name" Value="osInviteToGroup" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section> -->
+    </Section>
     <Section Name="osKickAvatar">
       <Key Name="inventoryID" Value="81305ee4-1030-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1030-9e0a-69a4-76ed57df0c8f" />
