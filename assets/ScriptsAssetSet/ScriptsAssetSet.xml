@@ -173,21 +173,18 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osForceAttachToAvatar.lsl" />
   </Section>
-  <!--
   <Section Name="osForceAttachToAvatarFromInventory">
     <Key Name="assetID" Value="81305ee4-1013-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osForceAttachToAvatarFromInventory" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osForceAttachToAvatarFromInventory.lsl" />
   </Section>
-   -->
   <Section Name="osForceAttachToOtherAvatarFromInventory">
     <Key Name="assetID" Value="81305ee4-1014-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osForceAttachToOtherAvatarFromInventory" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osForceAttachToOtherAvatarFromInventory.lsl" />
   </Section>
-  <!--
   <Section Name="osForceDetachFromAvatar">
     <Key Name="assetID" Value="81305ee4-1015-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osForceDetachFromAvatar" />
@@ -206,7 +203,6 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osForceDropAttachmentAt.lsl" />
   </Section>
-  -->
   <Section Name="osForceOtherSit">
     <Key Name="assetID" Value="81305ee4-1018-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osForceOtherSit" />
@@ -273,14 +269,12 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osGrantScriptPermissions.lsl" />
   </Section>
-  <!--
   <Section Name="osInviteToGroup">
     <Key Name="assetID" Value="81305ee4-1029-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osInviteToGroup" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osInviteToGroup.lsl" />
   </Section>
-  -->
   <Section Name="osKickAvatar">
     <Key Name="assetID" Value="81305ee4-1030-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osKickAvatar" />
@@ -341,14 +335,12 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osTeleportOwner.lsl" />
   </Section>
-  <!--
   <Section Name="osReplaceAgentEnvironment">
     <Key Name="assetID" Value="81305ee4-1040-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osReplaceAgentEnvironment" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osReplaceAgentEnvironment.lsl" />
   </Section>
-  -->
   <Section Name="osIsNpc">
     <Key Name="assetID" Value="81305ee4-1101-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osIsNpc" />
@@ -1267,12 +1259,12 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osSetPrimFloatOnWater.lsl" />
   </Section> -->
-<!--   <Section Name="osResetAllScripts">
+   <Section Name="osResetAllScripts">
     <Key Name="assetID" Value="81305ee4-2201-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osResetAllScripts" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osResetAllScripts.lsl" />
-  </Section> -->
+  </Section>
   <Section Name="osFormatString">
     <Key Name="assetID" Value="81305ee4-2301-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osFormatString" />
