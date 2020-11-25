@@ -6,41 +6,70 @@ Attach an inventory item in the object containing this script to any avatar in t
     itemName - The name of the item. If this is not found then a warning is said to the owner.
     attachmentPoint - The attachment point. For example, ATTACH_CHEST. 
 
-In OpenSimulator 0.7.4.
 Threat Level 	VeryHigh
 Permissions 	Use of this function is always disabled by default
 Delay 	0 seconds
 Example(s)
 */
 
-//Author: mewtwo0641
-//Simple example for osForceAttachToOtherAvatarFromInventory that attaches a list of items on touch
+//
+// osForceAttachToOtherAvatarFromInventory Script Exemple (YEngine)
+// Author: djphil
+//
  
-//List of items in object inventory to be attached in format: item_name, attach_point
-list items =
-[
-	"Belt", (string)ATTACH_BELLY,
-	"Hat", (string)ATTACH_HEAD,
-        "Left Shoe", (string)ATTACH_LFOOT,
-        "Right Shoe", (string)ATTACH_RFOOT
-];
- 
-key toucher;
+string AvatarUuid = "<TARGET_AVATAR_UUID>";
+string ObjectName;
  
 default
 {
-    touch_start(integer x)
+    state_entry()
     {
-        toucher = llDetectedKey(0);
+        ObjectName = llGetInventoryName(INVENTORY_ALL, 0);
  
-        integer i = 0;
+        if (ObjectName == "")
+        {
+            llSay(PUBLIC_CHANNEL, "Inventory object missing ...");
+        }
  
-        for(i; i < llGetListLength(items); i++)
-        {  
-            string name = llList2String(items, i);      
-            integer point = (integer)llList2String(items, i + 1);            
-            osForceAttachToOtherAvatarFromInventory(toucher, name, point);
-            i++;
+        else if (AvatarUuid == "<USER_UUID_TO_EJECT>" || !osIsUUID(AvatarUuid))
+        {
+            llOwnerSay("Please replace <TARGET_AVATAR_UUID> with a valid user uuid");
+        }
+ 
+        else
+        {
+            llSay(PUBLIC_CHANNEL, "Touch to see osForceAttachToOtherAvatarFromInventory attach the object to the target avatar's left hand.");
+            llSay(PUBLIC_CHANNEL, "Object name is " + ObjectName + " and target avatar uuid is " + AvatarUuid + " (" + osKey2Name(AvatarUuid) + ")");
+        }
+    }
+ 
+ 
+    touch_start(integer number)
+    {
+        osForceAttachToOtherAvatarFromInventory(AvatarUuid, ObjectName, ATTACH_LHAND);
+    }
+ 
+    // The attach event is called on both attach and detach.
+    attach(key id)
+    {
+        // Test if is a valid key ('id' is only valid on attach)
+        if (id)
+        {
+            llOwnerSay("The object " + ObjectName + " is attached to " + llKey2Name(id));
+        }
+ 
+        else 
+        {
+            llOwnerSay("The object is not attached!");
+        }
+    }
+ 
+    on_rez(integer param)
+    {
+        // Reset the script if it's not attached.
+        if (!llGetAttached())        
+        {
+            llResetScript();
         }
     }
 }

@@ -6,14 +6,51 @@ The object owner must have the right to eject users from the group the object is
 Threat Level 	VeryLow
 Permissions 	${OSSL|osslParcelOG}ESTATE_MANAGER,ESTATE_OWNER
 Delay 	0 seconds
-Notes
-This function was added in 0.7.4-post-fixes 
+Example(s)
 */
 
+//
+// osEjectFromGroup Script Exemple
+// Author: djphil
+//
+ 
+key userID = "<USER_UUID_TO_EJECT>";
+ 
 default
 {
     state_entry()
     {
-        llSay(0, "Script running");
+        if (userID == "<USER_UUID_TO_EJECT>" || !osIsUUID(userID))
+        {
+            llOwnerSay("Please replace <USER_UUID_TO_EJECT> with a valid user uuid");
+        }
+ 
+        else
+        {
+            llSay(PUBLIC_CHANNEL, "Touch to see osEjectFromGroup eject the user from this object's group.");
+        }
+    }
+ 
+    touch_start(integer number)
+    {
+        if (llDetectedKey(0) == llGetOwnerKey(llGetKey()))
+        {
+            integer result = osEjectFromGroup(userID);
+ 
+            if (result == TRUE)
+            {
+                llOwnerSay("Eject " + osKey2Name(userID) + " from group successfully.");
+            }
+ 
+            if (result == FALSE)
+            {
+                llOwnerSay("Eject " + osKey2Name(userID) + " from group unsuccessfully.");
+            }
+        }
+ 
+        else
+        {
+            llSay(PUBLIC_CHANNEL, "Sorry, you are not the owner of this object.");
+        }
     }
 }
