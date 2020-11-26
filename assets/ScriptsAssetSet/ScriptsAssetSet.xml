@@ -893,12 +893,12 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osCollisionSound.lsl" />
   </Section> -->
-<!--   <Section Name="osLoopSound">
+   <Section Name="osLoopSound">
     <Key Name="assetID" Value="81305ee4-1503-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osLoopSound" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osLoopSound.lsl" />
-  </Section> -->
+  </Section>
 <!--   <Section Name="osLoopSoundMaster">
     <Key Name="assetID" Value="81305ee4-1504-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osLoopSoundMaster" />
@@ -935,12 +935,12 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osSetSoundRadius.lsl" />
   </Section> -->
-<!--   <Section Name="osStopSound">
+   <Section Name="osStopSound">
     <Key Name="assetID" Value="81305ee4-1510-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osStopSound" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osStopSound.lsl" />
-  </Section> -->
+  </Section>
 <!--   <Section Name="osTriggerSound">
     <Key Name="assetID" Value="81305ee4-1511-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osTriggerSound" />
