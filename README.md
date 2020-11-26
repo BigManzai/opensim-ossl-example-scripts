@@ -15,10 +15,8 @@ add 11 files
 ## TODO:
 ```javascript
 NPCs
-    osNpcGetPos
-	
-    osNpcGetRot
-	
+    osNpcGetPos	
+    osNpcGetRot	
     osNpcGetOwner
     osNpcMoveTo
     osNpcMoveToTarget
