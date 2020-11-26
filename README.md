@@ -70,12 +70,8 @@ Region / Parcel Environment
     osReplaceRegionEnvironment
     osResetEnvironment  
 
-Script
-    osResetAllScripts 
-
 String Manipulation
     osRegexIsMatch
-
 
 Misc
     osAngleBetween
