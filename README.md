@@ -10,7 +10,7 @@ The missing scripts from OpenSimulator wiki are already contained in the XML con
 
 assetconfig.py is a extern helper script to create XML files for OpenSimulator.
 
-## TODO:
+## TODO missing scripts:
 ```javascript
 NPCs
     osNpcGetPos	
