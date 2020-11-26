@@ -51,14 +51,12 @@ Prim Drawing / Dynamic Texture
 
 Sound
     osCollisionSound	
-    osLoopSound	
     osLoopSoundMaster
     osLoopSoundSlave
     osPlaySound
     osPlaySoundSlave	
     osPreloadSound	
     osSetSoundRadius	
-    osStopSound	
     osTriggerSound
     osTriggerSoundLimited 
 
