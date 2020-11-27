@@ -1073,12 +1073,12 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osSetWindParam.lsl" />
   </Section>
-<!--   <Section Name="osWindActiveModelPluginName">
+   <Section Name="osWindActiveModelPluginName">
     <Key Name="assetID" Value="81305ee4-1909-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osWindActiveModelPluginName" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osWindActiveModelPluginName.lsl" />
-  </Section> -->
+  </Section>
 <!--   <Section Name="osReplaceParcelEnvironment">
     <Key Name="assetID" Value="81305ee4-1910-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osReplaceParcelEnvironment" />
@@ -1277,12 +1277,12 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osMatchString.lsl" />
   </Section>
-<!--   <Section Name="osRegexIsMatch">
+   <Section Name="osRegexIsMatch">
     <Key Name="assetID" Value="81305ee4-2303-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osRegexIsMatch" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osRegexIsMatch.lsl" />
-  </Section> -->
+  </Section>
   <Section Name="osReplaceString">
     <Key Name="assetID" Value="81305ee4-2304-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osReplaceString" />
@@ -1331,12 +1331,12 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osStringReplace.lsl" />
   </Section>
-<!--   <Section Name="osAngleBetween">
+   <Section Name="osAngleBetween">
     <Key Name="assetID" Value="81305ee4-2401-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osAngleBetween" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osAngleBetween.lsl" />
-  </Section> -->
+  </Section>
 <!--   <Section Name="osApproxEquals">
     <Key Name="assetID" Value="81305ee4-2402-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osApproxEquals" />
@@ -1355,12 +1355,12 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osIsUUID.lsl" />
   </Section>
-<!--   <Section Name="osIsNotValidNumber">
+   <Section Name="osIsNotValidNumber">
     <Key Name="assetID" Value="81305ee4-2405-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osIsNotValidNumber" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osIsNotValidNumber.lsl" />
-  </Section> -->
+  </Section>
   <Section Name="osKey2Name">
     <Key Name="assetID" Value="81305ee4-2406-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osKey2Name" />
@@ -1403,17 +1403,17 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osUnixTimeToTimestamp.lsl" />
   </Section>
-<!--   <Section Name="osVecDistSquare">
+   <Section Name="osVecDistSquare">
     <Key Name="assetID" Value="81305ee4-2413-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osVecDistSquare" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osVecDistSquare.lsl" />
-  </Section> -->
-<!--   <Section Name="osVecMagSquare">
+  </Section>
+   <Section Name="osVecMagSquare">
     <Key Name="assetID" Value="81305ee4-2414-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osVecMagSquare" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osVecMagSquare.lsl" />
-  </Section> -->
+  </Section>
   
 </Nini>
