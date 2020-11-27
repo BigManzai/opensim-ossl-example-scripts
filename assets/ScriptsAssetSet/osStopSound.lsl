@@ -10,29 +10,38 @@ Example(s)
 //
 // osStopSound Script Example
 //
-
-integer on = FALSE;
-string soundname = "youresound"; //sound file name
-
+ 
+string soundName;
+integer power;
+ 
 default
 {
     state_entry()
     {
-        on = FALSE;
-        soundname = llGetInventoryName(INVENTORY_SOUND, 0);
-        }
-
-    touch_start(integer total_number)
-    {
-        if(llDetectedKey(0) != llGetOwner())
-        return;
-        if(soundname != "")
+        // Get the first inventory sound name
+        soundName = llGetInventoryName(INVENTORY_SOUND, 0);
+ 
+        if (soundName == "")
         {
-            if(on)
-            osStopSound(0);
-            else
-            osLoopSound(0, soundname, 1);
-            on = !on;
+            llOwnerSay("Inventory sound missing ...");
+        }
+ 
+        else
+        {
+            llSay(PUBLIC_CHANNEL, "Touch to see osStopSound usage.");
+        }
+    }
+ 
+    touch_start(integer number)
+    {
+        if (power = !power)
+        {
+            osLoopSound(LINK_THIS, soundName, 1.0);
+        }
+ 
+        else
+        {
+            osStopSound(LINK_THIS);
         }
     }
 }

@@ -7,43 +7,81 @@ Threat Level 	This function does not do a threat level check
 Permissions 	Use of this function is always allowed by default
 Delay 	0 seconds
 Example(s)
-
-osLoopSound(linknum, "c98100c4-6a2a-456c-a5ba-3cfdb5c14715", volume);
-    osLoopSound(linknum, "Name of sound in this prim", volume);
-
-Notes
-This function was added in 0.9.0.1
-
-Since 0.9.1 if target prim inventory does not contain the sound, 
-the inventory of the prim containing the script calling this function is also checked 
 */
 
 //
 // osLoopSound Script Example
 //
-
-integer on = FALSE;
-string soundname = "youresound"; //sound file name
-
+ 
+string soundName;
+integer power;
+ 
 default
 {
-	state_entry()
-	{
-		on = FALSE;
-		soundname = llGetInventoryName(INVENTORY_SOUND, 0);
-		}
-
-	touch_start(integer total_number)
-	{
-		if(llDetectedKey(0) != llGetOwner())
-		return;
-		if(soundname != "")
-		{
-			if(on)
-			osStopSound();
-			else
-			osLoopSound(soundname, 1);
-			on = !on;
-		}
-	}
+    state_entry()
+    {
+        // Get the first inventory sound name
+        soundName = llGetInventoryName(INVENTORY_SOUND, 0);
+ 
+        if (soundName == "")
+        {
+            llOwnerSay("Inventory sound missing ...");
+        }
+ 
+        else
+        {
+            llSay(PUBLIC_CHANNEL, "Touch to see osLoopSound usage.");
+        }
+    }
+ 
+    touch_start(integer number)
+    {
+        if (power = !power)
+        {
+            osLoopSound(LINK_THIS, soundName, 1.0);
+        }
+ 
+        else
+        {
+            osStopSound(LINK_THIS);
+        }
+    }
 }
+
+/*
+//
+// osLoopSound Script Example
+//
+ 
+string soundUuid = "5e191c7b-8996-9ced-a177-b2ac32bfea06";
+integer power;
+ 
+default
+{
+    state_entry()
+    {
+        if (osIsUUID(soundUuid))
+        {
+            llSay(PUBLIC_CHANNEL, "Touch to see osLoopSound usage.");
+        }
+ 
+        else
+        {
+            llOwnerSay("Invalid UUID detected ...");
+        }
+    }
+ 
+    touch_start(integer number)
+    {
+        if (power = !power)
+        {
+            osLoopSound(LINK_THIS, soundUuid, 1.0);
+        }
+ 
+        else
+        {
+            osStopSound(LINK_THIS);
+        }
+    }
+}
+*/
