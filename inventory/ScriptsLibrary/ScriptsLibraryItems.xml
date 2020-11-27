@@ -1664,7 +1664,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-<!--     <Section Name="osWindActiveModelPluginName">
+     <Section Name="osWindActiveModelPluginName">
       <Key Name="inventoryID" Value="81305ee4-1909-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1909-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0010-000100bba000"/>
@@ -1672,7 +1672,7 @@
       <Key Name="name" Value="osWindActiveModelPluginName" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section> -->
+    </Section>
 <!--     <Section Name="osReplaceParcelEnvironment">
       <Key Name="inventoryID" Value="81305ee4-1910-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1910-9e0a-69a4-76ed57df0c8f" />
@@ -1970,7 +1970,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-<!--     <Section Name="osRegexIsMatch">
+     <Section Name="osRegexIsMatch">
       <Key Name="inventoryID" Value="81305ee4-2303-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-2303-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0014-000100bba000"/>
@@ -1978,7 +1978,7 @@
       <Key Name="name" Value="osRegexIsMatch" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section> -->
+    </Section>
     <Section Name="osReplaceString">
       <Key Name="inventoryID" Value="81305ee4-2304-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-2304-9e0a-69a4-76ed57df0c8f" />
@@ -2051,7 +2051,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-<!--     <Section Name="osAngleBetween">
+     <Section Name="osAngleBetween">
       <Key Name="inventoryID" Value="81305ee4-2401-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-2401-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0015-000100bba000"/>
@@ -2060,7 +2060,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-    <Section Name="osApproxEquals">
+<!--    <Section Name="osApproxEquals">
       <Key Name="inventoryID" Value="81305ee4-2402-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-2402-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0015-000100bba000"/>
@@ -2087,7 +2087,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-<!--     <Section Name="osIsNotValidNumber">
+     <Section Name="osIsNotValidNumber">
       <Key Name="inventoryID" Value="81305ee4-2405-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-2405-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0015-000100bba000"/>
@@ -2095,7 +2095,7 @@
       <Key Name="name" Value="osIsNotValidNumber" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section> -->
+    </Section>
     <Section Name="osKey2Name">
       <Key Name="inventoryID" Value="81305ee4-2406-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-2406-9e0a-69a4-76ed57df0c8f" />
@@ -2159,7 +2159,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-<!--     <Section Name="osVecDistSquare">
+     <Section Name="osVecDistSquare">
       <Key Name="inventoryID" Value="81305ee4-2413-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-2413-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0015-000100bba000"/>
@@ -2176,6 +2176,6 @@
       <Key Name="name" Value="osVecMagSquare" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section> -->
+    </Section>
 	
 </Nini>
