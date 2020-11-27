@@ -2,7 +2,7 @@
 
 OpenSimulator OSSL examples as they can be seen on the OpenSimulator wiki http://opensimulator.org/wiki/Category:OSSL_Functions
 
-Version 0.129
+Version 0.130
 
 The missing scripts from OpenSimulator wiki are already contained in the XML configuration files, but are commented out.
 
@@ -61,15 +61,7 @@ Sound
     osTriggerSoundLimited 
 
 Region / Parcel Environment
-    osWindActiveModelPluginName	
     osReplaceParcelEnvironment
     osReplaceRegionEnvironment
     osResetEnvironment  
-
-String Manipulation
-    osRegexIsMatch
-
-Misc
-    osAngleBetween
-    osIsNotValidNumber
 ```
