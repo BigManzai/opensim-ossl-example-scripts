@@ -1169,7 +1169,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-<!--     <Section Name="osDrawResetTransform">
+     <Section Name="osDrawResetTransform">
       <Key Name="inventoryID" Value="81305ee4-1309-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1309-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0004-000100bba000"/>
@@ -1195,7 +1195,7 @@
       <Key Name="name" Value="osDrawScaleTransform" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section> -->
+    </Section>
     <Section Name="osDrawText">
       <Key Name="inventoryID" Value="81305ee4-1312-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1312-9e0a-69a4-76ed57df0c8f" />
@@ -1205,7 +1205,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-<!--     <Section Name="osDrawTranslationTransform">
+     <Section Name="osDrawTranslationTransform">
       <Key Name="inventoryID" Value="81305ee4-1313-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1313-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0004-000100bba000"/>
@@ -1213,7 +1213,7 @@
       <Key Name="name" Value="osDrawTranslationTransform" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section> -->
+    </Section>
     <Section Name="osGetDrawStringSize">
       <Key Name="inventoryID" Value="81305ee4-1314-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1314-9e0a-69a4-76ed57df0c8f" />
@@ -1385,7 +1385,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-<!--     <Section Name="osCollisionSound">
+     <Section Name="osCollisionSound">
       <Key Name="inventoryID" Value="81305ee4-1502-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1502-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0006-000100bba000"/>
@@ -1393,7 +1393,7 @@
       <Key Name="name" Value="osCollisionSound" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section> -->
+    </Section>
     <Section Name="osLoopSound">
       <Key Name="inventoryID" Value="81305ee4-1503-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1503-9e0a-69a4-76ed57df0c8f" />
@@ -1403,7 +1403,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-<!--    <Section Name="osLoopSoundMaster">
+    <Section Name="osLoopSoundMaster">
       <Key Name="inventoryID" Value="81305ee4-1504-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1504-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0006-000100bba000"/>
@@ -1430,7 +1430,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-    <Section Name="osPlaySoundSlave">
+<!--    <Section Name="osPlaySoundSlave">
       <Key Name="inventoryID" Value="81305ee4-1507-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1507-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0006-000100bba000"/>
@@ -1447,7 +1447,7 @@
       <Key Name="name" Value="osPreloadSound" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section>
+    </Section> -->
     <Section Name="osSetSoundRadius">
       <Key Name="inventoryID" Value="81305ee4-1509-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1509-9e0a-69a4-76ed57df0c8f" />
@@ -1456,7 +1456,7 @@
       <Key Name="name" Value="osSetSoundRadius" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section> -->
+    </Section>
     <Section Name="osStopSound">
       <Key Name="inventoryID" Value="81305ee4-1510-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1510-9e0a-69a4-76ed57df0c8f" />
@@ -1466,7 +1466,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-<!--    <Section Name="osTriggerSound">
+    <Section Name="osTriggerSound">
       <Key Name="inventoryID" Value="81305ee4-1511-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1511-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0006-000100bba000"/>
@@ -1475,7 +1475,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-    <Section Name="osTriggerSoundLimited">
+<!--    <Section Name="osTriggerSoundLimited">
       <Key Name="inventoryID" Value="81305ee4-1512-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1512-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0006-000100bba000"/>
@@ -1690,7 +1690,7 @@
       <Key Name="name" Value="osReplaceRegionEnvironment" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section>
+    </Section> -->
     <Section Name="osResetEnvironment">
       <Key Name="inventoryID" Value="81305ee4-1912-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1912-9e0a-69a4-76ed57df0c8f" />
@@ -1699,7 +1699,7 @@
       <Key Name="name" Value="osResetEnvironment" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section> -->
+    </Section>
     <Section Name="osCheckODE">
       <Key Name="inventoryID" Value="81305ee4-2001-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-2001-9e0a-69a4-76ed57df0c8f" />
