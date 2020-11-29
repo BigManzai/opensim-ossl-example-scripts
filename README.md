@@ -8,7 +8,7 @@ Test: opensim-0.9.2.0Dev-967-g5552716 works
 
 The missing scripts from OpenSimulator wiki are already contained in the XML configuration files, but are commented out.
 
-** Copy the directories into your opensim/bin directory. **
+**Copy the directories into your opensim/bin directory.**
 
 
 ## Offline
