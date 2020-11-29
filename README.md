@@ -55,7 +55,6 @@ Prim
     osSetInertia
 
 Sound
-    osCollisionSound	
     osPlaySoundSlave	
     osPreloadSound	
     osTriggerSoundLimited 
