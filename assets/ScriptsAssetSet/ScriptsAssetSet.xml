@@ -743,36 +743,36 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osDrawRectangle.lsl" />
   </Section>
-<!--   <Section Name="osDrawResetTransform">
+   <Section Name="osDrawResetTransform">
     <Key Name="assetID" Value="81305ee4-1309-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osDrawResetTransform" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osDrawResetTransform.lsl" />
-  </Section> -->
-<!--   <Section Name="osDrawRotationTransform">
+  </Section>
+   <Section Name="osDrawRotationTransform">
     <Key Name="assetID" Value="81305ee4-1310-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osDrawRotationTransform" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osDrawRotationTransform.lsl" />
-  </Section> -->
-<!--   <Section Name="osDrawScaleTransform">
+  </Section>
+   <Section Name="osDrawScaleTransform">
     <Key Name="assetID" Value="81305ee4-1311-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osDrawScaleTransform" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osDrawScaleTransform.lsl" />
-  </Section> -->
+  </Section>
   <Section Name="osDrawText">
     <Key Name="assetID" Value="81305ee4-1312-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osDrawText" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osDrawText.lsl" />
   </Section>
-<!--   <Section Name="osDrawTranslationTransform">
+   <Section Name="osDrawTranslationTransform">
     <Key Name="assetID" Value="81305ee4-1313-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osDrawTranslationTransform" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osDrawTranslationTransform.lsl" />
-  </Section> -->
+  </Section>
   <Section Name="osGetDrawStringSize">
     <Key Name="assetID" Value="81305ee4-1314-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osGetDrawStringSize" />
@@ -887,12 +887,12 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osAdjustSoundVolume.lsl" />
   </Section>
-<!--   <Section Name="osCollisionSound">
+  <Section Name="osCollisionSound">
     <Key Name="assetID" Value="81305ee4-1502-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osCollisionSound" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osCollisionSound.lsl" />
-  </Section> -->
+  </Section>
    <Section Name="osLoopSound">
     <Key Name="assetID" Value="81305ee4-1503-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osLoopSound" />
@@ -929,24 +929,24 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osPreloadSound.lsl" />
   </Section> -->
-<!--   <Section Name="osSetSoundRadius">
+   <Section Name="osSetSoundRadius">
     <Key Name="assetID" Value="81305ee4-1509-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osSetSoundRadius" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osSetSoundRadius.lsl" />
-  </Section> -->
+  </Section>
    <Section Name="osStopSound">
     <Key Name="assetID" Value="81305ee4-1510-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osStopSound" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osStopSound.lsl" />
   </Section>
-<!--   <Section Name="osTriggerSound">
+   <Section Name="osTriggerSound">
     <Key Name="assetID" Value="81305ee4-1511-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osTriggerSound" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osTriggerSound.lsl" />
-  </Section> -->
+  </Section>
 <!--   <Section Name="osTriggerSoundLimited">
     <Key Name="assetID" Value="81305ee4-1512-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osTriggerSoundLimited" />
@@ -1091,12 +1091,12 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osReplaceRegionEnvironment.lsl" />
   </Section> -->
-<!--   <Section Name="osResetEnvironment">
+   <Section Name="osResetEnvironment">
     <Key Name="assetID" Value="81305ee4-1912-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osResetEnvironment" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osResetEnvironment.lsl" />
-  </Section> -->
+  </Section>
   <Section Name="osCheckODE">
     <Key Name="assetID" Value="81305ee4-2001-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osCheckODE" />
