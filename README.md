@@ -2,7 +2,7 @@
 
 OpenSimulator OSSL examples as they can be seen on the OpenSimulator wiki http://opensimulator.org/wiki/Category:OSSL_Functions
 
-Version 0.130
+Version 0.131
 
 The missing scripts from OpenSimulator wiki are already contained in the XML configuration files, but are commented out.
 
@@ -52,25 +52,13 @@ Prim
     osListenRegex
     osSetInertia
 
-Prim Drawing / Dynamic Texture
-    osDrawResetTransform	
-    osDrawRotationTransform	
-    osDrawScaleTransform
-    osDrawTranslationTransform 
-
 Sound
     osCollisionSound	
-    osLoopSoundMaster
-    osLoopSoundSlave
-    osPlaySound
     osPlaySoundSlave	
     osPreloadSound	
-    osSetSoundRadius	
-    osTriggerSound
     osTriggerSoundLimited 
 
 Region / Parcel Environment
     osReplaceParcelEnvironment
     osReplaceRegionEnvironment
-    osResetEnvironment  
 ```
