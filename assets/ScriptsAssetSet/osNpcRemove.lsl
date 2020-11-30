@@ -1,34 +1,42 @@
 /*
 osNpcRemove(key npc)
 
-Removes the NPC specified by key npc. 
-
-Threat Level 	High
-Permissions 	${OSSL|osslNPC}
-Delay 	0 seconds
-Example(s)
-This might be helpful to erase all of the NPCs in your sim. 
+    Removes the NPC specified by key npc. 
 */
 
 //
-// Example of osNpcRemove.
-// sim-wide NPC killer
-// kill all of NPCs in this SIM
-// Attempts to kill agents too, but it will silently fail
-// http://opensimulator.org/wiki/OsNpcRemove
+// osNpcRemove Script Exemple
+// Author: djphil
+//
  
 default
 {
+    state_entry()
+    {
+        llSay(PUBLIC_CHANNEL, "Touch to see osNpcRemove usage.");
+    }
+ 
     touch_start(integer number)
     {
-        list avatars = llList2ListStrided(osGetAvatarList(), 0, -1, 3);
-        integer i;
-        llSay(0,"NPC Removal: No avatars will be harmed or removed in this process!");
-        for (i=0; i<llGetListLength(avatars); i++)
+        list npcs = llList2ListStrided(osGetNPCList(), 0, -1, 3);
+ 
+        if (npcs == [])
         {
-            string target = llList2String(avatars, i);
-            osNpcRemove(target);
-            llSay(0,"NPC Removal: Target "+target);
+            llSay(PUBLIC_CHANNEL, "There is no NPC's in this sim currently.");
+        }
+ 
+        else
+        {
+            integer length = llGetListLength(npcs);
+            integer i;
+ 
+            for (i = 0; i < length; i++)
+            {
+                key npc = llList2Key(npcs, i);
+                llSay(PUBLIC_CHANNEL, "Remove NPC: " + npc + " (" + llKey2Name(npc) + ").");
+                osNpcSay(npc, "Goodbye!");
+                osNpcRemove(npc);
+            }
         }
     }
 }
