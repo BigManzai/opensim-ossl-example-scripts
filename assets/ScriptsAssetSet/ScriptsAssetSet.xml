@@ -413,18 +413,18 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osNpcSaveAppearance.lsl" />
   </Section> -->
-<!--   <Section Name="osNpcSay">
+   <Section Name="osNpcSay">
     <Key Name="assetID" Value="81305ee4-1113-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osNpcSay" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osNpcSay.lsl" />
-  </Section> -->
-<!--   <Section Name="osNpcSayTo">
+  </Section>
+   <Section Name="osNpcSayTo">
     <Key Name="assetID" Value="81305ee4-1114-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osNpcSayTo" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osNpcSayTo.lsl" />
-  </Section> -->
+  </Section>
   <Section Name="osNpcSetProfileAbout">
     <Key Name="assetID" Value="81305ee4-1115-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osNpcSetProfileAbout" />
@@ -443,12 +443,12 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osNpcSetRot.lsl" />
   </Section> -->
-<!--   <Section Name="osNpcShout">
+   <Section Name="osNpcShout">
     <Key Name="assetID" Value="81305ee4-1118-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osNpcShout" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osNpcShout.lsl" />
-  </Section> -->
+  </Section>
 <!--   <Section Name="osNpcSit">
     <Key Name="assetID" Value="81305ee4-1119-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osNpcSit" />
@@ -479,12 +479,12 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osNpcTouch.lsl" />
   </Section> -->
-<!--   <Section Name="osNpcWhisper">
+   <Section Name="osNpcWhisper">
     <Key Name="assetID" Value="81305ee4-1124-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osNpcWhisper" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osNpcWhisper.lsl" />
-  </Section> -->
+  </Section>
   <Section Name="osClearInertia">
     <Key Name="assetID" Value="81305ee4-1201-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osClearInertia" />
