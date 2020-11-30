@@ -673,7 +673,7 @@
       <Key Name="name" Value="osNpcSaveAppearance" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section>
+    </Section> -->
     <Section Name="osNpcSay">
       <Key Name="inventoryID" Value="81305ee4-1113-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1113-9e0a-69a4-76ed57df0c8f" />
@@ -691,7 +691,7 @@
       <Key Name="name" Value="osNpcSayTo" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section> -->
+    </Section>
     <Section Name="osNpcSetProfileAbout">
       <Key Name="inventoryID" Value="81305ee4-1115-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1115-9e0a-69a4-76ed57df0c8f" />
@@ -718,7 +718,7 @@
       <Key Name="name" Value="osNpcSetRot" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section>
+    </Section> -->
     <Section Name="osNpcShout">
       <Key Name="inventoryID" Value="81305ee4-1118-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1118-9e0a-69a4-76ed57df0c8f" />
@@ -728,7 +728,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-    <Section Name="osNpcSit">
+<!--    <Section Name="osNpcSit">
       <Key Name="inventoryID" Value="81305ee4-1119-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1119-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0002-000100bba000"/>
@@ -772,7 +772,7 @@
       <Key Name="name" Value="osNpcTouch" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section>
+    </Section> -->
     <Section Name="osNpcWhisper">
       <Key Name="inventoryID" Value="81305ee4-1124-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1124-9e0a-69a4-76ed57df0c8f" />
@@ -781,7 +781,7 @@
       <Key Name="name" Value="osNpcWhisper" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section> -->
+    </Section>
     <Section Name="osClearInertia">
       <Key Name="inventoryID" Value="81305ee4-1201-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1201-9e0a-69a4-76ed57df0c8f" />
