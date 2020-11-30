@@ -30,16 +30,12 @@ NPCs
     osNpcMoveToTarget
     osNpcPlayAnimation
     osNpcSaveAppearance
-    osNpcSay	
-    osNpcSayTo
     osNpcSetRot	
-    osNpcShout	
     osNpcSit	
     osNpcStand	
     osNpcStopMoveToTarget	
     osNpcStopAnimation	
     osNpcTouch
-    osNpcWhisper 
 
 Prim
     osClearObjectAnimations
