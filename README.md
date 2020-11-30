@@ -2,7 +2,7 @@
 
 OpenSimulator OSSL examples as they can be seen on the OpenSimulator wiki http://opensimulator.org/wiki/Category:OSSL_Functions
 
-Version 0.131 - 194 scripts
+Version 0.132 - 197 scripts
 
 Test: opensim-0.9.2.0Dev-967-g5552716 works
 
