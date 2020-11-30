@@ -4,7 +4,7 @@ OpenSimulator OSSL examples as they can be seen on the OpenSimulator wiki http:/
 
 Version 0.132 - 197 scripts
 
-Test: opensim-0.9.2.0Dev-967-g5552716 works
+Test: opensim-0.9.2.0Dev-969-g4f4a48c works
 
 The missing scripts from OpenSimulator wiki are already contained in the XML configuration files, but are commented out.
 
