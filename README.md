@@ -21,3 +21,46 @@ The missing scripts from OpenSimulator wiki are already contained in the XML con
     Now you can work normally with the examples.
 
 ## TODO Mistake, bad quality, incomplete:
+
+```javascript
+osApproxEquals.lsl
+osClearObjectAnimations.lsl
+osConsoleCommand.lsl
+osDie.lsl
+osForceBreakAllLinks.lsl
+osForceBreakLink.lsl
+osForceCreateLink.lsl
+osGetInventoryLastOwner.lsl
+osGetInventoryName.lsl
+osGetLastChangedEventKey.lsl
+osGetPrimitiveParams.lsl
+osGetRezzingObject.lsl
+osListenRegex.lsl
+osNpcGetOwner.lsl
+osNpcGetPos.lsl
+osNpcGetRot.lsl
+osNpcMoveTo.lsl
+osNpcMoveToTarget.lsl
+osNpcPlayAnimation.lsl
+osNpcSaveAppearance.lsl
+osNpcSetRot.lsl
+osNpcSit.lsl
+osNpcStand.lsl
+osNpcStopAnimation.lsl
+osNpcStopMoveToTarget.lsl
+osNpcTouch.lsl
+osPlaySoundSlave.lsl
+osPreloadSound.lsl
+osRegionNotice.lsl
+osRegionRestart.lsl
+osReplaceParcelEnvironment.lsl
+osReplaceRegionEnvironment.lsl
+osSetFontName.lsl
+osSetInertia.lsl
+osSetInertiaAsBox.lsl
+osSetInertiaAsCylinder.lsl
+osSetInertiaAsSphere.lsl
+osSetParcelSIPAddress.lsl
+osSetPrimFloatOnWater.lsl
+osTriggerSoundLimited.lsl
+```
