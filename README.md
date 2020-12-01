@@ -20,7 +20,7 @@ The missing scripts from OpenSimulator wiki are already contained in the XML con
     Right click and copy Examples to your Scripts directory.
     Now you can work normally with the examples.
 
-## TODO Mistake, bad quality, incomplete:
+## TODO Mistakes, bad qualities, incomplete, untested:
 
 ```javascript
 osApproxEquals.lsl
