@@ -6,7 +6,7 @@ Version 0.135 - 240 scripts
 
 Test: opensim-0.9.2.0Dev-969-g4f4a48c working
 
-**Copy the directories into your opensim/bin directory, restart opensim and clear your viewer cache**
+**Copy the directories into your opensim/bin directory, restart opensim and clear your viewer cache.**
 
 ## Offline
     You can easily view and change the examples offline with your text editor.
