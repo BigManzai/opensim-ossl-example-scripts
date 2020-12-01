@@ -12,7 +12,7 @@ Example(s)
 */
 
 //
-// empty Script Example
+// osRegionRestart Script Example
 //
 
 key owner;
