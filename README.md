@@ -22,7 +22,6 @@ Test: opensim-0.9.2.0Dev-969-g4f4a48c working
 ```javascript
 osApproxEquals.lsl
 osClearObjectAnimations.lsl
-osDie.lsl
 osForceBreakAllLinks.lsl
 osForceBreakLink.lsl
 osForceCreateLink.lsl
