@@ -83,24 +83,18 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="GrafittiBoard.lsl" />
   </Section>
-
   <Section Name="DefaultSay">
     <Key Name="assetID" Value="c5f02401-f08b-4519-952c-fdab017c10b7" />
     <Key Name="name" Value="DefaultSay" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="DefaultSay.lsl" />
-  </Section>
-  
+  </Section>  
   <Section Name="DefaultSayAndTouch">
     <Key Name="assetID" Value="9267e689-4f37-4ce5-b2c2-455ee2e1ab12" />
     <Key Name="name" Value="DefaultSayAndTouch" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="DefaultSayAndTouch.lsl" />
   </Section>
-
-
-
-
   <Section Name="osAddAgentToGroup">
     <Key Name="assetID" Value="81305ee4-1001-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osAddAgentToGroup" />
@@ -359,60 +353,60 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osGetNpcList.lsl" />
   </Section>
-<!--   <Section Name="osNpcGetPos">
+  <Section Name="osNpcGetPos">
     <Key Name="assetID" Value="81305ee4-1104-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osNpcGetPos" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osNpcGetPos.lsl" />
-  </Section> -->
-<!--   <Section Name="osNpcGetRot">
+  </Section>
+  <Section Name="osNpcGetRot">
     <Key Name="assetID" Value="81305ee4-1105-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osNpcGetRot" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osNpcGetRot.lsl" />
-  </Section> -->
-<!--   <Section Name="osNpcGetOwner">
+  </Section>
+  <Section Name="osNpcGetOwner">
     <Key Name="assetID" Value="81305ee4-1106-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osNpcGetOwner" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osNpcGetOwner.lsl" />
-  </Section> -->
+  </Section>
   <Section Name="osNpcLoadAppearance">
     <Key Name="assetID" Value="81305ee4-1107-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osNpcLoadAppearance" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osNpcLoadAppearance.lsl" />
   </Section>
-<!--   <Section Name="osNpcMoveTo">
+  <Section Name="osNpcMoveTo">
     <Key Name="assetID" Value="81305ee4-1108-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osNpcMoveTo" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osNpcMoveTo.lsl" />
-  </Section> -->
-<!--   <Section Name="osNpcMoveToTarget">
+  </Section>
+  <Section Name="osNpcMoveToTarget">
     <Key Name="assetID" Value="81305ee4-1109-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osNpcMoveToTarget" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osNpcMoveToTarget.lsl" />
-  </Section> -->
-<!--   <Section Name="osNpcPlayAnimation">
+  </Section>
+  <Section Name="osNpcPlayAnimation">
     <Key Name="assetID" Value="81305ee4-1110-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osNpcPlayAnimation" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osNpcPlayAnimation.lsl" />
-  </Section> -->
+  </Section>
   <Section Name="osNpcRemove">
     <Key Name="assetID" Value="81305ee4-1111-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osNpcRemove" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osNpcRemove.lsl" />
   </Section>
-<!--   <Section Name="osNpcSaveAppearance">
+  <Section Name="osNpcSaveAppearance">
     <Key Name="assetID" Value="81305ee4-1112-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osNpcSaveAppearance" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osNpcSaveAppearance.lsl" />
-  </Section> -->
+  </Section>
    <Section Name="osNpcSay">
     <Key Name="assetID" Value="81305ee4-1113-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osNpcSay" />
@@ -437,48 +431,48 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osNpcSetProfileImage.lsl" />
   </Section>
-<!--   <Section Name="osNpcSetRot">
+  <Section Name="osNpcSetRot">
     <Key Name="assetID" Value="81305ee4-1117-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osNpcSetRot" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osNpcSetRot.lsl" />
-  </Section> -->
+  </Section>
    <Section Name="osNpcShout">
     <Key Name="assetID" Value="81305ee4-1118-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osNpcShout" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osNpcShout.lsl" />
   </Section>
-<!--   <Section Name="osNpcSit">
+  <Section Name="osNpcSit">
     <Key Name="assetID" Value="81305ee4-1119-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osNpcSit" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osNpcSit.lsl" />
-  </Section> -->
-<!--   <Section Name="osNpcStand">
+  </Section>
+  <Section Name="osNpcStand">
     <Key Name="assetID" Value="81305ee4-1120-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osNpcStand" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osNpcStand.lsl" />
-  </Section> -->
-<!--   <Section Name="osNpcStopMoveToTarget">
+  </Section>
+  <Section Name="osNpcStopMoveToTarget">
     <Key Name="assetID" Value="81305ee4-1121-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osNpcStopMoveToTarget" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osNpcStopMoveToTarget.lsl" />
-  </Section> -->
-<!--   <Section Name="osNpcStopAnimation">
+  </Section>
+  <Section Name="osNpcStopAnimation">
     <Key Name="assetID" Value="81305ee4-1122-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osNpcStopAnimation" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osNpcStopAnimation.lsl" />
-  </Section> -->
-<!--   <Section Name="osNpcTouch">
+  </Section>
+  <Section Name="osNpcTouch">
     <Key Name="assetID" Value="81305ee4-1123-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osNpcTouch" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osNpcTouch.lsl" />
-  </Section> -->
+  </Section>
    <Section Name="osNpcWhisper">
     <Key Name="assetID" Value="81305ee4-1124-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osNpcWhisper" />
@@ -491,36 +485,36 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osClearInertia.lsl" />
   </Section>
-<!--   <Section Name="osClearObjectAnimations">
+  <Section Name="osClearObjectAnimations">
     <Key Name="assetID" Value="81305ee4-1202-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osClearObjectAnimations" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osClearObjectAnimations.lsl" />
-  </Section> -->
-<!--   <Section Name="osDie">
+  </Section>
+  <Section Name="osDie">
     <Key Name="assetID" Value="81305ee4-1203-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osDie" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osDie.lsl" />
-  </Section> -->
-<!--   <Section Name="osForceBreakAllLinks">
+  </Section>
+  <Section Name="osForceBreakAllLinks">
     <Key Name="assetID" Value="81305ee4-1204-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osForceBreakAllLinks" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osForceBreakAllLinks.lsl" />
-  </Section> -->
-<!--   <Section Name="osForceBreakLink">
+  </Section>
+  <Section Name="osForceBreakLink">
     <Key Name="assetID" Value="81305ee4-1205-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osForceBreakLink" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osForceBreakLink.lsl" />
-  </Section> -->
-<!--   <Section Name="osForceCreateLink">
+  </Section>
+  <Section Name="osForceCreateLink">
     <Key Name="assetID" Value="81305ee4-1206-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osForceCreateLink" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osForceCreateLink.lsl" />
-  </Section> -->
+  </Section>
   <Section Name="osGetInertiaData">
     <Key Name="assetID" Value="81305ee4-1207-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osGetInertiaData" />
@@ -533,30 +527,30 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osGetInventoryItemKey.lsl" />
   </Section>
-<!--   <Section Name="osGetInventoryName">
+  <Section Name="osGetInventoryName">
     <Key Name="assetID" Value="81305ee4-1209-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osGetInventoryName" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osGetInventoryName.lsl" />
-  </Section> -->
+  </Section>
   <Section Name="osGetInventoryDesc">
     <Key Name="assetID" Value="81305ee4-1210-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osGetInventoryDesc" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osGetInventoryDesc.lsl" />
   </Section>
-<!--   <Section Name="osGetInventoryLastOwner">
+  <Section Name="osGetInventoryLastOwner">
     <Key Name="assetID" Value="81305ee4-1211-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osGetInventoryLastOwner" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osGetInventoryLastOwner.lsl" />
-  </Section> -->
-<!--   <Section Name="osGetLastChangedEventKey">
+  </Section>
+  <Section Name="osGetLastChangedEventKey">
     <Key Name="assetID" Value="81305ee4-1212-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osGetLastChangedEventKey" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osGetLastChangedEventKey.lsl" />
-  </Section> -->
+  </Section>
   <Section Name="osGetLinkNumber">
     <Key Name="assetID" Value="81305ee4-1213-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osGetLinkNumber" />
@@ -569,18 +563,18 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osGetLinkPrimitiveParams.lsl" />
   </Section>
-<!--   <Section Name="osGetPrimitiveParams">
+  <Section Name="osGetPrimitiveParams">
     <Key Name="assetID" Value="81305ee4-1215-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osGetPrimitiveParams" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osGetPrimitiveParams.lsl" />
-  </Section> -->
-<!--   <Section Name="osGetRezzingObject">
+  </Section>
+  <Section Name="osGetRezzingObject">
     <Key Name="assetID" Value="81305ee4-1216-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osGetRezzingObject" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osGetRezzingObject.lsl" />
-  </Section> -->
+  </Section>
   <Section Name="osGetSitActiveRange">
     <Key Name="assetID" Value="81305ee4-1217-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osGetSitActiveRange" />
@@ -605,12 +599,12 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osGetLinkStandTarget.lsl" />
   </Section>
-<!--   <Section Name="osListenRegex">
+  <Section Name="osListenRegex">
     <Key Name="assetID" Value="81305ee4-1221-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osListenRegex" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osListenRegex.lsl" />
-  </Section> -->
+  </Section>
   <Section Name="osMessageAttachments">
     <Key Name="assetID" Value="81305ee4-1222-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osMessageAttachments" />
@@ -623,30 +617,30 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osMessageObject.lsl" />
   </Section>
-<!--   <Section Name="osSetInertia">
+  <Section Name="osSetInertia">
     <Key Name="assetID" Value="81305ee4-1224-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osSetInertia" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osSetInertia.lsl" />
-  </Section> -->
-<!--   <Section Name="osSetInertiaAsBox">
+  </Section>
+  <Section Name="osSetInertiaAsBox">
     <Key Name="assetID" Value="81305ee4-1225-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osSetInertiaAsBox" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osSetInertiaAsBox.lsl" />
-  </Section> -->
-<!--   <Section Name="osSetInertiaAsCylinder">
+  </Section>
+  <Section Name="osSetInertiaAsCylinder">
     <Key Name="assetID" Value="81305ee4-1226-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osSetInertiaAsCylinder" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osSetInertiaAsCylinder.lsl" />
-  </Section> -->
-<!--   <Section Name="osSetInertiaAsSphere">
+  </Section>
+  <Section Name="osSetInertiaAsSphere">
     <Key Name="assetID" Value="81305ee4-1227-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osSetInertiaAsSphere" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osSetInertiaAsSphere.lsl" />
-  </Section> -->
+  </Section>
   <Section Name="osSetPrimitiveParams">
     <Key Name="assetID" Value="81305ee4-1228-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osSetPrimitiveParams" />
@@ -785,12 +779,12 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osMovePen.lsl" />
   </Section>
-<!--   <Section Name="osSetFontName">
+  <Section Name="osSetFontName">
     <Key Name="assetID" Value="81305ee4-1316-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osSetFontName" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osSetFontName.lsl" />
-  </Section> -->
+  </Section>
   <Section Name="osSetFontSize">
     <Key Name="assetID" Value="81305ee4-1317-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osSetFontSize" />
@@ -899,36 +893,36 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osLoopSound.lsl" />
   </Section>
-<!--   <Section Name="osLoopSoundMaster">
+  <Section Name="osLoopSoundMaster">
     <Key Name="assetID" Value="81305ee4-1504-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osLoopSoundMaster" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osLoopSoundMaster.lsl" />
-  </Section> -->
-<!--   <Section Name="osLoopSoundSlave">
+  </Section>
+  <Section Name="osLoopSoundSlave">
     <Key Name="assetID" Value="81305ee4-1505-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osLoopSoundSlave" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osLoopSoundSlave.lsl" />
-  </Section> -->
-<!--   <Section Name="osPlaySound">
+  </Section>
+  <Section Name="osPlaySound">
     <Key Name="assetID" Value="81305ee4-1506-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osPlaySound" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osPlaySound.lsl" />
-  </Section> -->
-<!--   <Section Name="osPlaySoundSlave">
+  </Section>
+  <Section Name="osPlaySoundSlave">
     <Key Name="assetID" Value="81305ee4-1507-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osPlaySoundSlave" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osPlaySoundSlave.lsl" />
-  </Section> -->
-<!--   <Section Name="osPreloadSound">
+  </Section>
+  <Section Name="osPreloadSound">
     <Key Name="assetID" Value="81305ee4-1508-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osPreloadSound" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osPreloadSound.lsl" />
-  </Section> -->
+  </Section>
    <Section Name="osSetSoundRadius">
     <Key Name="assetID" Value="81305ee4-1509-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osSetSoundRadius" />
@@ -947,12 +941,12 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osTriggerSound.lsl" />
   </Section>
-<!--   <Section Name="osTriggerSoundLimited">
+  <Section Name="osTriggerSoundLimited">
     <Key Name="assetID" Value="81305ee4-1512-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osTriggerSoundLimited" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osTriggerSoundLimited.lsl" />
-  </Section> -->
+  </Section>
   <Section Name="osRequestSecureURL">
     <Key Name="assetID" Value="81305ee4-1601-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osRequestSecureURL" />
@@ -1079,18 +1073,18 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osWindActiveModelPluginName.lsl" />
   </Section>
-<!--   <Section Name="osReplaceParcelEnvironment">
+  <Section Name="osReplaceParcelEnvironment">
     <Key Name="assetID" Value="81305ee4-1910-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osReplaceParcelEnvironment" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osReplaceParcelEnvironment.lsl" />
-  </Section> -->
-<!--   <Section Name="osReplaceRegionEnvironment">
+  </Section>
+  <Section Name="osReplaceRegionEnvironment">
     <Key Name="assetID" Value="81305ee4-1911-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osReplaceRegionEnvironment" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osReplaceRegionEnvironment.lsl" />
-  </Section> -->
+  </Section>
    <Section Name="osResetEnvironment">
     <Key Name="assetID" Value="81305ee4-1912-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osResetEnvironment" />
@@ -1217,24 +1211,24 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osLoadedCreationTime.lsl" />
   </Section>
-<!--   <Section Name="osConsoleCommand">
+  <Section Name="osConsoleCommand">
     <Key Name="assetID" Value="81305ee4-2101-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osConsoleCommand" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osConsoleCommand.lsl" />
-  </Section> -->
-<!--   <Section Name="osRegionNotice">
+  </Section>
+  <Section Name="osRegionNotice">
     <Key Name="assetID" Value="81305ee4-2102-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osRegionNotice" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osRegionNotice.lsl" />
-  </Section> -->
-<!--   <Section Name="osRegionRestart">
+  </Section>
+  <Section Name="osRegionRestart">
     <Key Name="assetID" Value="81305ee4-2103-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osRegionRestart" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osRegionRestart.lsl" />
-  </Section> -->
+  </Section>
   <Section Name="osSetParcelMediaURL">
     <Key Name="assetID" Value="81305ee4-2104-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osSetParcelMediaURL" />
@@ -1247,18 +1241,18 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osSetParcelMusicURL.lsl" />
   </Section>
-<!--   <Section Name="osSetParcelSIPAddress">
+  <Section Name="osSetParcelSIPAddress">
     <Key Name="assetID" Value="81305ee4-2106-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osSetParcelSIPAddress" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osSetParcelSIPAddress.lsl" />
-  </Section> -->
-<!--   <Section Name="osSetPrimFloatOnWater">
+  </Section>
+  <Section Name="osSetPrimFloatOnWater">
     <Key Name="assetID" Value="81305ee4-2107-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osSetPrimFloatOnWater" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osSetPrimFloatOnWater.lsl" />
-  </Section> -->
+  </Section>
    <Section Name="osResetAllScripts">
     <Key Name="assetID" Value="81305ee4-2201-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osResetAllScripts" />
@@ -1337,12 +1331,12 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osAngleBetween.lsl" />
   </Section>
-<!--   <Section Name="osApproxEquals">
+  <Section Name="osApproxEquals">
     <Key Name="assetID" Value="81305ee4-2402-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osApproxEquals" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osApproxEquals.lsl" />
-  </Section> -->
+  </Section>
   <Section Name="osGetPSTWallclock">
     <Key Name="assetID" Value="81305ee4-2403-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osGetPSTWallclock" />
