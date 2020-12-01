@@ -17,7 +17,9 @@ Example(s)
 //
  
 // Change target_uuid to any uuid of the prim you wish to get params.
-string target_uuid = "44d375e6-c42b-49ad-b01d-663309350511";
+//string target_uuid = "44d375e6-c42b-49ad-b01d-663309350511";
+
+
  
 default
 {
@@ -28,6 +30,8 @@ default
  
     touch_start(integer number) 
     {
+        string target_uuid = llGetKey(); // get uuid
+        
         list buffer = osGetPrimitiveParams(target_uuid, [PRIM_NAME, PRIM_SIZE, PRIM_POSITION, PRIM_ROTATION]);
  
         llSay(PUBLIC_CHANNEL, "[PRIM_NAME] " + llList2String(buffer, 0));
