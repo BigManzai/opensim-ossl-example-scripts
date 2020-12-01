@@ -1,34 +1,4 @@
-<!--
-  In Keys,
-    name is the name of the item.
-    description is the description of the item.
-    assetID is the ID of the asset data that is referenced by the item.
-    folderID is the ID of the folder containing this item.
-    inventoryID is the ID for the item.  It must be unique.
-    assetType is the asset type of the item.  See the OpenMetaverse.AssetType enum in libopenmetaverse
-    inventoryType is the inventory type of the item.  See the OpenMetaverse.InventoryType enum in libopenmetaverse
-    flags are only required for wearables.  See OpenMetaverse.WearableType enum in libopenmetaverse.
--->
-
 <Nini>
-
-<!--
-  <Section Name="Example Library Item">
-    <Key Name="inventoryID" Value="30000000-0000-2222-4444-000000000001" />
-    <Key Name="assetID" Value="30000000-0000-2222-3333-000000000001" />
-    <Key Name="folderID" Value="30000112-000f-0000-0000-000100bba003"/>
-    <Key Name="description" Value="Example Library Item" />
-    <Key Name="name" Value="Example Library Item" />
-    <Key Name="assetType" Value="7" />
-    <Key Name="inventoryType" Value="7" />
-    <Key Name="currentPermissions" Value="2147483647" />
-    <Key Name="nextPermissions" Value="2147483647" />
-    <Key Name="everyonePermissions" Value="2147483647" />
-    <Key Name="basePermissions" Value="2147483647" />
-  </Section>
---> 
-
-<!-- A == <Key Name="folderID" Value="30000112-000f-0000-0000-000100bba003"/> -->
   <Section Name="llAddToLandBanList">
     <Key Name="inventoryID" Value="7ceba3f0-b1a0-11dc-8314-0800200c9a66" />
     <Key Name="assetID" Value="7ceba3f1-b1a0-11dc-8314-0800200c9a66" />
@@ -593,7 +563,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-<!--     <Section Name="osNpcGetPos">
+    <Section Name="osNpcGetPos">
       <Key Name="inventoryID" Value="81305ee4-1104-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1104-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0002-000100bba000"/>
@@ -619,7 +589,7 @@
       <Key Name="name" Value="osNpcGetOwner" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section> -->
+    </Section>
     <Section Name="osNpcLoadAppearance">
       <Key Name="inventoryID" Value="81305ee4-1107-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1107-9e0a-69a4-76ed57df0c8f" />
@@ -629,7 +599,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-<!--     <Section Name="osNpcMoveTo">
+    <Section Name="osNpcMoveTo">
       <Key Name="inventoryID" Value="81305ee4-1108-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1108-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0002-000100bba000"/>
@@ -655,7 +625,7 @@
       <Key Name="name" Value="osNpcPlayAnimation" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section> -->
+    </Section>
     <Section Name="osNpcRemove">
       <Key Name="inventoryID" Value="81305ee4-1111-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1111-9e0a-69a4-76ed57df0c8f" />
@@ -665,7 +635,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-<!--     <Section Name="osNpcSaveAppearance">
+    <Section Name="osNpcSaveAppearance">
       <Key Name="inventoryID" Value="81305ee4-1112-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1112-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0002-000100bba000"/>
@@ -673,7 +643,7 @@
       <Key Name="name" Value="osNpcSaveAppearance" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section> -->
+    </Section>
     <Section Name="osNpcSay">
       <Key Name="inventoryID" Value="81305ee4-1113-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1113-9e0a-69a4-76ed57df0c8f" />
@@ -710,7 +680,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-<!--     <Section Name="osNpcSetRot">
+    <Section Name="osNpcSetRot">
       <Key Name="inventoryID" Value="81305ee4-1117-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1117-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0002-000100bba000"/>
@@ -718,7 +688,7 @@
       <Key Name="name" Value="osNpcSetRot" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section> -->
+    </Section>
     <Section Name="osNpcShout">
       <Key Name="inventoryID" Value="81305ee4-1118-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1118-9e0a-69a4-76ed57df0c8f" />
@@ -728,7 +698,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-<!--    <Section Name="osNpcSit">
+   <Section Name="osNpcSit">
       <Key Name="inventoryID" Value="81305ee4-1119-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1119-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0002-000100bba000"/>
@@ -772,7 +742,7 @@
       <Key Name="name" Value="osNpcTouch" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section> -->
+    </Section>
     <Section Name="osNpcWhisper">
       <Key Name="inventoryID" Value="81305ee4-1124-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1124-9e0a-69a4-76ed57df0c8f" />
@@ -791,7 +761,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-<!--     <Section Name="osClearObjectAnimations">
+    <Section Name="osClearObjectAnimations">
       <Key Name="inventoryID" Value="81305ee4-1202-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1202-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0003-000100bba000"/>
@@ -835,7 +805,7 @@
       <Key Name="name" Value="osForceCreateLink" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section> -->
+    </Section>
     <Section Name="osGetInertiaData">
       <Key Name="inventoryID" Value="81305ee4-1207-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1207-9e0a-69a4-76ed57df0c8f" />
@@ -854,7 +824,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-<!--     <Section Name="osGetInventoryName">
+    <Section Name="osGetInventoryName">
       <Key Name="inventoryID" Value="81305ee4-1209-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1209-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0003-000100bba000"/>
@@ -862,7 +832,7 @@
       <Key Name="name" Value="osGetInventoryName" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section> -->
+    </Section>
     <Section Name="osGetInventoryDesc">
       <Key Name="inventoryID" Value="81305ee4-1210-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1210-9e0a-69a4-76ed57df0c8f" />
@@ -872,7 +842,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-<!--     <Section Name="osGetInventoryLastOwner">
+    <Section Name="osGetInventoryLastOwner">
       <Key Name="inventoryID" Value="81305ee4-1211-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1211-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0003-000100bba000"/>
@@ -889,7 +859,7 @@
       <Key Name="name" Value="osGetLastChangedEventKey" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section> -->
+    </Section>
     <Section Name="osGetLinkNumber">
       <Key Name="inventoryID" Value="81305ee4-1213-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1213-9e0a-69a4-76ed57df0c8f" />
@@ -908,7 +878,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-<!--     <Section Name="osGetPrimitiveParams">
+    <Section Name="osGetPrimitiveParams">
       <Key Name="inventoryID" Value="81305ee4-1215-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1215-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0003-000100bba000"/>
@@ -925,7 +895,7 @@
       <Key Name="name" Value="osGetRezzingObject" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section> -->
+    </Section>
     <Section Name="osGetSitActiveRange">
       <Key Name="inventoryID" Value="81305ee4-1217-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1217-9e0a-69a4-76ed57df0c8f" />
@@ -962,7 +932,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-<!--     <Section Name="osListenRegex">
+    <Section Name="osListenRegex">
       <Key Name="inventoryID" Value="81305ee4-1221-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1221-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0003-000100bba000"/>
@@ -970,7 +940,7 @@
       <Key Name="name" Value="osListenRegex" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section> -->
+    </Section>
     <Section Name="osMessageAttachments">
       <Key Name="inventoryID" Value="81305ee4-1222-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1222-9e0a-69a4-76ed57df0c8f" />
@@ -989,7 +959,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-<!--     <Section Name="osSetInertia">
+    <Section Name="osSetInertia">
       <Key Name="inventoryID" Value="81305ee4-1224-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1224-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0003-000100bba000"/>
@@ -1024,7 +994,7 @@
       <Key Name="name" Value="osSetInertiaAsSphere" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section> -->
+    </Section>
     <Section Name="osSetPrimitiveParams">
       <Key Name="inventoryID" Value="81305ee4-1228-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1228-9e0a-69a4-76ed57df0c8f" />
@@ -1232,7 +1202,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-<!--     <Section Name="osSetFontName">
+    <Section Name="osSetFontName">
       <Key Name="inventoryID" Value="81305ee4-1316-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1316-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0004-000100bba000"/>
@@ -1240,7 +1210,7 @@
       <Key Name="name" Value="osSetFontName" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section> -->
+    </Section>
     <Section Name="osSetFontSize">
       <Key Name="inventoryID" Value="81305ee4-1317-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1317-9e0a-69a4-76ed57df0c8f" />
@@ -1430,7 +1400,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-<!--    <Section Name="osPlaySoundSlave">
+   <Section Name="osPlaySoundSlave">
       <Key Name="inventoryID" Value="81305ee4-1507-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1507-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0006-000100bba000"/>
@@ -1447,7 +1417,7 @@
       <Key Name="name" Value="osPreloadSound" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section> -->
+    </Section>
     <Section Name="osSetSoundRadius">
       <Key Name="inventoryID" Value="81305ee4-1509-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1509-9e0a-69a4-76ed57df0c8f" />
@@ -1475,7 +1445,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-<!--    <Section Name="osTriggerSoundLimited">
+   <Section Name="osTriggerSoundLimited">
       <Key Name="inventoryID" Value="81305ee4-1512-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1512-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0006-000100bba000"/>
@@ -1483,7 +1453,7 @@
       <Key Name="name" Value="osTriggerSoundLimited" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section> -->
+    </Section>
     <Section Name="osRequestSecureURL">
       <Key Name="inventoryID" Value="81305ee4-1601-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1601-9e0a-69a4-76ed57df0c8f" />
@@ -1673,7 +1643,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-<!--     <Section Name="osReplaceParcelEnvironment">
+    <Section Name="osReplaceParcelEnvironment">
       <Key Name="inventoryID" Value="81305ee4-1910-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1910-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0010-000100bba000"/>
@@ -1681,8 +1651,8 @@
       <Key Name="name" Value="osReplaceParcelEnvironment" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section> -->
-<!--     <Section Name="osReplaceRegionEnvironment">
+    </Section>
+    <Section Name="osReplaceRegionEnvironment">
       <Key Name="inventoryID" Value="81305ee4-1911-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1911-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0010-000100bba000"/>
@@ -1690,7 +1660,7 @@
       <Key Name="name" Value="osReplaceRegionEnvironment" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section> -->
+    </Section>
     <Section Name="osResetEnvironment">
       <Key Name="inventoryID" Value="81305ee4-1912-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1912-9e0a-69a4-76ed57df0c8f" />
@@ -1880,7 +1850,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-<!--     <Section Name="osConsoleCommand">
+    <Section Name="osConsoleCommand">
       <Key Name="inventoryID" Value="81305ee4-2101-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-2101-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0012-000100bba000"/>
@@ -1906,7 +1876,7 @@
       <Key Name="name" Value="osRegionRestart" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section> -->
+    </Section>
     <Section Name="osSetParcelMediaURL">
       <Key Name="inventoryID" Value="81305ee4-2104-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-2104-9e0a-69a4-76ed57df0c8f" />
@@ -1925,7 +1895,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-<!--     <Section Name="osSetParcelSIPAddress">
+    <Section Name="osSetParcelSIPAddress">
       <Key Name="inventoryID" Value="81305ee4-2106-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-2106-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0012-000100bba000"/>
@@ -1942,7 +1912,7 @@
       <Key Name="name" Value="osSetPrimFloatOnWater" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section> -->
+    </Section>
     <Section Name="osResetAllScripts">
       <Key Name="inventoryID" Value="81305ee4-2201-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-2201-9e0a-69a4-76ed57df0c8f" />
@@ -2060,7 +2030,7 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-<!--    <Section Name="osApproxEquals">
+   <Section Name="osApproxEquals">
       <Key Name="inventoryID" Value="81305ee4-2402-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-2402-9e0a-69a4-76ed57df0c8f" />
       <Key Name="folderID" Value="30000112-001f-0000-0015-000100bba000"/>
@@ -2068,7 +2038,7 @@
       <Key Name="name" Value="osApproxEquals" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section> -->
+    </Section>
     <Section Name="osGetPSTWallclock">
       <Key Name="inventoryID" Value="81305ee4-2403-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-2403-9e0a-69a4-76ed57df0c8f" />
