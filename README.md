@@ -2,9 +2,9 @@
 
 OpenSimulator OSSL examples as they can be seen on the OpenSimulator wiki http://opensimulator.org/wiki/Category:OSSL_Functions
 
-Version 0.133 - 200 scripts
+Version 0.134
 
-Test: opensim-0.9.2.0Dev-969-g4f4a48c works
+Test: opensim-0.9.2.0Dev-969-g4f4a48c error
 
 The missing scripts from OpenSimulator wiki are already contained in the XML configuration files, but are commented out.
 
@@ -20,41 +20,4 @@ The missing scripts from OpenSimulator wiki are already contained in the XML con
     Right click and copy Examples to your Scripts directory.
     Now you can work normally with the examples.
 
-## TODO missing scripts:
-```javascript
-NPCs
-    osNpcGetPos	
-    osNpcGetRot	
-    osNpcGetOwner
-    osNpcMoveTo
-    osNpcMoveToTarget
-    osNpcPlayAnimation
-    osNpcSaveAppearance
-    osNpcSetRot	
-    osNpcSit	
-    osNpcStand	
-    osNpcStopMoveToTarget	
-    osNpcStopAnimation	
-    osNpcTouch
-
-Prim
-    osClearObjectAnimations
-    osDie
-    osForceBreakAllLinks	
-    osForceBreakLink
-    osForceCreateLink
-    osGetInventoryName
-    osGetPrimitiveParams
-    osGetRezzingObject
-    osListenRegex
-    osSetInertia
-
-Sound
-    osPlaySoundSlave	
-    osPreloadSound	
-    osTriggerSoundLimited 
-
-Region / Parcel Environment
-    osReplaceParcelEnvironment
-    osReplaceRegionEnvironment
-```
+## TODO Mistake, bad quality, incomplete:
