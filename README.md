@@ -36,9 +36,6 @@ osSetInertiaAsBox.lsl
 osSetInertiaAsCylinder.lsl
 osSetInertiaAsSphere.lsl
 osTriggerSoundLimited.lsl
-
-02-12-2020
-osSetPrimFloatOnWater Ubit delete example
 ```
 
 
@@ -58,4 +55,9 @@ osNpcMoveTo
 osNpcGetRot
 osGetPrimitiveParams
 osNpcCreate
+```
+
+## 02-12-2020
+```javascript
+osSetPrimFloatOnWater Ubit delete example
 ```
