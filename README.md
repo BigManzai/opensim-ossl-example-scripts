@@ -57,7 +57,7 @@ osGetPrimitiveParams
 osNpcCreate
 ```
 
-## 02-12-2020
+## 02-12-2020 upgrade:
 ```javascript
 osSetPrimFloatOnWater Ubit delete example
 ```
