@@ -59,5 +59,5 @@ osNpcCreate
 
 ## 02-12-2020 upgrade:
 ```javascript
-osSetPrimFloatOnWater Ubit delete example
+osSetPrimFloatOnWater Ubit delete example and osSetPrimFloatOnWater
 ```
