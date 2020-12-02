@@ -1904,15 +1904,6 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-    <Section Name="osSetPrimFloatOnWater">
-      <Key Name="inventoryID" Value="81305ee4-2107-9e0a-69a4-76ed57df0c8f" />
-      <Key Name="assetID" Value="81305ee4-2107-9e0a-69a4-76ed57df0c8f" />
-      <Key Name="folderID" Value="30000112-001f-0000-0012-000100bba000"/>
-      <Key Name="description" Value="osSetPrimFloatOnWater" />
-      <Key Name="name" Value="osSetPrimFloatOnWater" />
-      <Key Name="assetType" Value="10" />
-      <Key Name="inventoryType" Value="10" />
-    </Section>
     <Section Name="osResetAllScripts">
       <Key Name="inventoryID" Value="81305ee4-2201-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-2201-9e0a-69a4-76ed57df0c8f" />
