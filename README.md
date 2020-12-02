@@ -36,9 +36,11 @@ osSetInertiaAsBox.lsl
 osSetInertiaAsCylinder.lsl
 osSetInertiaAsSphere.lsl
 osTriggerSoundLimited.lsl
+```
 
 
-01-12-2020 upgrade:
+## 01-12-2020 upgrade:
+```javascript
 osGetParcelDwell
 osForceBreakAllLinks
 osForceBreakLink
