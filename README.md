@@ -36,6 +36,9 @@ osSetInertiaAsBox.lsl
 osSetInertiaAsCylinder.lsl
 osSetInertiaAsSphere.lsl
 osTriggerSoundLimited.lsl
+
+02-12-2020
+osSetPrimFloatOnWater Ubit delete example
 ```
 
 
