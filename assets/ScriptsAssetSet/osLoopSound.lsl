@@ -48,7 +48,8 @@ default
     }
 }
 
-/*
+/* And with uuid:
+
 //
 // osLoopSound Script Example
 //

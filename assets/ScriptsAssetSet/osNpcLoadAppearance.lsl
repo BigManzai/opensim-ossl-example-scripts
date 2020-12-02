@@ -7,19 +7,21 @@ Delay 	0 seconds
 Example(s)
 */
 
-//
-// Example of osNpcLoadAppearance.
 // Load an appearance notecard on the collided npc with the same name like the npc.
+// Attention: The unauthorized copying of someone else's property
+// is a criminal offense in many countries!
  
 default
 {
-    collision_start(integer num) //On Collision
+    collision_start(integer number)
     {
-        if(osIsNpc(llDetectedKey(0))) //Check is the the agent an npc
+        key collider = llDetectedKey(0);
+ 
+        if (osIsNpc(collider)) // Check is the collider an npc
         {
-            if(llGetInventoryType(llDetectedName(0)) == INVENTORY_NOTECARD) //is the notecard available
+            if (llGetInventoryType(collider) == INVENTORY_NOTECARD) // Is the notecard available
             {
-                osNpcLoadAppearance(llDetectedKey(0), llDetectedName(0)); //load the new appearance
+                osNpcLoadAppearance(collider, llDetectedName(0)); // Load the new appearance
             }
         }
     }

@@ -11,13 +11,47 @@ This function was added in 0.8-post-fixes
 */
 
 //
-// empty Script Example
+// osForceCreateLink Script Example
+// Authior: djphil
 //
-
+ 
+key target = "fbe8ad1b-b7bf-4919-b219-3ebf78e5f607";
+integer parent = LINK_ROOT;
+integer switch;
+ 
 default
 {
     state_entry()
     {
-        llSay(0, "This script example does not yet exist.");
+        if (osIsUUID(target))
+        {
+            llSay(PUBLIC_CHANNEL, "Touch to see osForceCreateLink usage.");
+        }
+ 
+        else
+        {
+            llSay(PUBLIC_CHANNEL, "Invalid uuid detected ...");
+        }
+    }
+ 
+    touch_start(integer number)
+    {
+        if (switch = !switch)
+        {
+            osForceCreateLink(target, parent);
+        }
+ 
+        else
+        {
+            osForceBreakLink(2);
+        }
+    }
+ 
+    changed(integer change)
+    {
+        if (change & CHANGED_LINK)
+        {
+            llSay(PUBLIC_CHANNEL, "The number of links have changed.");
+        }
     }
 }

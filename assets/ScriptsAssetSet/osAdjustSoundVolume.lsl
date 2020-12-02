@@ -7,21 +7,67 @@ Delay 	0.1 seconds
 Example(s)
 */
 
-// Example use of osAdjustSoundVolume
+//
+// osAdjustSoundVolume Script Example
+//
  
-integer which_prim = 2;
+string sound;
  
 default
 {
     state_entry()
     {
-        llListen(10, "", llGetOwner(), "");
+        sound = llGetInventoryName(INVENTORY_SOUND, 0);
+ 
+        if (sound == "")
+        {
+            llSay(PUBLIC_CHANNEL, "Inventory sound missing ...");
+        }
+ 
+        else
+        {
+            llSay(PUBLIC_CHANNEL, "Touch to hear osAdjustSoundVolume running.");
+        }
     }
  
-    listen(integer channel, string name, key id, string msg)
+    touch_start(integer number)
     {
-        float volume = (float)msg;
-        osAdjustSoundVolume(which_prim, volume);
-        llOwnerSay("Volume in prim " + (string)which_prim + " was set to " + (string)volume);
+        float volume = llFrand(1.0);
+        osAdjustSoundVolume(1, volume);
+        osPlaySound(1, sound, volume);
+        llSay(PUBLIC_CHANNEL, "The volume of the primitive (link 1) has been adjusted to " + (string)volume);
     }
 }
+
+/* And with uuid:
+
+//
+// osAdjustSoundVolume Script Example
+//
+ 
+string sound = "ed124764-705d-d497-167a-182cd9fa2e6c";
+ 
+default
+{
+    state_entry()
+    {
+        if (osIsUUID(sound))
+        {
+            llSay(PUBLIC_CHANNEL, "Touch to hear osAdjustSoundVolume running.");
+        }
+ 
+        else
+        {
+            llSay(PUBLIC_CHANNEL, "Invalid uuid detected ...");
+        }
+    }
+ 
+    touch_start(integer number)
+    {
+        float volume = llFrand(1.0);
+        osAdjustSoundVolume(1, volume);
+        osPlaySound(1, sound, volume);
+        llSay(PUBLIC_CHANNEL, "The volume of the primitive (link 1) has been adjusted to " + (string)volume);
+    }
+}
+*/
