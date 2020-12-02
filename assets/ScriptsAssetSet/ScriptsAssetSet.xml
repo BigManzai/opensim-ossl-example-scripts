@@ -1247,12 +1247,6 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osSetParcelSIPAddress.lsl" />
   </Section>
-  <Section Name="osSetPrimFloatOnWater">
-    <Key Name="assetID" Value="81305ee4-2107-9e0a-69a4-76ed57df0c8f" />
-    <Key Name="name" Value="osSetPrimFloatOnWater" />
-    <Key Name="assetType" Value="10" />
-    <Key Name="fileName" Value="osSetPrimFloatOnWater.lsl" />
-  </Section>
    <Section Name="osResetAllScripts">
     <Key Name="assetID" Value="81305ee4-2201-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osResetAllScripts" />
