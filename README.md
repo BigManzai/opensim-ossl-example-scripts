@@ -56,8 +56,22 @@ osNpcGetRot
 osGetPrimitiveParams
 osNpcCreate
 ```
-
 ## 02-12-2020 upgrade:
 ```javascript
 osSetPrimFloatOnWater Ubit delete example and osSetPrimFloatOnWater
+```
+
+## 03-12-2020 upgrade:
+```javascript
+osGetInventoryItemKey
+osGetInventoryLastOwner
+osGetLastChangedEventKey
+OsGetInventoryName
+OsGetInventoryDesc
+OsClearObjectAnimations
+OsGetInertiaData
+OsReplaceAgentEnvironment
+OsNpcSaveAppearance
+OsResetEnvironment
+OsReplaceAgentEnvironment
 ```
