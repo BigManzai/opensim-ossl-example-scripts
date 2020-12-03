@@ -21,9 +21,6 @@ Test: opensim-0.9.2.0Dev-971-g3e113b4 working
 
 ```javascript
 osApproxEquals.lsl
-osClearObjectAnimations.lsl
-osGetInventoryLastOwner.lsl
-osGetLastChangedEventKey.lsl
 osListenRegex.lsl
 osNpcGetPos.lsl
 osNpcMoveToTarget.lsl
@@ -37,41 +34,16 @@ osSetInertiaAsCylinder.lsl
 osSetInertiaAsSphere.lsl
 osTriggerSoundLimited.lsl
 ```
-
-
-## 01-12-2020 upgrade:
-```javascript
-osGetParcelDwell
-osForceBreakAllLinks
-osForceBreakLink
-osForceCreateLink
-osNpcSetRot
-osAdjustSoundVolume
-osLoopSound
-osNpcLoadAppearance
-osNpcGetOwner
-osNpcStopMoveToTarget
-osNpcMoveTo
-osNpcGetRot
-osGetPrimitiveParams
-osNpcCreate
-```
-## 02-12-2020 upgrade:
-```javascript
-osSetPrimFloatOnWater Ubit delete example and osSetPrimFloatOnWater
-```
-
 ## 03-12-2020 upgrade:
 ```javascript
 osGetInventoryItemKey
 osGetInventoryLastOwner
 osGetLastChangedEventKey
-OsGetInventoryName
-OsGetInventoryDesc
-OsClearObjectAnimations
-OsGetInertiaData
-OsReplaceAgentEnvironment
-OsNpcSaveAppearance
-OsResetEnvironment
-OsReplaceAgentEnvironment
+osGetInventoryName
+osGetInventoryDesc
+osClearObjectAnimations
+osGetInertiaData
+osReplaceAgentEnvironment
+osNpcSaveAppearance
+osResetEnvironment
 ```
