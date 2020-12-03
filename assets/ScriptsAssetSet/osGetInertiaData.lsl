@@ -19,28 +19,40 @@ Delay 	0 seconds
 Example(s)
 */
 
-// Example of osGetInertiaData
+//
+// osGetInertiaData Script Exemple
+// Author: djphil
+//
  
 default
 {
     state_entry()
     {
+        llSay(PUBLIC_CHANNEL, "Touch to see osGetInertiaData usage.");
         llSetStatus(STATUS_PHYSICS, TRUE);
-        llSetObjectName("osGetInertiaData");
     }
  
-    touch_start(integer n)
+    touch_start(integer number)
     {
-        string text;
         list buffer = osGetInertiaData();
         float mass = llList2Float(buffer, 0);
         vector center = llList2Vector(buffer, 1);
         vector Idiag = llList2Vector(buffer, 2);
         vector Ioffdiag = llList2Vector(buffer, 3);
-        text += "\n• The total mass of the linkset is " + (string)mass;
-        text += "\n• The center of mass offset relative to root prim is " + (string)center;
-        text += "\n• Diagonal elements of inertia is " + (string)Idiag;
-        text += "\n• Off diagonal elements of inertia is " + (string)Ioffdiag;
-        llSay(PUBLIC_CHANNEL, text);
+ 
+        if (mass == -1)
+        {
+            llSay(PUBLIC_CHANNEL, "The inertia data is invalid or not avaiable ...");
+        }
+ 
+        else
+        {
+            string text;
+            text += "\n• The total mass of the linkset is " + (string)mass;
+            text += "\n• The center of mass offset relative to root prim is " + (string)center;
+            text += "\n• Diagonal elements of inertia is " + (string)Idiag;
+            text += "\n• Off diagonal elements of inertia is " + (string)Ioffdiag;
+            llSay(PUBLIC_CHANNEL, text);
+        }
     }
 }

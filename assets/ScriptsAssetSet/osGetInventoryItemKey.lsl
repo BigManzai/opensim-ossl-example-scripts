@@ -10,19 +10,22 @@ Delay 	0 seconds
 Example(s)
 */
 
-// Example of osGetInventoryItemKey
+//
+// osGetInventoryItemKey Script Exemple
+// Author: Ubit
+//
  
 default
 {
     state_entry()
     {
-        llOwnerSay("Touch me to show osGetInventoryDesc");
+        llSay(PUBLIC_CHANNEL, "Touch me to see osGetInventoryItemKey usage.");
     }
  
     touch_start(integer number)
     {
-        key ItemKey = osGetInventoryItemKey("MyNoteCard");
-        if (ItemKey != NULL_KEY) llOwnerSay(osGetInventoryDesc(ItemKey));
-        else llOwnerSay("ItemKey is a NULL_KEY, item not found or owner has no rights ...");
-    }   
+        key ItemKey = osGetInventoryItemKey("MyItemName");
+        if (ItemKey != NULL_KEY)llSay(PUBLIC_CHANNEL, "Item key is " + osGetInventoryDesc(ItemKey));
+        else llSay(PUBLIC_CHANNEL, "The item key is a NULL_KEY, item not found or owner has no rights ...");
+    }
 }

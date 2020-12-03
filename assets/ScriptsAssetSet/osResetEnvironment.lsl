@@ -24,7 +24,7 @@ default
 {
     state_entry()
     {
-        llSay(PUBLIC_CHANNEL, "Touch to see osResetEnvironment usage.");
+        llSay(PUBLIC_CHANNEL, "Touch to see osResetEnvironment usage with a transition of " + (string)transition);
     }
  
     touch_start(integer number)
@@ -40,10 +40,6 @@ default
         {
             result = osResetEnvironment(switch, transition);
         }
- 
-        llSay(PUBLIC_CHANNEL, "transition: " + (string)transition);
-        llSay(PUBLIC_CHANNEL, "switch: " + (string)switch);
-        llSay(PUBLIC_CHANNEL, "result: " + (string)result);
  
         if (switch == 1 && result == 1)
         {

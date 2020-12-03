@@ -9,13 +9,58 @@ Added in 0.9.2.0
 */
 
 //
-// empty Script Example
+// osClearObjectAnimations Script Exemple
+// Author= djphil
 //
-
+ 
 default
 {
     state_entry()
     {
-        llSay(0, "This script example does not yet exist.");
+        llSay(PUBLIC_CHANNEL, "Right click on this object (animesh) and select \"Touch\" to see osClearObjectAnimations usage.");
+    }
+ 
+    touch_start(integer number)
+    {
+        integer total = osClearObjectAnimations();
+ 
+        if (total > 0)
+        {
+            llSay(PUBLIC_CHANNEL, (string)total + " animation(s) of this object (animesh) have been cleared with success ...");
+        }
+ 
+        else
+        {
+            llSay(PUBLIC_CHANNEL, "There is " + (string)total + " animation running in this object ...");
+        }
     }
 }
+/*
+//
+// osClearObjectAnimations Script Exemple
+// Author= djphil
+//
+ 
+default
+{
+    state_entry()
+    {
+        llSay(PUBLIC_CHANNEL, "Drop this script to the object's inventory (animesh) to see osClearObjectAnimations usage.");
+        llSay(PUBLIC_CHANNEL, "The script will then be automatically deleted from the object's inventory (animesh).");
+ 
+        integer total = osClearObjectAnimations();
+ 
+        if (total > 0)
+        {
+            llSay(PUBLIC_CHANNEL, (string)total + " animation(s) of this object (animesh) have been cleared with success ...");
+        }
+ 
+        else
+        {
+            llSay(PUBLIC_CHANNEL, "There is " + (string)total + " animation running in this object ...");
+        }
+ 
+        llRemoveInventory(llGetScriptName());
+    }
+}
+*/

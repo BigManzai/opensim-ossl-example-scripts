@@ -14,42 +14,60 @@ Example(s)
 */
 
 //
-// osReplaceAgentEnvironment Script Example
 //
-
-string gEnvironment = "A-12AM"; // Can be asset's name in object's inventory or the asset ID
-float gTransitionTime = 3.0;
+// osReplaceAgentEnvironment Script Example
+// Author: djphil
+//
+ 
+// Can be asset's name in object's inventory or the asset uuid
+string daycycle_1 = "A-12AM";
+string daycycle_2 = NULL_KEY;
+integer transition = 3;
+integer switch;
  
 default
 {
-    touch_start(integer total_number)
+    state_entry()
     {
-        key person = llDetectedKey(0);
-        if (llGetAgentSize(person) != ZERO_VECTOR)
-        {
-            llRequestExperiencePermissions(person, "");
-        }
-        else
-        {
-            llInstantMessage(person, "You need to be in the same region to change environment");
-        }
+        llSay(PUBLIC_CHANNEL, "Touch to see osReplaceAgentEnvironment usage with a transition of " + (string)transition);
     }
  
-    experience_permissions(key agent_id)
+    touch_start(integer number)
     {
-        integer envTest = osReplaceAgentEnvironment(agent_id, gTransitionTime, gEnvironment);
-        if (envTest == 1)
+        key agentKey = llDetectedKey(0);
+ 
+        if (llGetAgentSize(agentKey) != ZERO_VECTOR)
         {
-            llRegionSayTo(agent_id, 0, "Applying environment for " + (string)agent_id);
+            integer result;
+ 
+            llRegionSayTo(agentKey, PUBLIC_CHANNEL, "agentKey: " + (string)agentKey);
+ 
+            if (switch = !switch)
+            {
+                result = osReplaceAgentEnvironment(agentKey, transition, daycycle_1);
+                llRegionSayTo(agentKey, PUBLIC_CHANNEL, "daycycle_1: " + daycycle_1);
+            }
+ 
+            else
+            {
+                result = osReplaceAgentEnvironment(agentKey, transition, daycycle_2);
+                llRegionSayTo(agentKey, PUBLIC_CHANNEL, "daycycle_2: " + daycycle_2);
+            }
+ 
+            if (result == 1)
+            {
+                llRegionSayTo(agentKey, PUBLIC_CHANNEL, "Agent environment replaced with success!");
+            }
+ 
+            else
+            {
+                llRegionSayTo(agentKey, PUBLIC_CHANNEL, "Agent environment replaced without success!");
+            }
         }
+ 
         else
         {
-            llRegionSayTo(agent_id, 0, "Cannot apply environment for " + (string)agent_id + " due to reason id: " + (string)envTest);
+            llInstantMessage(agentKey, "You need to be in the same region to use this function ...");
         }
-    }
- 
-    experience_permissions_denied(key agent_id, integer reason)
-    {
-        llRegionSayTo(agent_id, 0, "Denied experience permissions for " + (string)agent_id + " due to reason id: " + (string)reason);
     }
 }

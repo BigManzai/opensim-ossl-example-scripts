@@ -9,6 +9,7 @@ Example(s)
 
 //
 // llGetInventoryName Script Exemple
+// Author: Gudule Lapointe
 //
  
 default

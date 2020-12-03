@@ -13,42 +13,106 @@ This function was added in 0.7.2-post-fixes, huds control added in 0.9.2.0
 */
 
 //
-// osNpcSaveAppearance Script Example
+// osAgentSaveAppearance Script Example
+// Author: djphil
 //
-
-// touch to create a NPC clone of the toucher in front of this emitter
-// NPC will move to the toucher, then will greet them.
-// Touch again to remove the NPC
- 
-key npc;
-vector toucherPos;
  
 default
 {
+    state_entry()
+    {
+        llSay(PUBLIC_CHANNEL, "Touch to see osAgentSaveAppearance usage.");
+    }
+ 
     touch_start(integer number)
     {
-        vector npcPos = llGetPos() + <1,0,0>;
-        osAgentSaveAppearance(llDetectedKey(0), "appearance");
-        // coud use avatar UUID directly in osNpcCreate, but then NPC appearance is not persisted
-        npc = osNpcCreate("ImYour", "Clone", npcPos, "appearance");
-        toucherPos = llDetectedPos(0);
-        state hasNPC;
+        key toucher = llDetectedKey(0);
+ 
+        if (llGetAgentSize(toucher) != ZERO_VECTOR)
+        {
+            string FullName = llDetectedName(0);
+            list buffer = llParseString2List(FullName, " ", []);
+            string FirstName = llList2String(buffer, 0);
+            string LastName = llList2String(buffer, 1);
+            string NotecardName = FirstName + " " + LastName + " " + llGetTimestamp();
+            llSay(PUBLIC_CHANNEL, "Attempting to create an Notecard \"" + NotecardName + "\".");
+ 
+            key result = osAgentSaveAppearance(toucher, NotecardName);
+ 
+            if (result && result != NULL_KEY)
+            {
+                llSay(PUBLIC_CHANNEL, "Notecard \"" + NotecardName + "\" created with success.");
+            }
+ 
+            else
+            {
+                llSay(PUBLIC_CHANNEL, "Notecard \"" + NotecardName + "\" created without success.");
+            }
+        }
+ 
+        else
+        {
+            llInstantMessage(toucher, "You need to be in the same region to use this function ...");
+        }
     }
 }
+
+/* And with "includeHuds"
+
+//
+// osAgentSaveAppearance (with option) Script Example
+// Author: djphil
+//
  
-state hasNPC
+integer includeHuds = TRUE;
+ 
+default
 {
     state_entry()
     {
-        osNpcMoveTo(npc, toucherPos + <3,0,0>); 
-        osNpcSay(npc, "Hi there! My name is " + llKey2Name(npc));
+        llSay(PUBLIC_CHANNEL, "Touch to see osAgentSaveAppearance (with option) usage.");
     }
  
     touch_start(integer number)
     {
-        osNpcSay(npc, "Goodbye!");
-        osNpcRemove(npc);
-        npc = NULL_KEY;
-        state default;
+        key toucher = llDetectedKey(0);
+ 
+        if (llGetAgentSize(toucher) != ZERO_VECTOR)
+        {
+            string FullName = llDetectedName(0);
+            list buffer = llParseString2List(FullName, " ", []);
+            string FirstName = llList2String(buffer, 0);
+            string LastName = llList2String(buffer, 1);
+            string NotecardName = FirstName + " " + LastName + " " + llGetTimestamp();
+            llSay(PUBLIC_CHANNEL, "Attempting to create an Notecard \"" + NotecardName + "\".");
+ 
+            key result;
+ 
+            if (includeHuds == TRUE)
+            {
+                result = osAgentSaveAppearance(toucher, NotecardName, TRUE);
+            }
+ 
+            else
+            {
+                result = osAgentSaveAppearance(toucher, NotecardName, FALSE);
+            }
+ 
+            if (result && result != NULL_KEY)
+            {
+                llSay(PUBLIC_CHANNEL, "Notecard \"" + NotecardName + "\" created with success.");
+            }
+ 
+            else
+            {
+                llSay(PUBLIC_CHANNEL, "Notecard \"" + NotecardName + "\" created without success.");
+            }
+        }
+ 
+        else
+        {
+            llInstantMessage(toucher, "You need to be in the same region to use this function ...");
+        }
     }
 }
+*/

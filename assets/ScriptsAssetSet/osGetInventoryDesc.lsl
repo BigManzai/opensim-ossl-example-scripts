@@ -7,13 +7,31 @@ Delay 	0 seconds
 Example(s)
 */
 
-// Example of osGetInventoryDesc
+//
+// osGetInventoryDesc Script Exemple
+// Author: Gudule Lapointe
+//
  
 default
 {
     state_entry()
     {
-        string name = llGetInventoryName(INVENTORY_LANDMARK, 0);
-        string decription = osGetInventoryDesc(name);
+        if (llGetInventoryNumber(INVENTORY_LANDMARK))
+        {
+            llSay(PUBLIC_CHANNEL, "Touch to see osGetInventoryDesc usage.");
+        }
+ 
+        else
+        {
+            llSay(PUBLIC_CHANNEL, "Inventory landmark missing ...");
+        }
+    }
+ 
+    touch_start(integer number)
+    {
+        string inventory_name = llGetInventoryName(INVENTORY_LANDMARK, 0);
+        string inventory_desc = osGetInventoryDesc(inventory_name);
+        llSay(PUBLIC_CHANNEL, "inventory_name: " + inventory_name);
+        llSay(PUBLIC_CHANNEL, "inventory_desc: " + inventory_desc);
     }
 }
