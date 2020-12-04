@@ -11,7 +11,7 @@ Example(s)
 
 //
 // osNpcMoveTo Script Exemple
-// Authior: djphil
+// Author: djphil
 //
  
 key npc;

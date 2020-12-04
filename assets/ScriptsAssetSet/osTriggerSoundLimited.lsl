@@ -20,13 +20,66 @@ Since 0.9.1 if target prim inventory does not contain the sound, the inventory o
 */
 
 //
-// empty Script Example
+// osTriggerSoundLimited Script Example
+// Author: djphil
 //
-
+ 
+vector north_east_corner = <30.0, 30.0, 22.0>;
+vector south_west_corner = <50.0, 50.0, 30.0>;
+string sound;
+ 
 default
 {
     state_entry()
     {
-        llSay(0, "This script example does not yet exist.");
+        sound = llGetInventoryName(INVENTORY_SOUND, 0);
+ 
+        if (sound == "")
+        {
+            llSay(PUBLIC_CHANNEL, "Inventory sound missing ...");
+        }
+ 
+        else
+        {
+            llSay(PUBLIC_CHANNEL, "Touch to hear osTriggerSoundLimited running.");
+        }
+    }
+ 
+    touch_start(integer number)
+    {
+        osTriggerSoundLimited(1, sound, 1.0, north_east_corner, south_west_corner);
     }
 }
+
+/* And with uuid:
+
+//
+// osTriggerSoundLimited Script Example
+// Author: djphil
+//
+ 
+string sound = "d7a9a565-a013-2a69-797d-5332baa1a947";
+vector north_east_corner = <30.0, 30.0, 22.0>;
+vector south_west_corner = <50.0, 50.0, 30.0>;
+ 
+default
+{
+    state_entry()
+    {
+        if (osIsUUID(sound))
+        {
+            llSay(PUBLIC_CHANNEL, "Touch to hear osTriggerSoundLimited running.");
+        }
+ 
+        else
+        {
+            llSay(PUBLIC_CHANNEL, "Invalid uuid detected ...");
+        }
+    }
+ 
+    touch_start(integer number)
+    {
+        osTriggerSoundLimited(1, sound, 1.0, north_east_corner, south_west_corner);
+    }
+}
+*/

@@ -10,16 +10,29 @@ Example(s)
 */
 
 //
-// Example of osGetNPCList.
+// osGetNPCList Script Exemple
+// Author: djphil
 //
+ 
 default
 {
-    touch_start(integer total_number)
+    state_entry()
+    {
+        llSay(PUBLIC_CHANNEL, "Touch to see osGetNPCList usage.");
+    }
+ 
+    touch_start(integer number)
     {
         list npcs = osGetNPCList();
+ 
         if (npcs == [])
-            llSay(0, "You must be the owner. There is nobody else here who could have touched me.");
+        {
+            llSay(PUBLIC_CHANNEL, "There is no NPC's in this sim currently.");
+        }
+ 
         else
-            llSay(0, "NPC's in this sim (without avatars): " + llList2CSV(npcs));
+        {
+            llSay(PUBLIC_CHANNEL, "NPC's in this sim (without avatars): " + llList2CSV(npcs));
+        }
     }
 }

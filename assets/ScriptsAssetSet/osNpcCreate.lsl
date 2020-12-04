@@ -11,22 +11,26 @@ Delay 	0 seconds
 Example(s)
 */
 
-// touch to create a NPC clone of the toucher in front of this emitter
-// NPC will move to the toucher, then will greet them.
-// Touch again to remove the NPC
+//
+// osNpcCreate Script Exemple
+// Author: djphil
+//
  
 key npc;
-vector toucherPos;
  
 default
 {
+    state_entry()
+    {
+        llSay(PUBLIC_CHANNEL, "Touch to see osNpcCreate usage.");
+    }
+ 
     touch_start(integer number)
     {
-        vector npcPos = llGetPos() + <1,0,0>;
-        osAgentSaveAppearance(llDetectedKey(0), "appearance");
-        // coud use avatar UUID directly in osNpcCreate, but then NPC appearance is not persisted
+        key toucher = llDetectedKey(0);
+        vector npcPos = llGetPos() + <1.0, 0.0, 1.0>;
+        osAgentSaveAppearance(toucher, "appearance");
         npc = osNpcCreate("ImYour", "Clone", npcPos, "appearance");
-        toucherPos = llDetectedPos(0);
         state hasNPC;
     }
 }
@@ -35,13 +39,19 @@ state hasNPC
 {
     state_entry()
     {
-        osNpcMoveTo(npc, toucherPos + <3,0,0>); 
-        osNpcSay(npc, "Hi there! My name is " + llKey2Name(npc));
+        llSetTimerEvent(5.0);
+    }
+ 
+    timer()
+    {
+        llSetTimerEvent(0.0);
+        osNpcSay(npc, "Hello world!");
     }
  
     touch_start(integer number)
     {
         osNpcSay(npc, "Goodbye!");
+        llSetTimerEvent(0.0);
         osNpcRemove(npc);
         npc = NULL_KEY;
         state default;

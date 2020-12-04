@@ -22,13 +22,38 @@ Since 0.9.1 if target prim inventory does not contain the sound, the inventory o
 */
 
 //
-// empty Script Example
+// osPlaySoundSlave
+// Author: djphil
 //
-
+ 
+// Can be sound's name in object's inventory or the sound uuid
+string sound_master = "f4a0660f-5446-dea2-80b7-6482a082803c";
+string sound_slave = "d7a9a565-a013-2a69-797d-5332baa1a947";
+ 
+float volume = 1.0;
+integer switch;
+ 
 default
 {
     state_entry()
     {
-        llSay(0, "This script example does not yet exist.");
+        llPreloadSound(sound_master);
+        llPreloadSound(sound_slave);
+        llSay(PUBLIC_CHANNEL, "Touch to see osPlaySoundSlave usage.");
+    }
+ 
+    touch_start(integer number)
+    {
+        if (switch = !switch)
+        {
+            osLoopSoundMaster(1, sound_master, volume);
+            osPlaySoundSlave(2, sound_slave, volume);
+        }
+ 
+        else
+        {
+            osStopSound(1);
+            osStopSound(2);
+        }
     }
 }

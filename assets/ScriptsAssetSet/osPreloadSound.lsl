@@ -18,13 +18,66 @@ Since 0.9.1 if target prim inventory does not contain the sound, the inventory o
 */
 
 //
-// empty Script Example
+// osPreloadSound Script Example
+// Author: djphil
 //
-
+ 
+string sound;
+ 
 default
 {
     state_entry()
     {
-        llSay(0, "This script example does not yet exist.");
+        sound = llGetInventoryName(INVENTORY_SOUND, 0);
+ 
+        if (sound == "")
+        {
+            llSay(PUBLIC_CHANNEL, "Inventory sound missing ...");
+        }
+ 
+        else
+        {
+            llSay(PUBLIC_CHANNEL, "Preloading sound ...");
+            osPreloadSound(1, sound);
+            llSay(PUBLIC_CHANNEL, "Sound ready to play!");
+        }
+    }
+ 
+    touch_start(integer number)
+    {
+        osPlaySound(1, sound, 1.0);
     }
 }
+
+/* And with uuid:
+
+//
+// osPreloadSound Script Example
+// Author: djphil
+//
+ 
+string sound = "ed124764-705d-d497-167a-182cd9fa2e6c";
+ 
+default
+{
+    state_entry()
+    {
+        if (osIsUUID(sound))
+        {
+            llSay(PUBLIC_CHANNEL, "Preloading sound ...");
+            osPreloadSound(1, sound);
+            llSay(PUBLIC_CHANNEL, "Sound ready to play!");
+        }
+ 
+        else
+        {
+            llSay(PUBLIC_CHANNEL, "Invalid uuid detected ...");
+        }
+    }
+ 
+    touch_start(integer number)
+    {
+        osPlaySound(1, sound, 1.0);
+    }
+
+*/

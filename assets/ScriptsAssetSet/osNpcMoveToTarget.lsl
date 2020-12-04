@@ -19,13 +19,208 @@ This function was added in 0.7.2-post-fixes
 */
 
 //
-// empty Script Example
+// osNpcMoveToTarget Script Exemple
+// With the use of the option OS_NPC_NO_FLY
+// Author: djphil
 //
-
+ 
+key npc;
+ 
 default
 {
     state_entry()
     {
-        llSay(0, "This script example does not yet exist.");
+        llSay(PUBLIC_CHANNEL, "Touch to see osNpcMoveToTarget usage.");
+        llSay(PUBLIC_CHANNEL, "This with the use of the option OS_NPC_NO_FLY.");
+    }
+ 
+    touch_start(integer number)
+    {
+        key toucher = llDetectedKey(0);
+        vector npcPos = llGetPos() + <-5.0, -1.0, 1.0>;
+        osAgentSaveAppearance(toucher, "appearance");
+        npc = osNpcCreate("ImYour", "Clone", npcPos, "appearance");
+        state hasNPC;
     }
 }
+ 
+state hasNPC
+{
+    state_entry()
+    {
+        llSetTimerEvent(5.0);
+    }
+ 
+    timer()
+    {
+        llSetTimerEvent(0.0);
+        osNpcSay(npc, "Hello world!");
+        osNpcMoveToTarget(npc, llGetPos() + <5.0, -1.0, 0.0>, OS_NPC_NO_FLY);
+    }
+ 
+    touch_start(integer number)
+    {
+        llSetTimerEvent(0.0);
+        osNpcSay(npc, "Goodbye!");
+        osNpcRemove(npc);
+        npc = NULL_KEY;
+        state default;
+    }
+}
+
+With OS_NPC_FLY:
+
+//
+// osNpcMoveToTarget Script Exemple
+// With the use of the option OS_NPC_FLY
+// Author: djphil
+//
+ 
+key npc;
+ 
+default
+{
+    state_entry()
+    {
+        llSay(PUBLIC_CHANNEL, "Touch to see osNpcMoveToTarget usage.");
+        llSay(PUBLIC_CHANNEL, "This with the use of the option OS_NPC_FLY.");
+    }
+ 
+    touch_start(integer number)
+    {
+        key toucher = llDetectedKey(0);
+        vector npcPos = llGetPos() + <-5.0, -1.0, 1.0>;
+        osAgentSaveAppearance(toucher, "appearance");
+        npc = osNpcCreate("ImYour", "Clone", npcPos, "appearance");
+        state hasNPC;
+    }
+}
+ 
+state hasNPC
+{
+    state_entry()
+    {
+        llSetTimerEvent(5.0);
+    }
+ 
+    timer()
+    {
+        llSetTimerEvent(0.0);
+        osNpcSay(npc, "Hello world!");
+        osNpcMoveToTarget(npc, llGetPos() + <5.0, -1.0, 3.0>, OS_NPC_FLY);
+    }
+ 
+    touch_start(integer number)
+    {
+        llSetTimerEvent(0.0);
+        osNpcSay(npc, "Goodbye!");
+        osNpcRemove(npc);
+        npc = NULL_KEY;
+        state default;
+    }
+}
+
+/* With OS_NPC_FLY and OS_NPC_LAND_AT_TARGET:
+
+//
+// osNpcMoveToTarget Script Exemple
+// With the use of the option OS_NPC_FLY and OS_NPC_LAND_AT_TARGET
+// Author: djphil
+//
+ 
+key npc;
+ 
+default
+{
+    state_entry()
+    {
+        llSay(PUBLIC_CHANNEL, "Touch to see osNpcMoveToTarget usage.");
+        llSay(PUBLIC_CHANNEL, "This with the use of the option OS_NPC_FLY and OS_NPC_LAND_AT_TARGET.");
+    }
+ 
+    touch_start(integer number)
+    {
+        key toucher = llDetectedKey(0);
+        vector npcPos = llGetPos() + <-5.0, -1.0, 1.0>;
+        osAgentSaveAppearance(toucher, "appearance");
+        npc = osNpcCreate("ImYour", "Clone", npcPos, "appearance");
+        state hasNPC;
+    }
+}
+ 
+state hasNPC
+{
+    state_entry()
+    {
+        llSetTimerEvent(5.0);
+    }
+ 
+    timer()
+    {
+        llSetTimerEvent(0.0);
+        osNpcSay(npc, "Hello world!");
+        osNpcMoveToTarget(npc, llGetPos() + <5.0, -1.0, 3.0>, OS_NPC_FLY | OS_NPC_LAND_AT_TARGET);
+    }
+ 
+    touch_start(integer number)
+    {
+        llSetTimerEvent(0.0);
+        osNpcSay(npc, "Goodbye!");
+        osNpcRemove(npc);
+        npc = NULL_KEY;
+        state default;
+    }
+}
+
+With OS_NPC_RUNNING:
+
+//
+// osNpcMoveToTarget Script Exemple
+// With the use of the option OS_NPC_RUNNING
+// Author: djphil
+//
+ 
+key npc;
+ 
+default
+{
+    state_entry()
+    {
+        llSay(PUBLIC_CHANNEL, "Touch to see osNpcMoveToTarget usage.");
+        llSay(PUBLIC_CHANNEL, "This with the use of the option OS_NPC_RUNNING.");
+    }
+ 
+    touch_start(integer number)
+    {
+        key toucher = llDetectedKey(0);
+        vector npcPos = llGetPos() + <-5.0, -1.0, 1.0>;
+        osAgentSaveAppearance(toucher, "appearance");
+        npc = osNpcCreate("ImYour", "Clone", npcPos, "appearance");
+        state hasNPC;
+    }
+}
+ 
+state hasNPC
+{
+    state_entry()
+    {
+        llSetTimerEvent(5.0);
+    }
+ 
+    timer()
+    {
+        llSetTimerEvent(0.0);
+        osNpcSay(npc, "Hello world!");
+        osNpcMoveToTarget(npc, llGetPos() + <5.0, -1.0, 0.0>, OS_NPC_RUNNING);
+    }
+ 
+    touch_start(integer number)
+    {
+        llSetTimerEvent(0.0);
+        osNpcSay(npc, "Goodbye!");
+        osNpcRemove(npc);
+        npc = NULL_KEY;
+        state default;
+    }
+}
+*/
