@@ -11,7 +11,7 @@ Example(s)
 
 //
 // osNpcStand Script Exemple
-// Authior: djphil
+// Author: djphil
 //
  
 key npc;

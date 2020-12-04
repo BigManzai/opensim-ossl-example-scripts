@@ -9,7 +9,7 @@ Example(s)
 
 //
 // osNpcStopAnimation Script Exemple
-// Authior: djphil
+// Author: djphil
 //
  
 string animation = "sit_ground";

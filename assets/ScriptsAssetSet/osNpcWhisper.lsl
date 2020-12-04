@@ -9,7 +9,7 @@ Example(s)
 
 //
 // osNpcWhisper Script Exemple
-// Authior: djphil
+// Author: djphil
 //
  
 key npc;

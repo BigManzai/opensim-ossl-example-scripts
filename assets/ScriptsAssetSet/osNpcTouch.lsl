@@ -26,7 +26,7 @@ Example(s)
 
 //
 // osNpcTouch Script Exemple
-// Authior: djphil
+// Author: djphil
 //
  
 key npc;
