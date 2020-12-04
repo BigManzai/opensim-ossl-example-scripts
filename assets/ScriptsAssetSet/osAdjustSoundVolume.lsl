@@ -9,6 +9,7 @@ Example(s)
 
 //
 // osAdjustSoundVolume Script Example
+// Author: djphil
 //
  
 string sound;
@@ -43,6 +44,7 @@ default
 
 //
 // osAdjustSoundVolume Script Example
+// Author: djphil
 //
  
 string sound = "ed124764-705d-d497-167a-182cd9fa2e6c";

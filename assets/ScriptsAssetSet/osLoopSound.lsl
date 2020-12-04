@@ -11,6 +11,7 @@ Example(s)
 
 //
 // osLoopSound Script Example
+// Author: djphil
 //
  
 string soundName;
@@ -38,12 +39,12 @@ default
     {
         if (power = !power)
         {
-            osLoopSound(LINK_THIS, soundName, 1.0);
+            osLoopSound(1, soundName, 1.0);
         }
  
         else
         {
-            osStopSound(LINK_THIS);
+            osStopSound(1);
         }
     }
 }
@@ -52,6 +53,7 @@ default
 
 //
 // osLoopSound Script Example
+// Author: djphil
 //
  
 string soundUuid = "5e191c7b-8996-9ced-a177-b2ac32bfea06";
@@ -76,12 +78,12 @@ default
     {
         if (power = !power)
         {
-            osLoopSound(LINK_THIS, soundUuid, 1.0);
+            osLoopSound(1, soundUuid, 1.0);
         }
  
         else
         {
-            osStopSound(LINK_THIS);
+            osStopSound(1);
         }
     }
 }
