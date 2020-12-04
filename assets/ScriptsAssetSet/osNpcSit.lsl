@@ -17,7 +17,7 @@ Example(s)
 
 //
 // osNpcSit (without llSitTarget) Script Exemple
-// Authior: djphil
+// Author: djphil
 //
  
 key npc;
@@ -68,7 +68,7 @@ state hasNPC
 
 //
 // osNpcSit (with llSitTarget) Script Exemple
-// Authior: djphil
+// Author: djphil
 //
  
 key npc;

@@ -10,8 +10,7 @@ This function was added in 0.7.3-post-fixes
 
 //
 // osNpcGetOwner Script Exemple
-// With the use of the option OS_NPC_CREATOR_OWNED
-// Authior: djphil
+// Author: djphil
 //
  
 key npc;
@@ -63,8 +62,7 @@ state hasNPC
 
 //
 // osNpcGetOwner Script Exemple
-// With the use of the option OS_NPC_NOT_OWNED
-// Authior: djphil
+// Author: djphil
 //
  
 key npc;

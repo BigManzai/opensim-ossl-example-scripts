@@ -11,6 +11,7 @@ Example(s)
 
 //
 // osNpcSetProfileImageScript Example
+// Author: djphil
 //
  
 key npc = NULL_KEY;

@@ -10,7 +10,7 @@ This function was added in 0.7.2-post-fixes
 
 //
 // osNpcSetRot Script Exemple
-// Authior: djphil
+// Author: djphil
 //
  
 key npc;
@@ -60,7 +60,7 @@ state hasNPC
 
 //
 // osNpcSetRot Script Exemple
-// Authior: djphil
+// Author: djphil
 //
  
 key npc;

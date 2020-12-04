@@ -11,7 +11,7 @@ Example(s)
 
 //
 // osNpcSay (without channel) Script Exemple
-// Authior: djphil
+// Author: djphil
 //
  
 key npc;
@@ -62,7 +62,7 @@ state hasNPC
 
 //
 // osNpcSay (with channel) Script Exemple
-// Authior: djphil
+// Author: djphil
 //
  
 key npc;

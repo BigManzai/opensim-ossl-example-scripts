@@ -9,7 +9,7 @@ Example(s)
 
 //
 // osNpcSayTo Script Exemple
-// Authior: djphil
+// Author: djphil
 //
  
 key npc;
