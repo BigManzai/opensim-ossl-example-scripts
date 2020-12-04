@@ -20,30 +20,38 @@ Test: opensim-0.9.2.0Dev-971-g3e113b4 working
 ## TODO Mistakes, bad qualities, incomplete, untested:
 
 ```javascript
-osApproxEquals.lsl
 osListenRegex.lsl
-osNpcGetPos.lsl
-osNpcMoveToTarget.lsl
-osPlaySoundSlave.lsl
-osPreloadSound.lsl
 osReplaceParcelEnvironment.lsl
 osReplaceRegionEnvironment.lsl
 osSetInertia.lsl
 osSetInertiaAsBox.lsl
 osSetInertiaAsCylinder.lsl
 osSetInertiaAsSphere.lsl
-osTriggerSoundLimited.lsl
 ```
-## 03-12-2020 upgrade:
+## 04-12-2020 upgrade:
 ```javascript
-osGetInventoryItemKey
-osGetInventoryLastOwner
-osGetLastChangedEventKey
-osGetInventoryName
-osGetInventoryDesc
-osClearObjectAnimations
-osGetInertiaData
-osReplaceAgentEnvironment
-osNpcSaveAppearance
-osResetEnvironment
+osPreloadSound
+osApproxEquals
+osNpcGetPos
+osNpcMoveToTarget‎
+osPlaySoundSlave
+osTriggerSoundLimited
+
+osNpcStopMoveToTarget
+osNpcMoveTo
+osNpcCreate
+osNpcRemove
+osGetNpcList‎
+
+osNpcGetRot
+osNpcGetOwner
+osNpcPlayAnimation‎
+osNpcSay
+osNpcSayTo
+
+osNpcSetRot
+osNpcSetProfileAbout
+osNpcSetProfileImage
+osNpcShout
+osNpcSit
 ```
