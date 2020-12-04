@@ -33,7 +33,7 @@ osSetInertiaAsSphere.lsl
 osPreloadSound
 osApproxEquals
 osNpcGetPos
-osNpcMoveToTarget‎
+osNpcMoveToTarget
 osPlaySoundSlave
 osTriggerSoundLimited
 
@@ -41,11 +41,11 @@ osNpcStopMoveToTarget
 osNpcMoveTo
 osNpcCreate
 osNpcRemove
-osGetNpcList‎
+osGetNpcList
 
 osNpcGetRot
 osNpcGetOwner
-osNpcPlayAnimation‎
+osNpcPlayAnimation
 osNpcSay
 osNpcSayTo
 
