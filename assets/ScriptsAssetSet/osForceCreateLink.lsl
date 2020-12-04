@@ -12,7 +12,7 @@ This function was added in 0.8-post-fixes
 
 //
 // osForceCreateLink Script Example
-// Authior: djphil
+// Author: djphil
 //
  
 key target = "fbe8ad1b-b7bf-4919-b219-3ebf78e5f607";
