@@ -2,7 +2,7 @@
 
 OpenSimulator OSSL examples as they can be seen on the OpenSimulator wiki http://opensimulator.org/wiki/Category:OSSL_Functions
 
-Version 0.141 - 236 scripts
+Version 0.142 - 236 scripts
 
 Test: opensim-0.9.2.0Dev-971-g3e113b4 working
 
@@ -66,3 +66,4 @@ osAdjustSoundVolume
 osLoopSound
 osNpcGetOwner
 ```
+## 05-12-2020 upgrade:
