@@ -959,42 +959,6 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-    <Section Name="osSetInertia">
-      <Key Name="inventoryID" Value="81305ee4-1224-9e0a-69a4-76ed57df0c8f" />
-      <Key Name="assetID" Value="81305ee4-1224-9e0a-69a4-76ed57df0c8f" />
-      <Key Name="folderID" Value="30000112-001f-0000-0003-000100bba000"/>
-      <Key Name="description" Value="osSetInertia" />
-      <Key Name="name" Value="osSetInertia" />
-      <Key Name="assetType" Value="10" />
-      <Key Name="inventoryType" Value="10" />
-    </Section>
-    <Section Name="osSetInertiaAsBox">
-      <Key Name="inventoryID" Value="81305ee4-1225-9e0a-69a4-76ed57df0c8f" />
-      <Key Name="assetID" Value="81305ee4-1225-9e0a-69a4-76ed57df0c8f" />
-      <Key Name="folderID" Value="30000112-001f-0000-0003-000100bba000"/>
-      <Key Name="description" Value="osSetInertiaAsBox" />
-      <Key Name="name" Value="osSetInertiaAsBox" />
-      <Key Name="assetType" Value="10" />
-      <Key Name="inventoryType" Value="10" />
-    </Section>
-    <Section Name="osSetInertiaAsCylinder">
-      <Key Name="inventoryID" Value="81305ee4-1226-9e0a-69a4-76ed57df0c8f" />
-      <Key Name="assetID" Value="81305ee4-1226-9e0a-69a4-76ed57df0c8f" />
-      <Key Name="folderID" Value="30000112-001f-0000-0003-000100bba000"/>
-      <Key Name="description" Value="osSetInertiaAsCylinder" />
-      <Key Name="name" Value="osSetInertiaAsCylinder" />
-      <Key Name="assetType" Value="10" />
-      <Key Name="inventoryType" Value="10" />
-    </Section>
-    <Section Name="osSetInertiaAsSphere">
-      <Key Name="inventoryID" Value="81305ee4-1227-9e0a-69a4-76ed57df0c8f" />
-      <Key Name="assetID" Value="81305ee4-1227-9e0a-69a4-76ed57df0c8f" />
-      <Key Name="folderID" Value="30000112-001f-0000-0003-000100bba000"/>
-      <Key Name="description" Value="osSetInertiaAsSphere" />
-      <Key Name="name" Value="osSetInertiaAsSphere" />
-      <Key Name="assetType" Value="10" />
-      <Key Name="inventoryType" Value="10" />
-    </Section>
     <Section Name="osSetPrimitiveParams">
       <Key Name="inventoryID" Value="81305ee4-1228-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1228-9e0a-69a4-76ed57df0c8f" />
