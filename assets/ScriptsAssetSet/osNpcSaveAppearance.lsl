@@ -13,7 +13,7 @@ This function was added in 0.7.2-post-fixes, huds control added in 0.9.2.0
 */
 
 //
-// osAgentSaveAppearance Script Example
+// osNpcSaveAppearance Script Exemple
 // Author: djphil
 //
  
@@ -21,38 +21,31 @@ default
 {
     state_entry()
     {
-        llSay(PUBLIC_CHANNEL, "Touch to see osAgentSaveAppearance usage.");
+        llSay(PUBLIC_CHANNEL, "Collide a NPC with this primitive to see osNpcSaveAppearance usage.");
     }
  
-    touch_start(integer number)
+    collision_start(integer number)
     {
-        key toucher = llDetectedKey(0);
+        key collider = llDetectedKey(0);
  
-        if (llGetAgentSize(toucher) != ZERO_VECTOR)
+        if (osIsNpc(collider))
         {
-            string FullName = llDetectedName(0);
-            list buffer = llParseString2List(FullName, " ", []);
-            string FirstName = llList2String(buffer, 0);
-            string LastName = llList2String(buffer, 1);
-            string NotecardName = FirstName + " " + LastName + " " + llGetTimestamp();
-            llSay(PUBLIC_CHANNEL, "Attempting to create an Notecard \"" + NotecardName + "\".");
- 
-            key result = osAgentSaveAppearance(toucher, NotecardName);
+            key result = osNpcSaveAppearance(collider, (string)collider);
  
             if (result && result != NULL_KEY)
             {
-                llSay(PUBLIC_CHANNEL, "Notecard \"" + NotecardName + "\" created with success.");
+                osNpcSay(collider, "Notecard \"" + (string)collider + "\" saved with success.");
             }
  
             else
             {
-                llSay(PUBLIC_CHANNEL, "Notecard \"" + NotecardName + "\" created without success.");
+                osNpcSay(collider, "Notecard \"" + (string)collider + "\" saved without success.");
             }
         }
  
         else
         {
-            llInstantMessage(toucher, "You need to be in the same region to use this function ...");
+            llSay(PUBLIC_CHANNEL, "Only NPC's can collide with me and save their appearance in a notecard ...");
         }
     }
 }
@@ -60,7 +53,7 @@ default
 /* And with "includeHuds"
 
 //
-// osAgentSaveAppearance (with option) Script Example
+// osNpcSaveAppearance Script Exemple
 // Author: djphil
 //
  
@@ -70,48 +63,41 @@ default
 {
     state_entry()
     {
-        llSay(PUBLIC_CHANNEL, "Touch to see osAgentSaveAppearance (with option) usage.");
+        llSay(PUBLIC_CHANNEL, "Collide a NPC with this primitive to see osNpcSaveAppearance usage.");
     }
  
-    touch_start(integer number)
+    collision_start(integer number)
     {
-        key toucher = llDetectedKey(0);
+        key collider = llDetectedKey(0);
  
-        if (llGetAgentSize(toucher) != ZERO_VECTOR)
+        if (osIsNpc(collider))
         {
-            string FullName = llDetectedName(0);
-            list buffer = llParseString2List(FullName, " ", []);
-            string FirstName = llList2String(buffer, 0);
-            string LastName = llList2String(buffer, 1);
-            string NotecardName = FirstName + " " + LastName + " " + llGetTimestamp();
-            llSay(PUBLIC_CHANNEL, "Attempting to create an Notecard \"" + NotecardName + "\".");
- 
             key result;
  
             if (includeHuds == TRUE)
             {
-                result = osAgentSaveAppearance(toucher, NotecardName, TRUE);
+                result = osNpcSaveAppearance(collider, (string)collider, TRUE);
             }
  
             else
             {
-                result = osAgentSaveAppearance(toucher, NotecardName, FALSE);
+                result = osNpcSaveAppearance(collider, (string)collider, FALSE);
             }
  
             if (result && result != NULL_KEY)
             {
-                llSay(PUBLIC_CHANNEL, "Notecard \"" + NotecardName + "\" created with success.");
+                osNpcSay(collider, "Notecard \"" + (string)collider + "\" saved with success.");
             }
  
             else
             {
-                llSay(PUBLIC_CHANNEL, "Notecard \"" + NotecardName + "\" created without success.");
+                osNpcSay(collider, "Notecard \"" + (string)collider + "\" saved without success.");
             }
         }
  
         else
         {
-            llInstantMessage(toucher, "You need to be in the same region to use this function ...");
+            llSay(PUBLIC_CHANNEL, "Only NPC's can collide with me and save their appearance in a notecard ...");
         }
     }
 }

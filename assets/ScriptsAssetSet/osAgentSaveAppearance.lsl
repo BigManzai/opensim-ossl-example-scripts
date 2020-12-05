@@ -9,14 +9,91 @@ Example(s)
 
 //
 // osAgentSaveAppearance Script Example
-// GPLv3 license attributed to the Wizardry and Steamworks group at http://was.fm/opensim:npc
-// touch to save your XML to a notecard named appearance for use with NPC follower and NPC puppeteer script.
+// Author: djphil
 //
  
 default
 {
-    touch_start(integer num)
+    state_entry()
     {
-        osAgentSaveAppearance(llDetectedKey(0), "appearance");
+        llSay(PUBLIC_CHANNEL, "Touch to see osAgentSaveAppearance usage.");
+    }
+ 
+    touch_start(integer number)
+    {
+        key toucher = llDetectedKey(0);
+ 
+        if (llGetAgentSize(toucher) != ZERO_VECTOR)
+        {
+            key result = osAgentSaveAppearance(toucher, (string)toucher);
+ 
+            if (result && result != NULL_KEY)
+            {
+                llSay(PUBLIC_CHANNEL, "Notecard \"" + (string)toucher + "\" saved with success.");
+            }
+ 
+            else
+            {
+                llSay(PUBLIC_CHANNEL, "Notecard \"" + (string)toucher + "\" saved without success.");
+            }
+        }
+ 
+        else
+        {
+            llInstantMessage(toucher, "You need to be in the same region to use this function ...");
+        }
     }
 }
+
+/* And with "includeHuds"
+
+//
+// osAgentSaveAppearance (with option) Script Example
+// Author: djphil
+//
+ 
+integer includeHuds = TRUE;
+ 
+default
+{
+    state_entry()
+    {
+        llSay(PUBLIC_CHANNEL, "Touch to see osAgentSaveAppearance (with option) usage.");
+    }
+ 
+    touch_start(integer number)
+    {
+        key toucher = llDetectedKey(0);
+ 
+        if (llGetAgentSize(toucher) != ZERO_VECTOR)
+        {
+            key result;
+ 
+            if (includeHuds == TRUE)
+            {
+                result = osAgentSaveAppearance(toucher, (string)toucher, TRUE);
+            }
+ 
+            else
+            {
+                result = osAgentSaveAppearance(toucher, (string)toucher, FALSE);
+            }
+ 
+            if (result && result != NULL_KEY)
+            {
+                llSay(PUBLIC_CHANNEL, "Notecard \"" + (string)toucher + "\" saved with success.");
+            }
+ 
+            else
+            {
+                llSay(PUBLIC_CHANNEL, "Notecard \"" + (string)toucher + "\" saved without success.");
+            }
+        }
+ 
+        else
+        {
+            llInstantMessage(toucher, "You need to be in the same region to use this function ...");
+        }
+    }
+}
+*/

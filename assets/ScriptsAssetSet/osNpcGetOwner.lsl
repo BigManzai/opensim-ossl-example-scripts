@@ -58,7 +58,7 @@ state hasNPC
     }
 }
 
-/* With OS_NPC_NOT_OWNED:
+/* With OS_NPC_NOT_OWNED: (It Needs the setting AllowNotOwned on true in section [NPC] of your OpenSim.ini)
 
 //
 // osNpcGetOwner Script Exemple
@@ -98,7 +98,6 @@ state hasNPC
         key npc_owner = osNpcGetOwner(npc);
         osNpcSay(npc, "Hello world!");
         osNpcSay(npc, "My owner is: " + (string)npc_owner + " (" + llKey2Name(npc_owner) + ")");
- 
     }
  
     touch_start(integer number)
