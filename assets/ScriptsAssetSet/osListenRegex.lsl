@@ -11,13 +11,39 @@ This function was added in 0.7.5-post-fixes
 */
 
 //
-// empty Script Example
+// osListenRegex Script Example
 //
+
+string NPCNAME="INVALID";
+integer zListener=-1;
+
+InitListener()
+{
+
+    key id = llGetOwner();
+    if (id)
+    {
+        string name= llKey2Name(llGetOwner());
+        NPCNAME = llGetSubString(name, 0, llSubStringIndex(name, " ") - 1);
+        if (zListener <0)
+        {
+            zListener = osListenRegex(0, "", "", "^(?i)(hi|hello|"+NPCNAME+" )(?-i)", OS_LISTEN_REGEX_MESSAGE);
+            llOwnerSay("Listening for '"+NPCNAME+"'");
+        }
+    }
+}
+
 
 default
 {
     state_entry()
     {
-        llSay(0, "This script example does not yet exist.");
+        llSay( 0, "I am Alive!");
+    }
+
+    touch_start(integer number_of_touchs)
+    {
+        llSay( 0, "Touched.");
+        InitListener();
     }
 }
