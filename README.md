@@ -21,10 +21,10 @@ Test: opensim-0.9.2.0Dev-973-ga758fc9 working
 
 ```javascript
 osReplaceParcelEnvironment.lsl
-osReplaceRegionEnvironment.lsl
 ```
 ## 06-12-2020 upgrade:
 ```javascript
 osList2Double moved to deprecated, not exist on source code, use llList2Float instead.
 osListenRegex.lsl
+osReplaceRegionEnvironment.lsl
 ```
