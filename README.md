@@ -20,7 +20,7 @@ Test: opensim-0.9.2.0Dev-973-ga758fc9 working
 ## TODO Mistakes, bad qualities, incomplete, untested:
 
 ```javascript
-osReplaceParcelEnvironment.lsl
+osReplaceParcelEnvironment
 ```
 ## 06-12-2020 upgrade:
 ```javascript
