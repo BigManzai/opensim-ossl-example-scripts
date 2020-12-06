@@ -25,6 +25,6 @@ osReplaceParcelEnvironment.lsl
 ## 06-12-2020 upgrade:
 ```javascript
 osList2Double moved to deprecated, not exist on source code, use llList2Float instead.
-osListenRegex.lsl
-osReplaceRegionEnvironment.lsl
+osListenRegex
+osReplaceRegionEnvironment
 ```
