@@ -24,19 +24,7 @@ osListenRegex.lsl
 osReplaceParcelEnvironment.lsl
 osReplaceRegionEnvironment.lsl
 ```
-## 05-12-2020 upgrade:
+## 06-12-2020 upgrade:
 ```javascript
-osAgentSaveAppearance.lsl
-osEjectFromGroup.lsl
-osInviteToGroup.lsl
-osNpcCreate.lsl
-osNpcGetOwner.lsl
-osNpcLoadAppearance.lsl
-osNpcSaveAppearance.lsl
-
-Files deleted:
-osSetInertia.lsl
-osSetInertiaAsBox.lsl
-osSetInertiaAsCylinder.lsl
-osSetInertiaAsSphere.lsl
+osList2Double moved to deprecated, not exist on source code, use llList2Float instead.
 ```
