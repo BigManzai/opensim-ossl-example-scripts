@@ -1331,12 +1331,6 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osKey2Name.lsl" />
   </Section>
-  <Section Name="osList2Double">
-    <Key Name="assetID" Value="81305ee4-2407-9e0a-69a4-76ed57df0c8f" />
-    <Key Name="name" Value="osList2Double" />
-    <Key Name="assetType" Value="10" />
-    <Key Name="fileName" Value="osList2Double.lsl" />
-  </Section>
   <Section Name="osMax">
     <Key Name="assetID" Value="81305ee4-2408-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osMax" />
