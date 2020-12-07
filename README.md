@@ -2,7 +2,7 @@
 
 OpenSimulator OSSL examples as they can be seen on the OpenSimulator wiki http://opensimulator.org/wiki/Category:OSSL_Functions
 
-Version 0.145 - 235 scripts
+Version 0.146 - 235 scripts
 
 Test: opensim-0.9.2.0Dev-973-ga758fc9 working
 
@@ -17,10 +17,7 @@ Test: opensim-0.9.2.0Dev-973-ga758fc9 working
     Right click and copy Examples to your Scripts directory.
     Now you can work normally with the examples.
 
-## 06-12-2020 upgrade:
+## 07-12-2020 upgrade:
 ```
-osList2Double moved to deprecated, not exist on source code, use llList2Float instead.
-osListenRegex
-osReplaceRegionEnvironment
-osReplaceParcelEnvironment
+osAvatarName2Key
 ```
