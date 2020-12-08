@@ -17,7 +17,4 @@ Test: opensim-0.9.2.0Dev-973-ga758fc9 working
     Right click and copy Examples to your Scripts directory.
     Now you can work normally with the examples.
 
-## 07-12-2020 upgrade:
-```
-osAvatarName2Key
-```
+
