@@ -10,9 +10,9 @@ Example(s)
 // Example of osSlerp
  
 //Test osSlerp. Kayaker Mangic Sept 2019
-//This isn't the right way to wiggle a stick (llSetKeyframedMotion is better)
-//but it does demostrate osSlerp working!
-//Put this script in a prim that is long in the X direction,
+   //This isn't the right way to wiggle a stick (llSetKeyframedMotion is better)
+  //but it does demostrate osSlerp working!
+ //Put this script in a prim that is long in the X direction,
 //it will wave it's tip around in a figure 8 (infinity) pattern.
  
 rotation lastrot=ZERO_ROTATION;     //slerp between these two rotations
