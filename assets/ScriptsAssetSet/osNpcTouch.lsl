@@ -30,6 +30,7 @@ Example(s)
 //
  
 key npc;
+integer nbr;
  
 default
 {
@@ -52,12 +53,12 @@ state hasNPC
 {
     state_entry()
     {
-        osNpcSay(npc, "Hello world!");
         llSetTimerEvent(5.0);
     }
  
     timer()
     {
+        if (++nbr == 1) osNpcSay(npc, "Hello world!");
         llSetTimerEvent(2.0);
         osNpcTouch(npc, llGetKey(), LINK_THIS);
     }
@@ -76,6 +77,7 @@ state hasNPC
             llSetTimerEvent(0.0);
             osNpcRemove(npc);
             npc = NULL_KEY;
+            nbr = 0;
             state default;
         }
     }
