@@ -24,14 +24,15 @@ default
 {
     state_entry()
     {
-        llSay(PUBLIC_CHANNEL, "Touch to see osResetEnvironment usage with a transition of " + (string)transition);
+        llSay(PUBLIC_CHANNEL, "Touch to see osResetEnvironment usage.");
+        llSay(PUBLIC_CHANNEL, "Transition: " + (string)transition + " second(s).");
     }
  
     touch_start(integer number)
     {
         integer result;
  
-        if (switch =! switch)
+        if (switch = !switch)
         {
             result = osResetEnvironment(switch, transition);
         }
@@ -41,22 +42,23 @@ default
             result = osResetEnvironment(switch, transition);
         }
  
-        if (switch == 1 && result == 1)
+        if (switch == 1 && result > 0)
         {
             llSay(PUBLIC_CHANNEL, "The parcel environment was removed with success.");
+            llSay(PUBLIC_CHANNEL, "The region environment is now used.");
         }
  
-        else if (switch == 1 && result == -1)
+        else if (switch == 1 && result < 0)
         {
             llSay(PUBLIC_CHANNEL, "The parcel environment was removed without success.");
         }
  
-        else if (switch == 0 && result == 1)
+        else if (switch == 0 && result > 0)
         {
             llSay(PUBLIC_CHANNEL, "The region environment was set to the default with success.");
         }
  
-        else if (switch == 0 && result == -1)
+        else if (switch == 0 && result < 0)
         {
             llSay(PUBLIC_CHANNEL, "The region environment was set to the default without success.");
         }
