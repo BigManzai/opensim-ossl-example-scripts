@@ -28,6 +28,16 @@
     <Key Name="assetType" Value="10" />
     <Key Name="inventoryType" Value="10" />
   </Section>
+  
+  <Section Name="DefaultLightShareScript">
+    <Key Name="inventoryID" Value="56df4bcc-b394-11dc-8314-0800200c9a66" />
+    <Key Name="assetID" Value="56df4bcd-b394-11dc-8314-0800200c9a66" />
+    <Key Name="folderID" Value="30000112-001f-0000-0000-000100bba000"/>
+    <Key Name="description" Value="llA" />
+    <Key Name="name" Value="DefaultLightShareScript" />
+    <Key Name="assetType" Value="10" />
+    <Key Name="inventoryType" Value="10" />
+  </Section>
 
   <Section Name="llAllowInventoryDrop">
     <Key Name="inventoryID" Value="54d6962c-b394-11dc-8314-0800200c9a66" />
@@ -1597,7 +1607,7 @@
       <Key Name="name" Value="osSetWindParam" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section>
+    </Section>	
      <Section Name="osWindActiveModelPluginName">
       <Key Name="inventoryID" Value="81305ee4-1909-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1909-9e0a-69a4-76ed57df0c8f" />
@@ -1606,7 +1616,43 @@
       <Key Name="name" Value="osWindActiveModelPluginName" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
+    </Section>	
+     <Section Name="lsClearWindlightScene">
+      <Key Name="inventoryID" Value="81305ee4-9900-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="assetID" Value="81305ee4-9900-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="folderID" Value="30000112-001f-0000-0010-000100bba000"/>
+      <Key Name="description" Value="lsClearWindlightScene" />
+      <Key Name="name" Value="lsClearWindlightScene" />
+      <Key Name="assetType" Value="10" />
+      <Key Name="inventoryType" Value="10" />
     </Section>
+     <Section Name="lsGetWindlightScene">
+      <Key Name="inventoryID" Value="81305ee4-9901-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="assetID" Value="81305ee4-9901-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="folderID" Value="30000112-001f-0000-0010-000100bba000"/>
+      <Key Name="description" Value="lsGetWindlightScene" />
+      <Key Name="name" Value="lsGetWindlightScene" />
+      <Key Name="assetType" Value="10" />
+      <Key Name="inventoryType" Value="10" />
+    </Section>
+     <Section Name="lsSetWindlightScene">
+      <Key Name="inventoryID" Value="81305ee4-9902-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="assetID" Value="81305ee4-9902-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="folderID" Value="30000112-001f-0000-0010-000100bba000"/>
+      <Key Name="description" Value="lsSetWindlightScene" />
+      <Key Name="name" Value="lsSetWindlightScene" />
+      <Key Name="assetType" Value="10" />
+      <Key Name="inventoryType" Value="10" />
+    </Section>
+     <Section Name="lsSetWindlightSceneTargeted">
+      <Key Name="inventoryID" Value="81305ee4-9903-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="assetID" Value="81305ee4-9903-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="folderID" Value="30000112-001f-0000-0010-000100bba000"/>
+      <Key Name="description" Value="lsSetWindlightSceneTargeted" />
+      <Key Name="name" Value="lsSetWindlightSceneTargeted" />
+      <Key Name="assetType" Value="10" />
+      <Key Name="inventoryType" Value="10" />
+    </Section>	
     <Section Name="osReplaceParcelEnvironment">
       <Key Name="inventoryID" Value="81305ee4-1910-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1910-9e0a-69a4-76ed57df0c8f" />
