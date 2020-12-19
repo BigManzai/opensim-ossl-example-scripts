@@ -17,6 +17,12 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="llAdjustSoundVolume.lsl" />
   </Section>
+  <Section Name="DefaultLightShareScript">
+    <Key Name="assetID" Value="56df4bcd-b394-11dc-8314-0800200c9a66" />
+    <Key Name="name" Value="DefaultLightShareScript" />
+    <Key Name="assetType" Value="10" />
+    <Key Name="fileName" Value="DefaultLightShareScript.lsl" />
+  </Section>  
   <Section Name="llAllowInventoryDrop">
     <Key Name="assetID" Value="54d6962d-b394-11dc-8314-0800200c9a66" />
     <Key Name="name" Value="llAllowInventoryDrop" />
@@ -1042,13 +1048,37 @@
     <Key Name="name" Value="osSetWindParam" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osSetWindParam.lsl" />
-  </Section>
+  </Section>  
    <Section Name="osWindActiveModelPluginName">
     <Key Name="assetID" Value="81305ee4-1909-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osWindActiveModelPluginName" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osWindActiveModelPluginName.lsl" />
+  </Section>  
+   <Section Name="lsClearWindlightScene">
+    <Key Name="assetID" Value="81305ee4-9900-9e0a-69a4-76ed57df0c8f" />
+    <Key Name="name" Value="lsClearWindlightScene" />
+    <Key Name="assetType" Value="10" />
+    <Key Name="fileName" Value="lsClearWindlightScene.lsl" />
   </Section>
+   <Section Name="lsGetWindlightScene">
+    <Key Name="assetID" Value="81305ee4-9901-9e0a-69a4-76ed57df0c8f" />
+    <Key Name="name" Value="lsGetWindlightScene" />
+    <Key Name="assetType" Value="10" />
+    <Key Name="fileName" Value="lsGetWindlightScene.lsl" />
+  </Section>
+   <Section Name="lsSetWindlightScene">
+    <Key Name="assetID" Value="81305ee4-9902-9e0a-69a4-76ed57df0c8f" />
+    <Key Name="name" Value="lsSetWindlightScene" />
+    <Key Name="assetType" Value="10" />
+    <Key Name="fileName" Value="lsSetWindlightScene.lsl" />
+  </Section>
+   <Section Name="lsSetWindlightSceneTargeted">
+    <Key Name="assetID" Value="81305ee4-9903-9e0a-69a4-76ed57df0c8f" />
+    <Key Name="name" Value="lsSetWindlightSceneTargeted" />
+    <Key Name="assetType" Value="10" />
+    <Key Name="fileName" Value="lsSetWindlightSceneTargeted.lsl" />
+  </Section>  
   <Section Name="osReplaceParcelEnvironment">
     <Key Name="assetID" Value="81305ee4-1910-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osReplaceParcelEnvironment" />
