@@ -14,7 +14,7 @@ Threat Level 	VeryLow
 Permissions 	${OSSL|osslParcelOG}ESTATE_MANAGER,ESTATE_OWNER
 Delay 	0 seconds
 Example(s)
-Sets all available parameters of current active wind plugin module:  
+Sets all available parameters of current active wind plugin module:
 */
 
 // osSetWindParam() sample

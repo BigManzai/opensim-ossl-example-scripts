@@ -50,10 +50,3 @@ default
         }
     }
 }
-/*
-Notes
-Rules contain pairs of data in the form of the parameter followed by the value to set.
-Setting new parameters with lsSetWindlightScene commits the new changes to the regionwindlight database table immediately.
-Excessive use of this function can cause unnecessary database requests.
-Use this function if you wish to avoid database loading with lsSetWindlightScene. 
-*/

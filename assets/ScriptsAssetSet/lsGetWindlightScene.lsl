@@ -28,7 +28,6 @@ default
  
     touch_start(integer number)
     {
-	//The current water color is: <4.000000, 38.000000, 64.000000>
         list rules = [WL_WATER_COLOR];
         list settings = lsGetWindlightScene(rules);
         llSay(PUBLIC_CHANNEL, "The current water color is: " + llList2String(settings, 1));
