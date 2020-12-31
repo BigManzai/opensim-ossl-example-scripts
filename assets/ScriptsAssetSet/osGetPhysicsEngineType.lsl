@@ -8,31 +8,30 @@ Example(s)
 */
 
 
-// ----------------------------------------------------------------
-// Example / Sample Script to show function use.
 //
-// Script Title:    osGetPhysicsEngineType.lsl
-// Script Author:   
-// Threat Level:    High
-// Script Source:   http://opensimulator.org/wiki/OsGetPhysicsEngineType
+// osGetPhysicsEngineType Script Example
+// Author: djphil
 //
-// Notes: See Script Source reference for more detailed information
-// This sample is full opensource and available to use as you see fit and desire.
-// Threat Levels only apply to OSSL & AA Functions
-// See http://opensimulator.org/wiki/Threat_level
-// ================================================================
-// Inworld Script Line:    string osGetPhysicsEngineType();
-//
-// Example of osGetPhysicsEngineType()
-//
+ 
 default
 {
-    state_entry() // display @ start
+    state_entry()
     {
-        llSay(0, "Touch me to get the physics engine type using osGetPhysicsEngineType");
+        llSay(PUBLIC_CHANNEL, "Touch to see osGetPhysicsEngineType usage.");
     }
-    touch_end(integer num) // Tell toucher our version
+ 
+    touch_start(integer number)
     {
-        llInstantMessage(llDetectedKey(0), "Physics engine type: "+osGetPhysicsEngineType());
+        string physics_engine_type = osGetPhysicsEngineType();
+ 
+        if (physics_engine_type == "ubODE")
+        {
+            llSay(PUBLIC_CHANNEL, physics_engine_type + " is detected ...");
+        }
+ 
+        else
+        {
+            llSay(PUBLIC_CHANNEL, physics_engine_type + " is not detected ...");
+        }
     }
 }

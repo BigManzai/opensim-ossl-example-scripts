@@ -8,16 +8,20 @@ Example(s)
 */
 
 
-// Example of osGetPhysicsEngineName
-
+//
+// osGetPhysicsEngineName Script Example
+// Author: djphil
+//
+ 
 default
 {
-    state_entry() // display @ start
+    state_entry()
     {
-        llSay(0, "Touch me to get the physics engine name using osGetPhysicsEngineName");
+        llSay(PUBLIC_CHANNEL, "Touch to see osGetPhysicsEngineName usage.");
     }
-    touch_end(integer num) // Tell toucher our version
+ 
+    touch_start(integer number)
     {
-        llInstantMessage(llDetectedKey(0), "Physics engine type: "+osGetPhysicsEngineName());
+        llSay(PUBLIC_CHANNEL, "The physics engine name is " + osGetPhysicsEngineName());
     }
 }

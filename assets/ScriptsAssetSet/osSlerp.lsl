@@ -61,8 +61,8 @@ default
                 nextrot = llAxes2Rot(fwd, lft, fwd % lft);      // this will be the next rotation to slerp to
             }
  
-            rotation rot = osSlerp(lastrot, nextrot, ratio);    // slerp generates rotations between these
-            llSetLinkPrimitiveParamsFast(LINK_THIS, [PRIM_ROTATION, rot]);                         
+            rotation rot = osSlerp(lastrot, nextrot, ratio);
+            llSetLinkPrimitiveParamsFast(LINK_THIS, [PRIM_ROTATION, rot]);
             llSleep(0.09);
         }
     }
