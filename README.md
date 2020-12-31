@@ -4,7 +4,7 @@ OpenSimulator OSSL examples as they can be seen on the OpenSimulator wiki http:/
 
 Version 0.2.06 - 241 scripts
 
-Test: opensim-0.9.2.0Dev-1040 working
+Test: opensim-0.9.2.0Dev-1045 working
 
 **Copy the directories into your opensim/bin directory, restart opensim and clear your viewer cache.**
 
