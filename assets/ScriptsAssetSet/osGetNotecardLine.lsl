@@ -7,7 +7,7 @@ Delay 	0 seconds
 Example(s)
 */
 
-// osGetNotecardLine exemple
+// osGetNotecardLine example
  
 default 
 {

@@ -13,7 +13,7 @@ Examples
 */
 
 //
-// lsSetWindlightSceneTargeted Script Exemple
+// lsSetWindlightSceneTargeted Script Example
 // Author: djphil
 //
  

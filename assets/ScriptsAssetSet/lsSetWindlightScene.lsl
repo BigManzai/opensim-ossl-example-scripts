@@ -18,7 +18,7 @@ Examples
 */
 
 //
-// lsSetWindlightScene Script Exemple
+// lsSetWindlightScene Script Example
 // Author: djphil
 //
  

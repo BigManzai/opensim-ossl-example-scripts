@@ -9,7 +9,7 @@ Added in 0.9.2.0
 */
 
 //
-// osClearObjectAnimations Script Exemple
+// osClearObjectAnimations Script Example
 // Author= djphil
 //
  
@@ -37,7 +37,7 @@ default
 }
 /*
 //
-// osClearObjectAnimations Script Exemple
+// osClearObjectAnimations Script Example
 // Author= djphil
 //
  

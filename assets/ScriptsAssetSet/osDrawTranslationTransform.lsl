@@ -8,7 +8,7 @@ Example(s)
 */
 
 //
-// osDrawTranslationTransform Script Exemple
+// osDrawTranslationTransform Script Example
 // Author: djphil
 //
  

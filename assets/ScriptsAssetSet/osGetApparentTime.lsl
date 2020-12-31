@@ -1,6 +1,6 @@
 /*
 float osGetApparentTime()
-Returns parcel time in seconds since midnight. If parcel does not have own enviroment, region time is returned
+Returns parcel time in seconds since midnight. If parcel does not have own environment, region time is returned
 Threat Level 	This function does not do a threat level check
 Permissions 	Use of this function is always allowed by default
 Delay 	0 seconds

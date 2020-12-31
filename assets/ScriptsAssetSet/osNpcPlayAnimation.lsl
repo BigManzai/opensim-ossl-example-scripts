@@ -8,7 +8,7 @@ Example(s)
 */
 
 //
-// osNpcPlayAnimation Script Exemple
+// osNpcPlayAnimation Script Example
 // Author: djphil
 //
  

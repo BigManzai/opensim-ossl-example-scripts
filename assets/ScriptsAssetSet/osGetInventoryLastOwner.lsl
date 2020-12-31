@@ -8,7 +8,7 @@ Example(s)
 */
 
 //
-// osGetInventoryLastOwner Script Exemple
+// osGetInventoryLastOwner Script Example
 // Author: Ubit
 //
  

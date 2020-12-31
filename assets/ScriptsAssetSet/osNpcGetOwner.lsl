@@ -9,7 +9,7 @@ This function was added in 0.7.3-post-fixes
 */
 
 //
-// osNpcGetOwner Script Exemple
+// osNpcGetOwner Script Example
 // Author: djphil
 //
  
@@ -61,7 +61,7 @@ state hasNPC
 /* With OS_NPC_NOT_OWNED: (It Needs the setting AllowNotOwned on true in section [NPC] of your OpenSim.ini)
 
 //
-// osNpcGetOwner Script Exemple
+// osNpcGetOwner Script Example
 // Author: djphil
 //
  

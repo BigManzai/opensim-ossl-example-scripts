@@ -10,7 +10,7 @@ Example(s)
 */
 
 //
-// osGetNPCList Script Exemple
+// osGetNPCList Script Example
 // Author: djphil
 //
  

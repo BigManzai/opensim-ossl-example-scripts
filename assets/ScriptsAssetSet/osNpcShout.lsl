@@ -8,7 +8,7 @@ Example(s)
 */
 
 //
-// osNpcShout Script Exemple
+// osNpcShout Script Example
 // Author: djphil
 //
  

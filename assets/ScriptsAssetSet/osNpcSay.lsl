@@ -10,7 +10,7 @@ Example(s)
 */
 
 //
-// osNpcSay (without channel) Script Exemple
+// osNpcSay (without channel) Script Example
 // Author: djphil
 //
  
@@ -61,7 +61,7 @@ state hasNPC
 /* And with channel:
 
 //
-// osNpcSay (with channel) Script Exemple
+// osNpcSay (with channel) Script Example
 // Author: djphil
 //
  

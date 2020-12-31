@@ -10,7 +10,7 @@ Example(s)
 */
 
 //
-// osNpcMoveTo Script Exemple
+// osNpcMoveTo Script Example
 // Author: djphil
 //
  

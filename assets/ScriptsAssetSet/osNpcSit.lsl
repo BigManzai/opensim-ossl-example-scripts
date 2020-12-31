@@ -16,7 +16,7 @@ Example(s)
 */
 
 //
-// osNpcSit (without llSitTarget) Script Exemple
+// osNpcSit (without llSitTarget) Script Example
 // Author: djphil
 //
  
@@ -67,7 +67,7 @@ state hasNPC
 /* With llSitTarget:
 
 //
-// osNpcSit (with llSitTarget) Script Exemple
+// osNpcSit (with llSitTarget) Script Example
 // Author: djphil
 //
  

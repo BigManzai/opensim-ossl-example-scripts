@@ -19,7 +19,7 @@ This function was added in 0.7.2-post-fixes
 */
 
 //
-// osNpcMoveToTarget Script Exemple
+// osNpcMoveToTarget Script Example
 // With the use of the option OS_NPC_NO_FLY
 // Author: djphil
 //
@@ -71,7 +71,7 @@ state hasNPC
 With OS_NPC_FLY:
 
 //
-// osNpcMoveToTarget Script Exemple
+// osNpcMoveToTarget Script Example
 // With the use of the option OS_NPC_FLY
 // Author: djphil
 //
@@ -123,7 +123,7 @@ state hasNPC
 /* With OS_NPC_FLY and OS_NPC_LAND_AT_TARGET:
 
 //
-// osNpcMoveToTarget Script Exemple
+// osNpcMoveToTarget Script Example
 // With the use of the option OS_NPC_FLY and OS_NPC_LAND_AT_TARGET
 // Author: djphil
 //
@@ -175,7 +175,7 @@ state hasNPC
 With OS_NPC_RUNNING:
 
 //
-// osNpcMoveToTarget Script Exemple
+// osNpcMoveToTarget Script Example
 // With the use of the option OS_NPC_RUNNING
 // Author: djphil
 //

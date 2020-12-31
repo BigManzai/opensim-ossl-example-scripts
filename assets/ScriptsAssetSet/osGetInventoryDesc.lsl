@@ -8,7 +8,7 @@ Example(s)
 */
 
 //
-// osGetInventoryDesc Script Exemple
+// osGetInventoryDesc Script Example
 // Author: Gudule Lapointe
 //
  

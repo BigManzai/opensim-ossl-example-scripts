@@ -5,7 +5,7 @@ osNpcRemove(key npc)
 */
 
 //
-// osNpcRemove Script Exemple
+// osNpcRemove Script Example
 // Author: djphil
 //
  

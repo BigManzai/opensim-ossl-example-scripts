@@ -10,7 +10,7 @@ Example(s)
 */
 
 //
-// osEjectFromGroup Script Exemple
+// osEjectFromGroup Script Example
 // Author: djphil
 //
  

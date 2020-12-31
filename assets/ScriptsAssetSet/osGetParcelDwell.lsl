@@ -10,7 +10,7 @@ Example(s)
 */
 
 //
-// osGetParcelDwell Script Exemple
+// osGetParcelDwell Script Example
 // Author: djphil
 //
  
@@ -32,7 +32,7 @@ default
 /* And with PARCEL_DETAILS_DWELL
 
 //
-// PARCEL_DETAILS_DWELL Script Exemple
+// PARCEL_DETAILS_DWELL Script Example
 // Author: djphil
 //
  

@@ -11,7 +11,7 @@ Example(s)
 */
 
 //
-// osGetInventoryItemKey Script Exemple
+// osGetInventoryItemKey Script Example
 // Author: Ubit
 //
  

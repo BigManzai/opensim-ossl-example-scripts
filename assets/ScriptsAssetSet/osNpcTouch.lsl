@@ -25,7 +25,7 @@ Example(s)
 */
 
 //
-// osNpcTouch Script Exemple
+// osNpcTouch Script Example
 // Author: djphil
 //
  

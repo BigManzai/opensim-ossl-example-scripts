@@ -8,7 +8,7 @@ Example(s)
 */
 
 //
-// llGetInventoryName Script Exemple
+// llGetInventoryName Script Example
 // Author: Gudule Lapointe
 //
  

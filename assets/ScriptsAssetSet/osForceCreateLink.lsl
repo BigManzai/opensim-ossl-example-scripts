@@ -1,7 +1,7 @@
 /*
 osForceCreateLink(key target, integer parent)
 
-    Idential to llCreateLink() except that it doesn't require the link permission to be granted. Present in 0.8 and later. 
+    Identical to llCreateLink() except that it doesn't require the link permission to be granted. Present in 0.8 and later. 
 
 Threat Level 	VeryLow
 Permissions 	${OSSL|osslParcelO}ESTATE_MANAGER,ESTATE_OWNER

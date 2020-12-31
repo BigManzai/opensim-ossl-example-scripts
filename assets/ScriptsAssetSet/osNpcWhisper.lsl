@@ -8,7 +8,7 @@ Example(s)
 */
 
 //
-// osNpcWhisper Script Exemple
+// osNpcWhisper Script Example
 // Author: djphil
 //
  

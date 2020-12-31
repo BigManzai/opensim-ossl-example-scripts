@@ -8,7 +8,7 @@ Example(s)
 */
 
 //
-// osAvatarName2Key Script Exemple
+// osAvatarName2Key Script Example
 // Author: djphil
 // 
  
@@ -34,7 +34,7 @@ default
 
 /*
 //
-// osAvatarName2Key Script Exemple
+// osAvatarName2Key Script Example
 // Author: djphil
 // 
  

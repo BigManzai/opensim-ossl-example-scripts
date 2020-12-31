@@ -16,7 +16,7 @@ Example(s)
 */
 
 //
-// osInviteToGroup Script Exemple
+// osInviteToGroup Script Example
 // Author: djphil
 //
  
