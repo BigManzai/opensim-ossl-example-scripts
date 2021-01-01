@@ -10,7 +10,7 @@ Example(s)
 */
 
 //
-// osNpcStand Script Exemple
+// osNpcStand Script Example
 // Author: djphil
 //
  

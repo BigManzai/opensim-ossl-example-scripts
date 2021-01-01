@@ -17,7 +17,7 @@ Example(s)
 //    alpha - alpha (transparency) component of the dynamic texture. Values are from 0-clear to 255-solid (example: alpha:255) 
 //    bgcolour - specifies the background color of the texture (example: bgcolour:Red) 
 //    setalpha 
-//    integer value - any integer value is treated like specifing alpha component 
+//    integer value - any integer value is treated like specifying alpha component 
 //
 default
 {

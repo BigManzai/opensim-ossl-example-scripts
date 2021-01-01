@@ -8,11 +8,11 @@ Example(s)
 */
 
 //
-// osSlerp Script Exemple
+// osSlerp Script Example
 // Author: Kayaker Mangic Sept 2019
 //
  
-// This isn't the right way to wiggle a stick (llSetKeyframedMotion is better) but it does demostrate osSlerp working!
+// This isn't the right way to wiggle a stick (llSetKeyframedMotion is better) but it does demonstrate osSlerp working!
 // Put this script in a prim that is long in the X direction, it will wave it's tip around in a figure 8 (infinity) pattern.
  
 rotation lastrot;   // slerp between these two rotations

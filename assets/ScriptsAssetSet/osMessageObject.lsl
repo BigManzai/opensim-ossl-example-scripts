@@ -9,7 +9,7 @@ Threat Level 	Low
 Permissions 	${OSSL|osslParcelOG}ESTATE_MANAGER,ESTATE_OWNER
 Delay 	0 seconds
 Example(s)
-This example consists of a sender script, and a reciever script.
+This example consists of a sender script, and a receiver script.
 
 	Sender script 
 */
@@ -52,7 +52,7 @@ default
     }
 }
 
-/*     Reciever script 
+/*     Receiver script 
 
 // Place this script in the Receiver prim.
 default

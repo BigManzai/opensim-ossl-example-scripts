@@ -8,7 +8,7 @@ Example(s)
 */
 
 //
-// osNpcSayTo Script Exemple
+// osNpcSayTo Script Example
 // Author: djphil
 //
  

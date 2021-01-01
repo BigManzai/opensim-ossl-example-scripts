@@ -13,7 +13,7 @@ Example(s)
 */
 
 //
-// osForceAttachToOtherAvatarFromInventory Script Exemple (YEngine)
+// osForceAttachToOtherAvatarFromInventory Script Example (YEngine)
 // Author: djphil
 //
  

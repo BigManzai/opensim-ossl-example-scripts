@@ -9,7 +9,7 @@ vector Idiag, // diagonal elements of inertia
 vector Ioffdiag // off diagonal elements of inertia
 ]
 
-mass maybe -1 if inertia data is invalid or not avaiable
+mass maybe -1 if inertia data is invalid or not available
 
 Caution ! Only supported by ubOde for now
 
@@ -20,7 +20,7 @@ Example(s)
 */
 
 //
-// osGetInertiaData Script Exemple
+// osGetInertiaData Script Example
 // Author: djphil
 //
  
@@ -42,7 +42,7 @@ default
  
         if (mass == -1)
         {
-            llSay(PUBLIC_CHANNEL, "The inertia data is invalid or not avaiable ...");
+            llSay(PUBLIC_CHANNEL, "The inertia data is invalid or not available ...");
         }
  
         else

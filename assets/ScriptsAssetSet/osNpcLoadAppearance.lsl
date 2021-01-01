@@ -8,7 +8,7 @@ Example(s)
 */
 
 //
-// osNpcLoadAppearance Script Exemple
+// osNpcLoadAppearance Script Example
 // Author: djphil
 //
  

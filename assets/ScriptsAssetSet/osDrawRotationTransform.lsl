@@ -8,7 +8,7 @@ Example(s)
 */
 
 //
-// osDrawRotationTransform Script Exemple
+// osDrawRotationTransform Script Example
 // Author: djphil
 //
  

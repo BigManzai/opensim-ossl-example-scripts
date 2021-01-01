@@ -1,6 +1,6 @@
 /*
 integer osStringLastIndexOf(string src, string value, integer ignoreCase)
-Reports the zero-based index of the last occurrence of string value withing string scr. returns -1 if not found. It can compare ignoring case with ignoreCase TRUE(1) or considering case if FALSE(0);
+Reports the zero-based index of the last occurrence of string value within string scr. returns -1 if not found. It can compare ignoring case with ignoreCase TRUE(1) or considering case if FALSE(0);
 Threat Level 	No threat level specified
 Permissions 	Use of this function is always allowed by default
 Delay 	No function delay specified

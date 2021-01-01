@@ -13,7 +13,7 @@ Example(s)
 */
 
 //
-// osGetPrimitiveParams Script Exemple
+// osGetPrimitiveParams Script Example
 //
  
 // Change target_uuid to any uuid of the prim you wish to get params.

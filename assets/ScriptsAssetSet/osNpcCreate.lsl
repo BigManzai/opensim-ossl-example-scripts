@@ -12,7 +12,7 @@ Example(s)
 */
 
 //
-// osNpcCreate Script Exemple
+// osNpcCreate Script Example
 // Author: djphil
 //
  
@@ -61,7 +61,7 @@ state hasNPC
 /* With OS_NPC_SENSE_AS_AGENT: (It Needs the setting AllowSenseAsAvatar on true in section [NPC] of your OpenSim.ini)
 
 //
-// osNpcCreate Script Exemple
+// osNpcCreate Script Example
 // Authior: djphil
 //
  
@@ -142,12 +142,12 @@ state hasNPC
     {
         if (sens_as_agent == TRUE)
         {
-            llSay(PUBLIC_CHANNEL, (string)number + " NPC sense as agent deteced: " + llDetectedName(0));
+            llSay(PUBLIC_CHANNEL, (string)number + " NPC sense as agent detected: " + llDetectedName(0));
         }
  
         else
         {
-            llSay(PUBLIC_CHANNEL, (string)number + " NPC sense as npc deteted: " + llDetectedName(0));
+            llSay(PUBLIC_CHANNEL, (string)number + " NPC sense as npc detected: " + llDetectedName(0));
         }
     }
  
@@ -168,7 +168,7 @@ state hasNPC
 With OS_NPC_OBJECT_GROUP: (It Needs the setting NoNPCGroup on false in section [NPC] of your OpenSim.ini)
 
 //
-// osNpcCreate Script Exemple
+// osNpcCreate Script Example
 // Authior: djphil
 //
  

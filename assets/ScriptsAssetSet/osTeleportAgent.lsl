@@ -22,7 +22,7 @@ Example(s)
 // Destination = "RegionName"; = Using RegionName
 // HyperGrid Teleport (region must be HG Enabled)
 // Destination = "TcpIpAddr:Port:RegionName"; = Using the Target/Destination IP Address
-// Destination = "DNSname:Port:RegionName"; = Using the Target/Detination DNSname
+// Destination = "DNSname:Port:RegionName"; = Using the Target/Destination DNSname
 // Note: RegionName is Optionally Specified to deliver Avatar to specific region in an instance.
 
 // 

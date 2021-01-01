@@ -13,7 +13,7 @@ Examples
 */
 
 //
-// lsClearWindlightScene Script Exemple
+// lsClearWindlightScene Script Example
 // Author: djphil
 //
  

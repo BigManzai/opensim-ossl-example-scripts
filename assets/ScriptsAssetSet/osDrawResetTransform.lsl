@@ -8,7 +8,7 @@ Example(s)
 */
 
 //
-// osDrawResetTransform Script Exemple
+// osDrawResetTransform Script Example
 // Author: djphil
 //
  

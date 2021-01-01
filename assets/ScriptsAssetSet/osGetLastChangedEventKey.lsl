@@ -8,7 +8,7 @@ Example(s)
 */
 
 //
-// osGetLastChangedEventKey Script Exemple
+// osGetLastChangedEventKey Script Example
 // Author: Ubit
 //
  

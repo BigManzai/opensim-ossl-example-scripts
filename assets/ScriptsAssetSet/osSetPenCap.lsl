@@ -31,7 +31,7 @@ default
         integer i;
  
         CommandList = osSetPenSize( CommandList, 5 );         // Set the pen width to 5 pixels. With 1 pixel, arrow is very hard to see
-        CommandList = osSetPenCap("start", "arrow");          // Sets the beggining of the line with an arrow
+        CommandList = osSetPenCap("start", "arrow");          // Sets the beginning of the line with an arrow
         CommandList = osMovePen(drawList,50,100);             // Moves pen to 50,100
         CommandList = osLineTo(drawList, 100,150);            // Draws line from 50,100 to 100,150
  

@@ -11,7 +11,7 @@ Example(s)
 These examples will control the projection map in the host prim, a prim on the linkset and another prim identified by it's uuid. 
 */
 
-// Exemple of osSetProjectionParams control this prim
+// Example of osSetProjectionParams control this prim
  
 // These variables correspond to the settings found in the "Features" tab of the build editor
 float FOV = 1.5;        // Values 0.00 - 3.00
@@ -41,7 +41,7 @@ default
 // ************************************************************
 
 /*
-// Exemple of osSetProjectionParams control the prim with link number 2
+// Example of osSetProjectionParams control the prim with link number 2
  
 // These variables correspond to the settings found in the "Features" tab of the build editor
 float FOV = 1.5;        // Values 0.00 - 3.00
@@ -75,7 +75,7 @@ default
 // ************************************************************
 
 /*
-// Exemple of osSetProjectionParams control the remote prim
+// Example of osSetProjectionParams control the remote prim
  
 // These variables correspond to the settings found in the "Features" tab of the build editor
 float FOV = 1.5;        // Values 0.00 - 3.00

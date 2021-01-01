@@ -24,7 +24,7 @@ default
  
         llSay(PUBLIC_CHANNEL, "Touch to see osForceAttachToAvatar attach this object to your avatar's left hand.");
         llSay(PUBLIC_CHANNEL, "Touch it again to see osForceDropAttachmentAt drop this object to its original position and rotation.");
-        llSay(PUBLIC_CHANNEL, "The posistion is " + (string)pos + " and the rotation is " + (string)rot);
+        llSay(PUBLIC_CHANNEL, "The position is " + (string)pos + " and the rotation is " + (string)rot);
     }
  
     touch_start(integer number)

@@ -9,7 +9,7 @@ This function was added in 0.7.2-post-fixes
 */
 
 //
-// osNpcSetRot Script Exemple
+// osNpcSetRot Script Example
 // Author: djphil
 //
  
@@ -59,7 +59,7 @@ state hasNPC
 /* Or with llEuler2Rot
 
 //
-// osNpcSetRot Script Exemple
+// osNpcSetRot Script Example
 // Author: djphil
 //
  

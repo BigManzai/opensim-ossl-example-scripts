@@ -9,7 +9,7 @@ This function was added in 0.7.2-post-fixes
 */
 
 //
-// osNpcGetRot Script Exemple
+// osNpcGetRot Script Example
 // Author: djphil
 //
  

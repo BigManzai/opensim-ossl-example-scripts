@@ -14,7 +14,7 @@ Example(s)
 */
 
 //
-// osApproxEquals Script Exemple
+// osApproxEquals Script Example
 // Author: djphil
 //
  
@@ -25,7 +25,7 @@ default
     state_entry()
     {
         llSay(PUBLIC_CHANNEL, "Touch to see osApproxEquals usage.");
-        llSay(PUBLIC_CHANNEL, "This exemple compare two floats.");
+        llSay(PUBLIC_CHANNEL, "This example compare two floats.");
     }
  
     touch_start(integer number)
@@ -57,7 +57,7 @@ default
 /* Compare two vectors:
 
 //
-// osApproxEquals Script Exemple
+// osApproxEquals Script Example
 // Author: djphil
 //
  
@@ -68,7 +68,7 @@ default
     state_entry()
     {
         llSay(PUBLIC_CHANNEL, "Touch to see osApproxEquals usage.");
-        llSay(PUBLIC_CHANNEL, "This exemple compare two vectors.");
+        llSay(PUBLIC_CHANNEL, "This example compare two vectors.");
     }
  
     touch_start(integer number)
@@ -100,7 +100,7 @@ default
 Compare two rotations:
 
 //
-// osApproxEquals Script Exemple
+// osApproxEquals Script Example
 // Author: djphil
 //
  
@@ -111,7 +111,7 @@ default
     state_entry()
     {
         llSay(PUBLIC_CHANNEL, "Touch to see osApproxEquals usage.");
-        llSay(PUBLIC_CHANNEL, "This exemple compare two rotations.");
+        llSay(PUBLIC_CHANNEL, "This example compare two rotations.");
     }
  
     touch_start(integer number)
@@ -143,7 +143,7 @@ default
 Compare two floats with margin:
 
 //
-// osApproxEquals Script Exemple
+// osApproxEquals Script Example
 // Author: djphil
 //
  
@@ -155,7 +155,7 @@ default
     state_entry()
     {
         llSay(PUBLIC_CHANNEL, "Touch to see osApproxEquals usage.");
-        llSay(PUBLIC_CHANNEL, "This exemple compare two floats with a margin of " + (string)margin);
+        llSay(PUBLIC_CHANNEL, "This example compare two floats with a margin of " + (string)margin);
     }
  
     touch_start(integer number)
@@ -189,7 +189,7 @@ default
 Compare two vectors with margin:
 
 //
-// osApproxEquals Script Exemple
+// osApproxEquals Script Example
 // Author: djphil
 //
  
@@ -201,7 +201,7 @@ default
     state_entry()
     {
         llSay(PUBLIC_CHANNEL, "Touch to see osApproxEquals usage.");
-        llSay(PUBLIC_CHANNEL, "This exemple compare two vectors with a margin of " + (string)margin);
+        llSay(PUBLIC_CHANNEL, "This example compare two vectors with a margin of " + (string)margin);
     }
  
     touch_start(integer number)
@@ -234,7 +234,7 @@ default
 Compare two rotations with margin:
 
 //
-// osApproxEquals Script Exemple
+// osApproxEquals Script Example
 // Author: djphil
 //
  
@@ -246,7 +246,7 @@ default
     state_entry()
     {
         llSay(PUBLIC_CHANNEL, "Touch to see osApproxEquals usage.");
-        llSay(PUBLIC_CHANNEL, "This exemple compare two rotations with a margin of " + (string)margin);
+        llSay(PUBLIC_CHANNEL, "This example compare two rotations with a margin of " + (string)margin);
     }
  
     touch_start(integer number)
