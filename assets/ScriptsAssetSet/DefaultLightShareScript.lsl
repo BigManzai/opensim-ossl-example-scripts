@@ -29,7 +29,7 @@ Here are some conversions from the WindLight XML to the LightShare settings that
 */
 
 //
-// Default LightShare Script Exemple
+// Default LightShare Script Example
 // Author: djphil
 //
  
