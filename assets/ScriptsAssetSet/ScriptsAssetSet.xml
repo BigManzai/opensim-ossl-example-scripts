@@ -1378,7 +1378,13 @@
     <Key Name="name" Value="osRound" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osRound.lsl" />
-  </Section>
+  </Section>  
+  <Section Name="osSHA256">
+    <Key Name="assetID" Value="81305ee4-2415-9e0a-69a4-76ed57df0c8f" />
+    <Key Name="name" Value="osSHA256" />
+    <Key Name="assetType" Value="10" />
+    <Key Name="fileName" Value="osSHA256.lsl" />
+  </Section>  
   <Section Name="osSlerp">
     <Key Name="assetID" Value="81305ee4-2411-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osSlerp" />
