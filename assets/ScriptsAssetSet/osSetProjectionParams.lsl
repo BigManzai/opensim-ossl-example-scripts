@@ -1,107 +1,181 @@
 /*
-osSetProjectionParams(integer projection, key texture, float fov, float focus, float amb)
+osSetProjectionParams(integer projection, key texture, float fov, float focus, float ambiance)
+osSetProjectionParams(integer linknumber, integer projection, key texture, float fov, float focus, float ambiance)
+osSetProjectionParams(key prim, integer projection, key texture, float fov, float focus, float ambiance)
 
-osSetProjectionParams(integer linknumber, integer projection, key texture, float fov, float focus, float amb)
-osSetProjectionParams(key prim, integer projection, key texture, float fov, float focus, float amb)
-Sets a prim projector parameters, argument projection is TRUE(1) or FALSE(0). The prim can be the host prim on first variant, a prim on the linkset or a prim with giving UUID. In last case Threat level is high and controlled by Allow_osSetProjectionParams. The other cases have no threat level check. Note that you may need to set the prim light also.
+Sets a prim projector parameters, argument projection is TRUE(1) or FALSE(0). The prim can be the host prim on first variant, a prim on the linkset or a prim with giving UUID.
+
+In last case Threat level is high and controlled by Allow_osSetProjectionParams. The other cases have no threat level check. Note that you may need to set the prim light also.
+
 Threat Level 	No threat level specified
 Permissions 	No permissions specified
 Delay 	0 seconds
+
 Example(s)
-These examples will control the projection map in the host prim, a prim on the linkset and another prim identified by it's uuid. 
+
+These examples will control the projection map in the host prim, a prim on the linkset and another prim identified by it's uuid.  
 */
 
-// Exemple of osSetProjectionParams control this prim
+//
+// osSetProjectionParams Script Example
+// Author: djphil
+//
  
 // These variables correspond to the settings found in the "Features" tab of the build editor
-float FOV = 1.5;        // Values 0.00 - 3.00
-float Focus = 15.0;     // Values -20.00 - 20.00
-float Ambiance = 0.4;   // Values 0.00 - 1.00
+float fov = 1.5;        // Range 0.0 to 3.0
+float focus = 15.0;     // Range -20.0 to 20.0
+float ambiance = 0.4;   // Range 0.0 yp 1.0
  
-// UUID of the texture to project
-key Texture = "b4c6b075-4940-4270-bb10-d293fd6f8091";
+// Can be texture's name in object's inventory or the texture uuid
+key texture = "00000000-0000-2222-3333-100000001001";
  
-integer Power;
+integer power;
+ 
+integer check_values()
+{
+    if (fov < 0.0 || fov > 3.0) return FALSE;
+    if (focus < -20.0 || focus > 20.0) return FALSE;
+    if (ambiance < 0.0 || ambiance > 1.0) return FALSE;
+    return TRUE;
+}
  
 default
 {
     state_entry()
     {
-        llSay(PUBLIC_CHANNEL, "Script running ...");
+        if (check_values() == TRUE)
+        {
+            llSay(PUBLIC_CHANNEL, "Touch to see osSetProjectionParams usage.");
+            llSay(PUBLIC_CHANNEL, "fov: " + (string)fov);
+            llSay(PUBLIC_CHANNEL, "focus: " + (string)focus);
+            llSay(PUBLIC_CHANNEL, "ambiance: " + (string)ambiance);
+            llSay(PUBLIC_CHANNEL, "texture: " + (string)texture);
+        }
+ 
+        else
+        {
+            llSay(PUBLIC_CHANNEL, "Invalid value(s) detected ...");
+        }
     }
  
     touch_start(integer number) 
     {
-        Power =! Power;
-        osSetPrimitiveParams(llGetKey(),[PRIM_POINT_LIGHT, Power, <1.0, 1.0, 1.0>, 1.0, 5.0, 0.5]);
-        osSetProjectionParams(Power, Texture, FOV, Focus, Ambiance);
+        power = !power;
+        osSetPrimitiveParams(llGetKey(),[PRIM_POINT_LIGHT, power, <1.0, 1.0, 1.0>, 1.0, 5.0, 0.5]);
+        osSetProjectionParams(power, texture, fov, focus, ambiance);
     }
 }
 
-// ************************************************************
+/* With a link number:
 
-/*
-// Exemple of osSetProjectionParams control the prim with link number 2
+//
+// osSetProjectionParams Script Example
+// Author: djphil
+//
  
 // These variables correspond to the settings found in the "Features" tab of the build editor
-float FOV = 1.5;        // Values 0.00 - 3.00
-float Focus = 15.0;     // Values -20.00 - 20.00
-float Ambiance = 0.4;   // Values 0.00 - 1.00
+float fov = 1.5;        // Range 0.0 to 3.0
+float focus = 15.0;     // Range -20.0 to 20.0
+float ambiance = 0.4;   // Range 0.0 yp 1.0
  
-// UUID of the texture to project
-key Texture = "b4c6b075-4940-4270-bb10-d293fd6f8091";
+// Link number of other primitive that we want to control
+integer link = 2;
  
-// Link number of prim that we want to control
-integer Link = 2;
+// Can be texture's name in object's inventory or the texture uuid
+key texture = "00000000-0000-2222-3333-100000001001";
  
-integer Power;
+integer power;
+ 
+integer check_values()
+{
+    if (fov < 0.0 || fov > 3.0) return FALSE;
+    if (focus < -20.0 || focus > 20.0) return FALSE;
+    if (ambiance < 0.0 || ambiance > 1.0) return FALSE;
+    return TRUE;
+}
  
 default
 {
     state_entry()
     {
-        llSay(PUBLIC_CHANNEL, "Script running ...");
+        if (check_values() == TRUE)
+        {
+            llSay(PUBLIC_CHANNEL, "Touch to see osSetProjectionParams usage.");
+            llSay(PUBLIC_CHANNEL, "fov: " + (string)fov);
+            llSay(PUBLIC_CHANNEL, "focus: " + (string)focus);
+            llSay(PUBLIC_CHANNEL, "ambiance: " + (string)ambiance);
+            llSay(PUBLIC_CHANNEL, "link: " + (string)link);
+            llSay(PUBLIC_CHANNEL, "texture: " + (string)texture);
+        }
+ 
+        else
+        {
+            llSay(PUBLIC_CHANNEL, "Invalid value(s) detected ...");
+        }
     }
  
     touch_start(integer number) 
     {
-        Power =! Power;
-        llSetLinkPrimitiveParamsFast(Link, [PRIM_POINT_LIGHT, Power, <1.0, 1.0, 1.0>, 1.0, 5.0, 0.5]);
-        osSetProjectionParams(Link, Power, Texture, FOV, Focus, Ambiance);
+        power = !power;
+        llSetLinkPrimitiveParamsFast(link, [PRIM_POINT_LIGHT, power, <1.0, 1.0, 1.0>, 1.0, 5.0, 0.5]);
+        osSetProjectionParams(link, power, texture, fov, focus, ambiance);
     }
 }
 */
 
-// ************************************************************
+/* With a primitive uuid:
 
-/*
-// Exemple of osSetProjectionParams control the remote prim
+//
+// osSetProjectionParams Script Example
+// Author: djphil
+//
  
 // These variables correspond to the settings found in the "Features" tab of the build editor
-float FOV = 1.5;        // Values 0.00 - 3.00
-float Focus = 15.0;     // Values -20.00 - 20.00
-float Ambiance = 0.4;   // Values 0.00 - 1.00
+float fov = 1.5;        // Range 0.0 to 3.0
+float focus = 15.0;     // Range -20.0 to 20.0
+float ambiance = 0.4;   // Range 0.0 yp 1.0
  
-// UUID of the texture to project
-key Texture = "b4c6b075-4940-4270-bb10-d293fd6f8091";
+// uuid of other primitive that we want to control
+key target = "8c68368f-3a10-4473-abb3-f4e91a42013e";
  
-// UUID of other prim that we want to control
-key Remote = "1721c368-e468-46da-bcae-0bdd3e647a2b";
+// Can be texture's name in object's inventory or the texture uuid
+key texture = "00000000-0000-2222-3333-100000001001";
  
-integer Power;
+integer power;
+ 
+integer check_values()
+{
+    if (fov < 0.0 || fov > 3.0) return FALSE;
+    if (focus < -20.0 || focus > 20.0) return FALSE;
+    if (ambiance < 0.0 || ambiance > 1.0) return FALSE;
+    return TRUE;
+}
  
 default
 {
     state_entry()
     {
-        llSay(PUBLIC_CHANNEL, "Script running ...");
+        if (check_values() == TRUE)
+        {
+            llSay(PUBLIC_CHANNEL, "Touch to see osSetProjectionParams usage.");
+            llSay(PUBLIC_CHANNEL, "fov: " + (string)fov);
+            llSay(PUBLIC_CHANNEL, "focus: " + (string)focus);
+            llSay(PUBLIC_CHANNEL, "ambiance: " + (string)ambiance);
+            llSay(PUBLIC_CHANNEL, "target: " + (string)target);
+            llSay(PUBLIC_CHANNEL, "texture: " + (string)texture);
+        }
+ 
+        else
+        {
+            llSay(PUBLIC_CHANNEL, "Invalid value(s) detected ...");
+        }
     }
  
     touch_start(integer number) 
     {
-        Power =! Power;
-        osSetPrimitiveParams(Remote,[PRIM_POINT_LIGHT, Power, <1.0, 1.0, 1.0>, 1.0, 5.0, 0.5]);
-        osSetProjectionParams(Remote, Power, Texture, FOV, Focus, Ambiance);
+        power = !power;
+        osSetPrimitiveParams(target,[PRIM_POINT_LIGHT, power, <1.0, 1.0, 1.0>, 1.0, 5.0, 0.5]);
+        osSetProjectionParams(target, power, texture, fov, focus, ambiance);
     }
 }
 */
