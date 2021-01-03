@@ -31,7 +31,7 @@ default
     {
         float ratio;
         rot_a = rot_b;
-        rot_b = llEuler2Rot(<llFrand(PI), llFrand(PI), llFrand(PI)>);;
+        rot_b = llEuler2Rot(<llFrand(PI), llFrand(PI), llFrand(PI)>);
         integer counter = 10;
  
         do {
