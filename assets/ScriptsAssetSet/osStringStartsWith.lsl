@@ -1,5 +1,5 @@
 /*
-string osStringStartsWith(string src, string start, integer ignore_case)
+integer osStringStartsWith(string src, string start, integer ignore_case)
 Returns 1 if the string in src starts with the characters in start. Case is ignored if ignore_case is 1 otherwise the case of the characters matters.
 Threat Level 	None
 Permissions 	Use of this function is always allowed by default
