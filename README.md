@@ -20,7 +20,7 @@ Testfiles:  https://www.mediafire.com/file/6qus4gagy2sirjw/opensim-0.9.2.1097.zi
     Now you can work normally with the examples.
 
 
-## Example
+## Examples
     #!/bin/sh
     cd /opt/opensim
     git clone https://github.com/BigManzai/opensim-ossl-example-scripts
