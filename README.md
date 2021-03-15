@@ -20,3 +20,15 @@ Testfiles:  https://www.mediafire.com/file/6qus4gagy2sirjw/opensim-0.9.2.1097.zi
     Now you can work normally with the examples.
 
 
+## Example
+    #!/bin/sh
+    cd /opt/opensim
+    git clone https://github.com/BigManzai/opensim-ossl-example-scripts
+    cp -r /opt/opensim/opensim-ossl-example-scripts/assets /opt/opensim/bin/assets
+    cp -r /opt/opensim/opensim-ossl-example-scripts/inventory/ScriptsLibrary /opt/opensim/bin/inventory
+
+    #Win10 PowerShell
+    cd C:/opensim
+    git clone https://github.com/BigManzai/opensim-ossl-example-scripts
+    cp -r /opensim/opensim-ossl-example-scripts/assets /opensim/bin/assets
+    cp -r /opensim/opensim-ossl-example-scripts/inventory/ScriptsLibrary /opensim/bin/inventory
