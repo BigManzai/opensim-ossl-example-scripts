@@ -1,14 +1,17 @@
 /*
 float osVecDistSquare(vector a, vector b)
-returns the square of norm of vector or distance vector (a - b), when expensive square root is not needed.
+returns the square of norm of vector, or distance vector, (a - b), when expensive square root math operation is not needed.
+
+for example to check if distance is larger than 10, check if the square is larger than 100
 Threat Level 	No threat level specified
 Permissions 	No permissions specified
-Delay 	0 seconds
+Extra Delay 	0 seconds
 Example(s)
 */
 
 //
 // osVecDistSquare Script Example
+// Author: djphil
 //
  
 default
