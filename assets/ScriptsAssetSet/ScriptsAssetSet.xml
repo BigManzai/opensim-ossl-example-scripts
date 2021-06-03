@@ -1410,7 +1410,7 @@
     <Key Name="fileName" Value="osVecMagSquare.lsl" />
   </Section>  
   <Section Name="osListSortInPlace">
-    <Key Name="assetID" Value="81305ee4-2415-9e0a-69a4-76ed57df0c8f" />
+    <Key Name="assetID" Value="81305ee4-2416-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osListSortInPlace" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osListSortInPlace.lsl" />
