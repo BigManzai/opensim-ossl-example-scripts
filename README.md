@@ -2,9 +2,9 @@
 
 OpenSimulator OSSL examples as they can be seen on the OpenSimulator wiki http://opensimulator.org/wiki/Category:OSSL_Functions
 
-Version 0.2.011 - 242 scripts
+Version 0.2.014 - 243 scripts
 
-Test: opensim-0.9.2.0 Dev-1119 working
+Test: opensim-0.9.2.0 Dev-1172 working
 
 binary testfiles Ubuntu 18 + Scripts + Money + landtool:  https://www.mediafire.com/file/witlc2azj4o7sqq/opensim-0.9.2.1119.zip/file
 
