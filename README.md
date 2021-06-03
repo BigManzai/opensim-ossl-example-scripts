@@ -6,7 +6,7 @@ Version 0.2.014 - 243 scripts
 
 Test: opensim-0.9.2.0 Dev-1172 working
 
-binary testfiles Ubuntu 18 + Scripts + Money + landtool:  https://www.mediafire.com/file/witlc2azj4o7sqq/opensim-0.9.2.1119.zip/file
+binary testfiles Ubuntu 18 + Scripts + Money + landtool:  https://www.mediafire.com/file/dnyf0ur5hxufcwa/opensim-0.9.2.1172.zip/file
 
 **Copy the directories into your opensim/bin directory, restart opensim and clear your viewer cache.**
 
