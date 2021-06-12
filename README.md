@@ -1,4 +1,4 @@
-# opensim ossl example scripts for OpenSim 0.9.2.0 Dev
+# opensim ossl example scripts for OpenSim 0.9.2 Dev
 
 OpenSimulator OSSL examples as they can be seen on the OpenSimulator wiki http://opensimulator.org/wiki/Category:OSSL_Functions
 
