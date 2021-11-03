@@ -4,9 +4,9 @@ OpenSimulator OSSL examples as they can be seen on the OpenSimulator wiki http:/
 
 Version 0.2.016 - 243 scripts
 
-Test: opensim-0.9.2.0 Dev-1235 working
+Test: opensim-0.9.2.0 Dev-1330 working
 
-binary testfiles Ubuntu 18 + Scripts + Money + landtool:  https://www.mediafire.com/file/adg8paby5dhezj6/opensim-0.9.2.1301.zip/file
+binary testfiles Ubuntu 18 + Scripts + Money + landtool:  https://www.mediafire.com/file/09iq8ggv1ho34qc/opensim-0.9.2.1330.zip/file
 
 **Copy the directories into your opensim/bin directory, restart opensim and clear your viewer cache.**
 
