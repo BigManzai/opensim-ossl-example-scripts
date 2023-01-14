@@ -32,3 +32,6 @@ binary testfiles Ubuntu 22 + Scripts + Money + landtool:  https://eu2.contabosto
     git clone https://github.com/BigManzai/opensim-ossl-example-scripts
     cp -r /opensim/opensim-ossl-example-scripts/assets /opensim/bin/assets
     cp -r /opensim/opensim-ossl-example-scripts/inventory/ScriptsLibrary /opensim/bin/inventory
+    
+## Todo   
+sl_script_b13cf232206a730cfc808cbd9a2b6bda.lsl new script
