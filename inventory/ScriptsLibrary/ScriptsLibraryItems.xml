@@ -1,4 +1,14 @@
 <Nini>
+  <Section Name="new script">
+    <Key Name="inventoryID" Value="2074003b-8d5f-40e5-8b20-581c1c50aedb" />
+    <Key Name="assetID" Value="2074003b-8d5f-40e5-8b20-581c1c50aedb" />
+    <Key Name="folderID" Value="30000112-001f-0000-0000-000100bba000"/>
+    <Key Name="description" Value="llA" />
+    <Key Name="name" Value="new script" />
+    <Key Name="assetType" Value="10" />
+    <Key Name="inventoryType" Value="10" />
+  </Section>
+
   <Section Name="llAddToLandBanList">
     <Key Name="inventoryID" Value="7ceba3f0-b1a0-11dc-8314-0800200c9a66" />
     <Key Name="assetID" Value="7ceba3f1-b1a0-11dc-8314-0800200c9a66" />
