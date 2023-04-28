@@ -2167,5 +2167,40 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
-	
+    <Section Name="osGetParcelID">
+      <Key Name="inventoryID" Value="81305554-2416-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="assetID" Value="81305554-2416-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="folderID" Value="30000112-001f-0000-0015-000100bba000"/>
+      <Key Name="description" Value="osGetParcelID" />
+      <Key Name="name" Value="osGetParcelID" />
+      <Key Name="assetType" Value="10" />
+      <Key Name="inventoryType" Value="10" />
+    </Section>
+    <Section Name="osGetParcelIDs">
+      <Key Name="inventoryID" Value="81305554-2417-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="assetID" Value="81305554-2417-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="folderID" Value="30000112-001f-0000-0015-000100bba000"/>
+      <Key Name="description" Value="osGetParcelIDs" />
+      <Key Name="name" Value="osGetParcelIDs" />
+      <Key Name="assetType" Value="10" />
+      <Key Name="inventoryType" Value="10" />
+    </Section>
+    <Section Name="osGetParcelDetails">
+      <Key Name="inventoryID" Value="81305554-2418-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="assetID" Value="81305554-2418-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="folderID" Value="30000112-001f-0000-0015-000100bba000"/>
+      <Key Name="description" Value="osGetParcelDetails" />
+      <Key Name="name" Value="osGetParcelDetails" />
+      <Key Name="assetType" Value="10" />
+      <Key Name="inventoryType" Value="10" />
+    </Section>
+    <Section Name="osListSortInPlaceStrided">
+      <Key Name="inventoryID" Value="81305554-2419-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="assetID" Value="81305554-2419-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="folderID" Value="30000112-001f-0000-0015-000100bba000"/>
+      <Key Name="description" Value="osListSortInPlaceStrided" />
+      <Key Name="name" Value="osListSortInPlaceStrided" />
+      <Key Name="assetType" Value="10" />
+      <Key Name="inventoryType" Value="10" />
+    </Section>	
 </Nini>
