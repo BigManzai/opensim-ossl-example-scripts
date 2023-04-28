@@ -1421,5 +1421,28 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osListSortInPlace.lsl" />
   </Section>
-  
+  <Section Name="osGetParcelID">
+    <Key Name="assetID" Value="81305554-2416-9e0a-69a4-76ed57df0c8f" />
+    <Key Name="name" Value="osGetParcelID" />
+    <Key Name="assetType" Value="10" />
+    <Key Name="fileName" Value="osGetParcelID.lsl" />
+  </Section>
+  <Section Name="osGetParcelIDs">
+    <Key Name="assetID" Value="81305554-2417-9e0a-69a4-76ed57df0c8f" />
+    <Key Name="name" Value="osGetParcelIDs" />
+    <Key Name="assetType" Value="10" />
+    <Key Name="fileName" Value="osGetParcelIDs.lsl" />
+  </Section>
+  <Section Name="osGetParcelDetails">
+    <Key Name="assetID" Value="81305554-2418-9e0a-69a4-76ed57df0c8f" />
+    <Key Name="name" Value="osGetParcelDetails" />
+    <Key Name="assetType" Value="10" />
+    <Key Name="fileName" Value="osGetParcelDetails.lsl" />
+  </Section>
+  <Section Name="osListSortInPlaceStrided">
+    <Key Name="assetID" Value="81305554-2419-9e0a-69a4-76ed57df0c8f" />
+    <Key Name="name" Value="osListSortInPlaceStrided" />
+    <Key Name="assetType" Value="10" />
+    <Key Name="fileName" Value="osListSortInPlaceStrided.lsl" />
+  </Section>  
 </Nini>
