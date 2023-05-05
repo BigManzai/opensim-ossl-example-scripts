@@ -1,21 +1,27 @@
 /*
 string osSetPenColor(string drawList, string color)
-Appends a PenColor drawing command to the string provided in drawList and returns the result.
 
-This sets the pen's drawing color to either the specified named .NET color or to a 32-bit color value (formatted as eight hexadecimal digits in the format aarrggbb, representing the eight-bit alpha, red, green and blue channels).
+string osSetPenColor(string drawList, vector color)
+string osSetPenColor(string drawList, vector color, float alpha)
+
+    osSetPenColor(string drawList, string color) Appends a PenColor drawing command to the string provided in drawList and returns the result. 
+
+This sets the pen's drawing color to either the specified named .NET color named colors or to a 32-bit color value (formatted as eight hexadecimal digits in the format aarrggbb, representing the eight-bit alpha, red, green and blue channels).
 
 For full opacity, use an alpha value of FF (e.g. FFFF0000 for red); for varying degrees of transparency, reduce the alpha value (e.g. 800000FF for semi-transparent blue).
 
 The color names and hexadecimal color representations are not case-sensitive.
 
+    osSetPenColor(string drawList, vector color) converts vector color to the hexadecimal color with a alpha of 1.0 (FF) and appends the drawing command. 
+
+    osSetPenColor(string drawList, vector color, float alpha) converts vector color and alpha to the hexadecimal color and appends the drawing command. 
+
+
 NOTE : This function replaces the deprecated OsSetPenColour function.
 Threat Level 	This function does not do a threat level check
 Permissions 	Use of this function is always allowed by default
-Delay 	0 seconds
-Example(s)
-*/
-
-// Example of osSetPenColor
+Extra Delay 	0 seconds
+Example(s) */
  
 string hexDigits = "0123456789abcdef";
 list colorNames = [
