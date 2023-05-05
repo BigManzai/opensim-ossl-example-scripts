@@ -1444,5 +1444,11 @@
     <Key Name="name" Value="osListSortInPlaceStrided" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osListSortInPlaceStrided.lsl" />
-  </Section>  
+  </Section>
+  <Section Name="osParticleSystem">
+    <Key Name="assetID" Value="81305554-2420-9e0a-69a4-76ed57df0c8f" />
+    <Key Name="name" Value="osParticleSystem" />
+    <Key Name="assetType" Value="10" />
+    <Key Name="fileName" Value="osParticleSystem.lsl" />
+  </Section>
 </Nini>
