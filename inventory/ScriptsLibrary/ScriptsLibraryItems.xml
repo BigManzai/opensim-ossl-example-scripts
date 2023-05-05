@@ -2202,5 +2202,14 @@
       <Key Name="name" Value="osListSortInPlaceStrided" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
-    </Section>	
+    </Section>
+    <Section Name="osParticleSystem">
+      <Key Name="inventoryID" Value="81305554-2420-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="assetID" Value="81305554-2420-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="folderID" Value="30000112-001f-0000-0015-000100bba000"/>
+      <Key Name="description" Value="osParticleSystem" />
+      <Key Name="name" Value="osParticleSystem" />
+      <Key Name="assetType" Value="10" />
+      <Key Name="inventoryType" Value="10" />
+    </Section>
 </Nini>
