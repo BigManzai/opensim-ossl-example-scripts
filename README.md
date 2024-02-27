@@ -4,7 +4,7 @@ OpenSimulator OSSL examples as they can be seen on the OpenSimulator wiki http:/
 
 Version 0.3.018 - 243 scripts
 
-Test: opensim-0.9.2.2 Dev Master Version 389 working
+Test: opensim-0.9.3.0 Dev Master Version 272 working
 
 binary testfiles Ubuntu 22 + Scripts + Money + landtool:
 
