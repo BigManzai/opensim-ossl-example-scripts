@@ -4,6 +4,15 @@ The owner can ban, temporarily ban, unban, pass, or unpass avatars from their la
 The script listens on channel 5 for commands and processes them accordingly. 
 It uses a sensor to detect avatars in the vicinity and applies the commands to the detected avatars. 
 Additionally, it handles cases where no avatars are detected and resets the command accordingly.
+
+Commands are:
+/5 ban:full_avatar_name
+/5 tempban:full_avatar_name
+/5 unban:full_avatar_name
+/5 pass:full_avatar_name
+/5 unpass:full_avatar_name
+/5 clearban
+/5 clearpass
 */
 
 // Define a variable to store the received command
