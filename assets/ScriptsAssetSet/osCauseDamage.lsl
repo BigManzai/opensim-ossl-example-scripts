@@ -1,14 +1,13 @@
 /*
 osCauseDamage(key avatar, float damage)
-Implemented December 30,2009 by Revolution in GIT# 87959464c9db8948bed89909913400bc2eb7524d - Rev 11850
+    default: This is the default state of the script. In OpenSimulator, scripts can have multiple states, but this script only uses the default state.
 
-This is an updated version of Mantis 0003777. It allows for damage on collision, touch, etc.
+    state_entry(): This is an event handler function that is automatically triggered when the script is initialized or when it enters the default state.
 
-See also OsCauseHealing.
-Threat Level 	High
-Permissions 	${OSSL|osslParcelO}ESTATE_MANAGER,ESTATE_OWNER
-Delay 	0 seconds
-Example(s)
+    osCauseDamage(llGetOwner(), 50);: This line of code calls the osCauseDamage function, which is a function provided by OpenSimulator for causing damage to an avatar or object. 
+    In this case, it's causing damage to the owner of the object where the script is located. The second parameter 50 specifies the amount of damage, in this case, 50 points.
+
+So, when this script is initialized or enters the default state, it immediately causes 50 points of damage to the owner of the object where the script is located.
 */
 
 default
