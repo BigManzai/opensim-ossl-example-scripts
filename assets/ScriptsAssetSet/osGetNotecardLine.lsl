@@ -1,24 +1,23 @@
 /*
 string osGetNotecardLine(string name, integer line)
-This function directly reads a line of text from the specified notecard, if it exists within the task inventory, and returns the text as a string. It skips the dataserver event, thereby reducing code complexity.
-Threat Level 	VeryHigh
-Permissions 	${OSSL|osslParcelO}ESTATE_MANAGER,ESTATE_OWNER
-Delay 	0 seconds
-Example(s)
+This script demonstrates the usage of osGetNotecardLine function to read each line of a notecard.
 */
 
-// osGetNotecardLine exemple
- 
+// osGetNotecardLine example
+
 default 
 {
     state_entry()
     {
+        // Declare variables
         integer i;
-        string notecard_name = llGetInventoryName(INVENTORY_NOTECARD, 0);
-        integer notecard_line = osGetNumberOfNotecardLines(notecard_name);
+        string notecard_name = llGetInventoryName(INVENTORY_NOTECARD, 0); // Get the name of the first notecard in the prim's inventory
+        integer notecard_line = osGetNumberOfNotecardLines(notecard_name); // Get the total number of lines in the notecard
  
+        // Loop through each line of the notecard
         for(i = 0; i < notecard_line; ++i)
         {
+            // Retrieve and trim each line of the notecard, then say it in the public chat
             llSay(PUBLIC_CHANNEL, llStringTrim(osGetNotecardLine(notecard_name, i), STRING_TRIM));
         }
     }
