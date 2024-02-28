@@ -1,18 +1,16 @@
 /*
 string osDrawLine(string drawList, integer startX, integer startY, integer endX, integer endY)
+    The provided script demonstrates the usage of the osDrawLine() function, which appends a line drawing command to the string provided in drawList and returns the result.
 
-string osDrawLine(string drawList, integer endX, integer endY)
-Depending on the form, appends a LineTo drawing command, or MoveTo and LineTo commands, to the string provided in drawList and returns the result.
+    It starts with a comment block describing the function's purpose, threat level, permissions, delay, and examples.
 
-In the longer form, draws a line using the current pen size and color from to the coordinates indicated by startX and startY to the coordinates indicated by endX and endY.
+    In the default state, the state_entry() event handler is triggered when the script enters its default state.
 
-In the shorter form, draws a line using the current pen size and color from the pen's current position to the coordinates indicated by endX and endY.
+    Inside state_entry(), a variable CommandList is initialized to store drawing commands.
 
-After the line is drawn, the pen's X and Y coordinates are set to endX and endY, respectively.
-Threat Level 	None
-Permissions 	No permissions specified
-Delay 	No function delay specified
-Example(s)
+    Various drawing commands are appended to CommandList to set the pen size, pen color, and draw lines from specified start to end points.
+
+    Finally, the drawn lines are displayed using osSetDynamicTextureData() function to set dynamic texture data.
 */
 
 // Example of osDrawLine
@@ -20,14 +18,24 @@ default
 {
     state_entry()
     {
-        string CommandList = ""; // Storage for our drawing commands
- 
-        CommandList = osSetPenSize( CommandList, 3 );              // Set the pen width to 3 pixels
-        CommandList = osSetPenColor( CommandList, "Red" );        // Set the pen color to red
-        CommandList = osDrawLine( CommandList, 10, 10, 128, 246 ); // Draw the first line (long form)
-        CommandList = osSetPenColor( CommandList, "Green" );      // Set the pen color to green
-        CommandList = osDrawLine( CommandList, 246, 10);           // Draw the second line (short form)
- 
+        // Storage for our drawing commands
+        string CommandList = "";
+
+        // Set the pen width to 3 pixels
+        CommandList = osSetPenSize( CommandList, 3 );
+
+        // Set the pen color to red
+        CommandList = osSetPenColor( CommandList, "Red" );
+
+        // Draw the first line (long form) from (10,10) to (128,246)
+        CommandList = osDrawLine( CommandList, 10, 10, 128, 246 );
+
+        // Set the pen color to green
+        CommandList = osSetPenColor( CommandList, "Green" );
+
+        // Draw the second line (short form) from the pen's current position to (246,10)
+        CommandList = osDrawLine( CommandList, 246, 10);
+
         // Now draw the lines
         osSetDynamicTextureData( "", "vector", CommandList, "width:256,height:256", 0 );
     }
