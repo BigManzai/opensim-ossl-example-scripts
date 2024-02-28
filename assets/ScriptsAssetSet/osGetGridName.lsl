@@ -1,20 +1,22 @@
 /*
 string osGetGridName()
-Returns the current grid's name as a string.
-Threat Level 	Moderate
-Permissions 	Use of this function is always allowed by default
-Delay 	0 seconds
-Example(s)
+This function retrieves the name of the grid.
 */
 
 //
- // Example of osGetGridName()
- // returns the value of gridname = "Hippogrid" in OpenSim.ini under [GridInfo] section
- //
-  default
- {
- state_entry()
-   {
-   llSay(0, "Grid Name = "+osGetGridName());
-   }
- }
+// Example of osGetGridName()
+// Returns the value of gridname = "Hippogrid" in OpenSim.ini under [GridInfo] section.
+//
+
+default
+{
+    // The state entry event is triggered when the script begins running.
+    state_entry()
+    {
+        // Retrieve the name of the grid using osGetGridName().
+        string grid_name = osGetGridName();
+
+        // Display the name of the grid.
+        llSay(0, "Grid Name = " + grid_name);
+    }
+}
