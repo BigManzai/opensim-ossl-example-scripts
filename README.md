@@ -1,6 +1,6 @@
 # opensim ossl example scripts for OpenSimulator
 
-OpenSimulator OSSL examples new for OpenSimulator wiki http://opensimulator.org/wiki/Category:OSSL_Functions
+New OSSL examples for the OpenSimulator wiki and OpenSimulator http://opensimulator.org/wiki/Category:OSSL_Functions
 
 Version 0.3.019 - 243 scripts
 
