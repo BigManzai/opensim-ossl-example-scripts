@@ -1,19 +1,22 @@
 /*
 string osGetApparentRegionTimeString(integer format24)
-Returns a string with current region sun hour. Will use 12 or 24 hour format if format24 is 0 or 1, respectible.
-Threat Level 	This function does not do a threat level check
-Permissions 	Use of this function is always allowed by default
-Delay 	0 seconds
-Example(s)
+This function retrieves the current apparent sun time of the region as a formatted string.
 */
 
 //
-//osGetApparentRegionTimeString() example
+// osGetApparentRegionTimeString() example
 //
+
 default
 {
+    // The state entry event is triggered when the script begins running.
     state_entry()
     {
-        llSay(0, "Current Apparent Sun Hour: "+ osGetApparentRegionTimeString(1));
+        // Retrieve the current apparent sun time of the region as a formatted string using osGetApparentRegionTimeString().
+        // The 'format24' parameter specifies whether to use a 24-hour format (1) or a 12-hour format (0).
+        string apparent_time_string = osGetApparentRegionTimeString(1); // Using 24-hour format.
+
+        // Display the current apparent sun time as a formatted string.
+        llSay(0, "Current Apparent Sun Hour: " + apparent_time_string);
     }
 }
