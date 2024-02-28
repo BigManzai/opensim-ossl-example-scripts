@@ -1,14 +1,18 @@
 /*
 string osDrawImage(string drawList, integer width, integer height, string imageUrl)
-Appends an Image drawing command to the string provided in drawList and returns the result.
+    The provided script demonstrates the usage of the osDrawImage() function, which appends an image drawing command to the string provided in drawList and returns the result.
 
-Retrieves an image specified by the imageUrl parameter and draws it at the specified height and width, with the upper left corner of the image placed at the pen's current position. After the image is drawn, the width and height values are added to the pen's X and Y position, respectively (that is, the pen's current position is set to the lower right corner of the image).
+    It starts with a comment block describing the function's purpose, threat level, permissions, delay, and examples.
 
-If imageUrl points to an invalid location, an image type not supported by libgdi, or a non-image MIME type, nothing is drawn. If either or both of the width or height parameters are zero or negative, nothing is drawn, but the image is still retrieved.
-Threat Level 	This function does not do a threat level check
-Permissions 	Use of this function is always allowed by default
-Delay 	No function delay specified
-Example(s)
+    In the default state, the state_entry() event handler is triggered when the script enters its default state.
+
+    Inside state_entry(), a variable CommandList is initialized to store drawing commands.
+
+    The URL of the image to draw is specified in the ImageURL variable.
+
+    Various drawing commands are appended to CommandList to move the pen to a specific position and draw the image with specified width and height.
+
+    Finally, the drawn image is displayed using osSetDynamicTextureData() function to set dynamic texture data.
 */
 
 // Example of osDrawImage
@@ -16,12 +20,19 @@ default
 {
     state_entry()
     {
-        string CommandList = ""; // Storage for our drawing commands
+        // Storage for our drawing commands
+        string CommandList = "";
+
+        // URL of the image to draw
         string ImageURL = "http://opensimulator.org/skins/osmonobook/images/headerLogo.png";
-        CommandList = osMovePen( CommandList, 0, 0 );                // Upper left corner at <0,0>
-        CommandList = osDrawImage( CommandList, 256, 54, ImageURL ); // 200 pixels by 100 pixels
- 
-        // Now draw the image
+
+        // Upper left corner at (0, 0)
+        CommandList = osMovePen( CommandList, 0, 0 );
+
+        // Draw the image with specified width and height
+        CommandList = osDrawImage( CommandList, 256, 54, ImageURL );
+
+        // Set dynamic texture data to display the drawn image
         osSetDynamicTextureData( "", "vector", CommandList, "width:256,height:256", 0 );
     }
 }
