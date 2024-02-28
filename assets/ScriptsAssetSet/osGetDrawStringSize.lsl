@@ -1,32 +1,31 @@
 /*
 vector osGetDrawStringSize(string contentType, string text, string fontName, integer fontSize)
-Returns a vector containing the horizontal and vertical dimensions in pixels of the specified text, if drawn in the specified font and at the specified point size. The horizontal extent is returned in the .x component of the vector, and the vertical extent is returned in .y. The .z component is not used.
-
-The contentType parameter should be "vector".
-
-If the osSetFontSize() function has not been used, and neither the FontName nor FontProp commands have been added to the draw list, specify "Arial" as the font name, and 14 as the font size.
-Threat Level 	This function does not do a threat level check
-Permissions 	Use of this function is always allowed by default
-Delay 	0 seconds
-Example(s)
+This function retrieves the size of the drawn string in the specified font and font size.
 */
 
 // Example of osGetDrawStringSize
 default
 {
+    // The state entry event is triggered when the script begins running.
     state_entry()
     {
         string CommandList = ""; // Storage for our drawing commands
         string TextToDraw = "Hello, World!"; // text to draw
- 
-        vector Extents = osGetDrawStringSize( "vector", TextToDraw, "Arial", 14 );
- 
-        integer xpos = 128 - ((integer) Extents.x >> 1);            // Center the text horizontally
-        integer ypos = 127 - ((integer) Extents.y >> 1);            //   and vertically
-        CommandList = osMovePen( CommandList, xpos, ypos );         // Position the text
-        CommandList = osDrawText( CommandList, TextToDraw );        // Place the text
- 
-        // Now draw the text
-        osSetDynamicTextureData( "", "vector", CommandList, "width:256,height:256", 0 );
+
+        // Retrieve the size of the drawn string in the specified font and font size using osGetDrawStringSize().
+        vector Extents = osGetDrawStringSize("vector", TextToDraw, "Arial", 14);
+
+        // Calculate the positions to center the text horizontally and vertically.
+        integer xpos = 128 - ((integer)Extents.x >> 1); // Center the text horizontally
+        integer ypos = 127 - ((integer)Extents.y >> 1); // Center the text vertically
+
+        // Position the text using osMovePen().
+        CommandList = osMovePen(CommandList, xpos, ypos);
+
+        // Place the text using osDrawText().
+        CommandList = osDrawText(CommandList, TextToDraw);
+
+        // Draw the text by setting dynamic texture data using osSetDynamicTextureData().
+        osSetDynamicTextureData("", "vector", CommandList, "width:256,height:256", 0);
     }
 }
