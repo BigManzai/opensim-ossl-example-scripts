@@ -30,4 +30,6 @@ Version 0.3.019 - 243 scripts
     cp -r /opensim/opensim-ossl-example-scripts/inventory/ScriptsLibrary /opensim/bin/inventory
     
 ## Todo   
-Working 2024 Status 30%
+    Working 2024 
+    I'm currently adding a new Remark documentation that is intended for beginners.
+    Status 30%
