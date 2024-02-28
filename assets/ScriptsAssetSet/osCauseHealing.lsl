@@ -1,20 +1,21 @@
 /*
 osCauseHealing(key avatar, float healing)
-Implemented December 30,2009 by Revolution in GIT# 87959464c9db8948bed89909913400bc2eb7524d - Rev 11850
+    default: This is the default state of the script.
 
-This does the opposite of osCauseDamage. It gives health to the avatar.
+    state_entry(): This event handler function is triggered when the script enters its default state.
 
-See also OsCauseDamage.
-Threat Level 	High
-Permissions 	${OSSL|osslParcelO}ESTATE_MANAGER,ESTATE_OWNER
-Delay 	0 seconds
-Example(s)
+    osCauseHealing(llGetOwner(), 50);: This line of code calls the osCauseHealing function, which is a function provided by OpenSimulator for causing healing to an avatar or object. 
+    In this case, it's causing healing to the owner of the object where the script is located. The second parameter 50 specifies the amount of healing, in this case, 50 points.
+
+This script, when initialized or when it enters the default state, immediately causes 50 points of healing to the owner of the object where the script is located.
 */
 
 default
 {
-   state_entry()
-  {
-     osCauseHealing(llGetOwner(), 50);
-  }
+    state_entry()
+    {
+        // Cause healing to the owner of the object where the script is located
+        // The second parameter '50' specifies the amount of healing, in this case, 50 points
+        osCauseHealing(llGetOwner(), 50);
+    }
 }
