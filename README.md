@@ -30,4 +30,4 @@ Version 0.3.019 - 243 scripts
     cp -r /opensim/opensim-ossl-example-scripts/inventory/ScriptsLibrary /opensim/bin/inventory
     
 ## Todo   
-Working 2024
+Working 2024 Status 30%
