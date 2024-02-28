@@ -1,29 +1,34 @@
 /*
 float osGetHealRate(key avatar)
-Gets the current automatic healing rate in % per second.
-
-Default heal rate is now around 0.5% per second.
-A value of zero can disable automatic heal, current maximum value is 100 % per second.
-
-See also OsSetHealRate.
-Threat Level 	None
-Permissions 	Use of this function is always allowed by default
-Delay 	0 seconds
-Example(s)
+This function retrieves the heal rate of the specified avatar.
 */
 
 //
 // osGetHealth Script Example
 //
- 
+
 default
 {
+    // The state entry event is triggered when the script begins running.
     state_entry()
     {
+        // Get the owner's key.
         key uuid = llGetOwner();
+
+        // Set the heal rate for the owner's avatar.
         osSetHealRate(uuid, 10.0);
+
+        // Cause damage to the owner's avatar.
         osCauseDamage(uuid, 50.0);
-        llOwnerSay("osGetHealRate = " + (string)osGetHealRate(uuid));
-        llOwnerSay(llKey2Name(uuid) + " has " + (string)osGetHealth(uuid) + "% health left.");
+
+        // Retrieve the heal rate of the owner's avatar using osGetHealRate().
+        float heal_rate = osGetHealRate(uuid);
+
+        // Retrieve the health percentage of the owner's avatar using osGetHealth().
+        float health = osGetHealth(uuid);
+
+        // Display the heal rate and health percentage of the owner's avatar.
+        llOwnerSay("osGetHealRate = " + (string)heal_rate);
+        llOwnerSay(llKey2Name(uuid) + " has " + (string)health + "% health left.");
     }
 }
