@@ -1,18 +1,16 @@
 /*
 integer osConsoleCommand(string command)
-This function allows an LSL script to directly execute a command to opensim's console. Even if the function is available, only administrators/gods can successfully execute it.
+    The provided script demonstrates the usage of the osConsoleCommand() function, which allows an LSL script to directly execute a command to OpenSim's console.
 
-In addition, one can further restrict this function to only certain administrators/gods. See Threat level for more information on how to do this.
+    It starts with a comment block describing the function's purpose, threat level, permissions, delay, and examples.
 
-If the script owner does have the necessary permissions to call this function, then they can do anything someone with direct access to the command console could do, such as changing the avatar passwords, deleting sims, changing the terrain, etc.
+    In the default state, the touch_start() event handler is triggered when the object is touched.
 
-This command represents the highest security threat of any OSSL function, giving it a threat level of Severe.
+    Inside the touch_start() event handler, the script uses osConsoleCommand() to execute the command "login disable", which disables logins to the OpenSim region.
 
-Do not use or allow this function unless you are absolutely sure of what you're doing!
-Threat Level 	Severe
-Permissions 	Use of this function is always disabled by default
-Delay 	0 seconds
-Example(s)
+    It then notifies in local chat that logins are disabled.
+
+    The script emphasizes the severe security threat posed by this function and warns against its usage unless one is absolutely sure of what they're doing.
 */
 
 //
@@ -21,9 +19,12 @@ Example(s)
 
 default
 {
-  touch_start(integer num_detected)
-  {
-    osConsoleCommand("login disable");
-    llSay(0, "Logins are disabled");
-  }
+    touch_start(integer num_detected)
+    {
+        // Disable logins using osConsoleCommand
+        osConsoleCommand("login disable");
+
+        // Notify in local chat that logins are disabled
+        llSay(0, "Logins are disabled");
+    }
 }
