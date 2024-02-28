@@ -1,10 +1,6 @@
 /*
 key osGetMapTexture()
-Returns the UUID of the map texture of the current region.
-Threat Level 	This function does not do a threat level check
-Permissions 	Use of this function is always allowed by default
-Delay 	0 seconds
-Example(s)
+This script sets the texture of the prim to the texture used for the world map on all sides when the script initializes.
 */
 
 
@@ -14,6 +10,7 @@ default
 {
     state_entry()
     {
-        llSetTexture(osGetMapTexture(),ALL_SIDES);
+        // Set the world map texture to all sides of the prim
+        llSetTexture(osGetMapTexture(), ALL_SIDES);
     }
 }
