@@ -1,19 +1,21 @@
 /*
 string osGetGridHomeURI()
-Returns the current grid's home URI as a string. if HG is not configured, returns empty string
-Threat Level 	Moderate
-Permissions 	${OSSL|osslParcelO}ESTATE_MANAGER,ESTATE_OWNER
-Delay 	0 seconds
-Example(s)
+This function retrieves the URI of the grid's home page.
 */
 
 //
 // Example of osGetGridHomeUri()
 //
+
 default
 {
-  state_entry()
-  {
-     llSay(0, "Grid Home Uri= "+osGetGridHomeURI());
-   }
+    // The state entry event is triggered when the script begins running.
+    state_entry()
+    {
+        // Retrieve the URI of the grid's home page using osGetGridHomeURI().
+        string home_uri = osGetGridHomeURI();
+
+        // Display the URI of the grid's home page.
+        llSay(0, "Grid Home Uri = " + home_uri);
+    }
 }
