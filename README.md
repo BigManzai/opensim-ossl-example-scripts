@@ -2,7 +2,7 @@
 
 OpenSimulator OSSL examples as they can be seen on the OpenSimulator wiki http://opensimulator.org/wiki/Category:OSSL_Functions
 
-Version 0.3.018 - 243 scripts
+Version 0.3.019 - 243 scripts
 
 **Copy the directories into your opensim/bin directory, restart opensim and clear your viewer cache.**
 
