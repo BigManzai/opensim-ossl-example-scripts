@@ -1,7 +1,6 @@
 /*
 osForceAttachToAvatarFromInventory(string itemName, integer attachmentPoint)
-This script is designed to attach an object from the script's inventory to an avatar's left hand when touched. 
-It includes comments explaining each section of the code and the purpose of various functions and events.
+This function attempts to attach an object from the script's inventory to an avatar at a specified attachment point.
 */
 
 //
