@@ -1,19 +1,22 @@
 /*
 string osGetApparentTimeString(integer format24)
-Returns a string with current parcel sun hour. Will use 12 or 24 hour format if format24 is 0 or 1, respectible. If parcel does not have own evironment, region hour is returned.
-Threat Level 	This function does not do a threat level check
-Permissions 	Use of this function is always allowed by default
-Delay 	0 seconds
-Example(s)
+This function retrieves the current apparent time in the OpenSim environment as a formatted string.
 */
 
 //
-//osGetApparentTimeString() example
+// osGetApparentTimeString() example
 //
+
 default
 {
+    // The state entry event is triggered when the script begins running.
     state_entry()
     {
-        llSay(0, "Current Apparent Sun Hour: "+ osGetApparentTimeString(1));
+        // Retrieve the current apparent time in the OpenSim environment as a formatted string using osGetApparentTimeString().
+        // The 'format24' parameter specifies whether to use a 24-hour format (1) or a 12-hour format (0).
+        string apparent_time_string = osGetApparentTimeString(1); // Using 24-hour format.
+
+        // Display the current apparent time as a formatted string.
+        llSay(0, "Current Apparent Sun Hour: " + apparent_time_string);
     }
 }
