@@ -1,38 +1,41 @@
 /*
-list osGetNPCList()
-Returns a strided list of the UUID, position, and name of each NPC in the region. Only available after 0.9 Commit # e53f43, July 26,2017
+    osGetNPCList is a function that retrieves a list of non-player characters (NPCs) in the simulator.
+    It returns a list containing the UUIDs (Unique User Identifiers) of all NPCs present.
 
-This function is similar to OsGetAvatarList.
-Threat Level 	None
-Permissions 	${OSSL|osslParcelOG}ESTATE_MANAGER,ESTATE_OWNER
-Delay 	0 seconds
-Example(s)
+    This script demonstrates the usage of osGetNPCList by displaying the UUIDs of NPCs when touched.
 */
 
 //
-// osGetNPCList Script Exemple
+// osGetNPCList Script Example
 // Author: djphil
 //
- 
+
+// The default state is the initial state of the script.
 default
 {
+    // The state_entry event is triggered when the script is initialized or reset.
     state_entry()
     {
+        // Say a message in the public chat channel when the script initializes.
         llSay(PUBLIC_CHANNEL, "Touch to see osGetNPCList usage.");
     }
- 
+
+    // The touch_start event is triggered when an object is touched.
     touch_start(integer number)
     {
+        // Retrieve the list of NPCs using osGetNPCList function.
         list npcs = osGetNPCList();
- 
+
+        // Check if the list of NPCs is empty.
         if (npcs == [])
         {
-            llSay(PUBLIC_CHANNEL, "There is no NPC's in this sim currently.");
+            // If there are no NPCs, say a message indicating their absence.
+            llSay(PUBLIC_CHANNEL, "There are no NPCs in this sim currently.");
         }
- 
         else
         {
-            llSay(PUBLIC_CHANNEL, "NPC's in this sim (without avatars): " + llList2CSV(npcs));
+            // If NPCs are present, say a message listing their UUIDs.
+            llSay(PUBLIC_CHANNEL, "NPCs in this sim (without avatars): " + llList2CSV(npcs));
         }
     }
 }
