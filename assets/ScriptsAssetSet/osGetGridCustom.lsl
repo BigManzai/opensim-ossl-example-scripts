@@ -1,10 +1,6 @@
 /*
 string osGetGridCustom(string key)
-Returns the value of the GridInfo key as a string.
-Threat Level 	Moderate
-Permissions 	${OSSL|osslParcelO}ESTATE_MANAGER,ESTATE_OWNER
-Delay 	0 seconds
-Example(s)
+This function retrieves the value associated with the specified key from the grid's custom configuration.
 */
 
 //
@@ -17,10 +13,17 @@ Example(s)
 // standalones, this is found in the file -
 // ./bin/config-include/StandaloneCommon.ini
 //
+
 default
 {
+    // The state entry event is triggered when the script begins running.
     state_entry()
     {
-        llSay(0, "Grid Welcome Page = " + osGetGridCustom("welcome"));
+        // Retrieve the value associated with the key "welcome" from the grid's custom configuration using osGetGridCustom().
+        // This example demonstrates retrieving the welcome page URL configured for the grid.
+        string welcome_page = osGetGridCustom("welcome");
+
+        // Display the value associated with the key "welcome" (the grid's welcome page URL).
+        llSay(0, "Grid Welcome Page = " + welcome_page);
     }
 }
