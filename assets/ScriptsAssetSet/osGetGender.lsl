@@ -1,20 +1,22 @@
 /*
 string osGetGender(key id)
-Returns a string with one of the following values: "male", "female", or "unknown". This value is determined by the value selected for the avatar shape in the appearance dialog in the user's viewer. If that value cannot be found for any reason (avatar is not in the region, improperly formatted key, etc.), "unknown" is returned.
-Threat Level 	None
-Permissions 	Use of this function is always allowed by default
-Delay 	0 seconds
-Example(s)
+This function retrieves the gender of the specified avatar.
 */
 
 //
 // Example of osGetGender.
 //
+
 default
 {
+    // The touch_start event is triggered when an object is touched by an avatar.
     touch_start(integer total_number)
     {
+        // Retrieve the gender of the avatar that touched the object using osGetGender().
+        // llDetectedKey(0) returns the key of the avatar that touched the object.
         string gender = osGetGender(llDetectedKey(0));
-        llSay(0, "Your gender is:" + gender);
+
+        // Display the gender of the avatar.
+        llSay(0, "Your gender is: " + gender);
     }
 }
