@@ -1051,6 +1051,69 @@
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
+    <Section Name="osGetInventoryKeys">
+      <Key Name="inventoryID" Value="81305ee4-1236-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="assetID" Value="81305ee4-1236-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="folderID" Value="30000112-001f-0000-0003-000100bba000"/>
+      <Key Name="description" Value="osGetInventoryKeys" />
+      <Key Name="name" Value="osGetInventoryKeys" />
+      <Key Name="assetType" Value="10" />
+      <Key Name="inventoryType" Value="10" />
+    </Section>
+    <Section Name="osGetInventoryNames">
+      <Key Name="inventoryID" Value="81305ee4-1237-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="assetID" Value="81305ee4-1237-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="folderID" Value="30000112-001f-0000-0003-000100bba000"/>
+      <Key Name="description" Value="osGetInventoryNames" />
+      <Key Name="name" Value="osGetInventoryNames" />
+      <Key Name="assetType" Value="10" />
+      <Key Name="inventoryType" Value="10" />
+    </Section>
+    <Section Name="osGetLinkInventoryDesc">
+      <Key Name="inventoryID" Value="81305ee4-1238-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="assetID" Value="81305ee4-1238-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="folderID" Value="30000112-001f-0000-0003-000100bba000"/>
+      <Key Name="description" Value="osGetLinkInventoryDesc" />
+      <Key Name="name" Value="osGetLinkInventoryDesc" />
+      <Key Name="assetType" Value="10" />
+      <Key Name="inventoryType" Value="10" />
+    </Section>
+    <Section Name="osGetLinkInventoryKey">
+      <Key Name="inventoryID" Value="81305ee4-1239-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="assetID" Value="81305ee4-1239-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="folderID" Value="30000112-001f-0000-0003-000100bba000"/>
+      <Key Name="description" Value="osGetLinkInventoryKey" />
+      <Key Name="name" Value="osGetLinkInventoryKey" />
+      <Key Name="assetType" Value="10" />
+      <Key Name="inventoryType" Value="10" />
+    </Section>
+    <Section Name="osGetLinkInventoryKeys">
+      <Key Name="inventoryID" Value="81305ee4-1240-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="assetID" Value="81305ee4-1240-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="folderID" Value="30000112-001f-0000-0003-000100bba000"/>
+      <Key Name="description" Value="osGetLinkInventoryKeys" />
+      <Key Name="name" Value="osGetLinkInventoryKeys" />
+      <Key Name="assetType" Value="10" />
+      <Key Name="inventoryType" Value="10" />
+    </Section>
+    <Section Name="osGetLinkInventoryName">
+      <Key Name="inventoryID" Value="81305ee4-1241-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="assetID" Value="81305ee4-1241-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="folderID" Value="30000112-001f-0000-0003-000100bba000"/>
+      <Key Name="description" Value="osGetLinkInventoryName" />
+      <Key Name="name" Value="osGetLinkInventoryName" />
+      <Key Name="assetType" Value="10" />
+      <Key Name="inventoryType" Value="10" />
+    </Section>
+    <Section Name="osGetLinkInventoryNames">
+      <Key Name="inventoryID" Value="81305ee4-1242-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="assetID" Value="81305ee4-1242-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="folderID" Value="30000112-001f-0000-0003-000100bba000"/>
+      <Key Name="description" Value="osGetLinkInventoryNames" />
+      <Key Name="name" Value="osGetLinkInventoryNames" />
+      <Key Name="assetType" Value="10" />
+      <Key Name="inventoryType" Value="10" />
+    </Section>
     <Section Name="osDrawEllipse">
       <Key Name="inventoryID" Value="81305ee4-1301-9e0a-69a4-76ed57df0c8f" />
       <Key Name="assetID" Value="81305ee4-1301-9e0a-69a4-76ed57df0c8f" />
@@ -2209,6 +2272,42 @@
       <Key Name="folderID" Value="30000112-001f-0000-0015-000100bba000"/>
       <Key Name="description" Value="osParticleSystem" />
       <Key Name="name" Value="osParticleSystem" />
+      <Key Name="assetType" Value="10" />
+      <Key Name="inventoryType" Value="10" />
+    </Section>
+    <Section Name="osAESDecrypt">
+      <Key Name="inventoryID" Value="81305554-2421-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="assetID" Value="81305554-2421-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="folderID" Value="30000112-001f-0000-0015-000100bba000"/>
+      <Key Name="description" Value="osAESDecrypt" />
+      <Key Name="name" Value="osAESDecrypt" />
+      <Key Name="assetType" Value="10" />
+      <Key Name="inventoryType" Value="10" />
+    </Section>
+    <Section Name="osAESDecryptFrom">
+      <Key Name="inventoryID" Value="81305554-2422-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="assetID" Value="81305554-2422-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="folderID" Value="30000112-001f-0000-0015-000100bba000"/>
+      <Key Name="description" Value="osAESDecryptFrom" />
+      <Key Name="name" Value="osAESDecryptFrom" />
+      <Key Name="assetType" Value="10" />
+      <Key Name="inventoryType" Value="10" />
+    </Section>
+    <Section Name="osAESEncrypt">
+      <Key Name="inventoryID" Value="81305554-2423-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="assetID" Value="81305554-2423-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="folderID" Value="30000112-001f-0000-0015-000100bba000"/>
+      <Key Name="description" Value="osAESEncrypt" />
+      <Key Name="name" Value="osAESEncrypt" />
+      <Key Name="assetType" Value="10" />
+      <Key Name="inventoryType" Value="10" />
+    </Section>
+    <Section Name="osAESEncryptTo">
+      <Key Name="inventoryID" Value="81305554-2424-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="assetID" Value="81305554-2424-9e0a-69a4-76ed57df0c8f" />
+      <Key Name="folderID" Value="30000112-001f-0000-0015-000100bba000"/>
+      <Key Name="description" Value="osAESEncryptTo" />
+      <Key Name="name" Value="osAESEncryptTo" />
       <Key Name="assetType" Value="10" />
       <Key Name="inventoryType" Value="10" />
     </Section>
