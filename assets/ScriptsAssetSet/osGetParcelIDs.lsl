@@ -1,21 +1,35 @@
 /* osGetParcelIDs()
-This function returns a list of the parcel global ids of all parcels in region.
-Threat Level 	none is unknown threat level
-Permissions 	none
-Extra Delay 	0 seconds
-Notes           This function was added in 0.9.3.0 */
+When an avatar touches the object, this script retrieves the list of parcel IDs in the region using osGetParcelIDs, 
+then iterates through each parcel ID to retrieve details such as the owner, name, and area of each parcel using osGetParcelDetails. 
+Finally, it formats and outputs these details to the chat.
+*/
 
 default
 {
-    touch_start(integer blabla)
+    touch_start(integer total_number)
     {
-        list ids = osGetParcelIDs();
-        integer count = llGetListLength(ids);
+        // Get a list of parcel IDs in the region
+        list parcelIDs = osGetParcelIDs();
+        
+        // Get the total number of parcels in the region
+        integer numParcels = llGetListLength(parcelIDs);
+        
+        // Iterate through each parcel ID
         integer i = 0;
-        while (i < count)
+        while (i < numParcels)
         {
-            list tmp = osGetParcelDetails(llList2Key(ids,i++),[PARCEL_DETAILS_OWNER,PARCEL_DETAILS_NAME,PARCEL_DETAILS_AREA]);
-            llSay(0,"** "+llDumpList2String(tmp," "));
+            // Get details of the parcel using its ID
+            list parcelDetails = osGetParcelDetails(llList2Key(parcelIDs, i),
+                                                     [PARCEL_DETAILS_OWNER,
+                                                      PARCEL_DETAILS_NAME,
+                                                      PARCEL_DETAILS_AREA]);
+            
+            // Format and output the parcel details to chat
+            llSay(0, "** " + llDumpList2String(parcelDetails, " "));
+            
+            // Move to the next parcel ID
+            i++;
         }
     }
 }
+
