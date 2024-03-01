@@ -1,30 +1,35 @@
 /*
 integer osGetSimulatorMemory();
-Implemented December 12,2009 by Adam Frisby in GIT# 87e89efbf9727b294658f149c6494fd49608bc12 - Rev 11700
-Threat Level 	Moderate
-Permissions 	${OSSL|osslParcelO}ESTATE_MANAGER,ESTATE_OWNER
-Delay 	0 seconds
-Example(s)
-Simple Script (displays only the integer such as 234652064) 
+In the state_entry event, the script initializes by retrieving the memory used by the OpenSimulator instance using osGetSimulatorMemory. 
+It then sets the text above the object to display this memory usage.
+
+In the touch event, whenever an avatar touches the object, the script updates by again retrieving the memory used by the OpenSimulator instance using osGetSimulatorMemory. 
+It then updates the text above the object to display this updated memory usage.
+
+This script allows avatars to check the memory usage of the OpenSimulator instance by touching the object, and the displayed text will update accordingly.
 */
 
-
-// ----------------------------------------------------------------
 // Example / Sample Script to show function use.
-//
-// Simple Unformatted Output
-// 
+
 integer TotMemUsed;
+
 default
 {
- state_entry()
- {
- TotMemUsed = osGetSimulatorMemory();
- llSetText( (string)TotMemUsed+" Memory by the OpenSimulator Instance", <0.0,1.0,0.0>, 1.0 );
- }
- touch(integer num)
- {
- TotMemUsed = osGetSimulatorMemory();
- llSetText( (string)TotMemUsed+" Memory by the OpenSimulator Instance", <0.0,1.0,0.0>, 1.0 );
- }
+    state_entry()
+    {
+        // Get the memory used by the OpenSimulator instance
+        TotMemUsed = osGetSimulatorMemory();
+        
+        // Display the memory usage as text above the object
+        llSetText((string)TotMemUsed + " Memory by the OpenSimulator Instance", <0.0, 1.0, 0.0>, 1.0);
+    }
+    
+    touch(integer num)
+    {
+        // Get the memory used by the OpenSimulator instance
+        TotMemUsed = osGetSimulatorMemory();
+        
+        // Display the memory usage as text above the object
+        llSetText((string)TotMemUsed + " Memory by the OpenSimulator Instance", <0.0, 1.0, 0.0>, 1.0);
+    }
 }
