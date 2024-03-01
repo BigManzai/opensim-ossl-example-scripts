@@ -1,38 +1,26 @@
 /*
-string osGetScriptEngineName()
-Returns the name of the script engine which is currently enabled on the server.
-Threat Level 	High
-Permissions 	Use of this function is always allowed by default
-Delay 	0 seconds
-Example(s)
+When an avatar touches the object containing this script, it triggers the touch_end event. 
+Within this event, the script calls osGetScriptEngineName to retrieve the name of the script engine being used, 
+and then it outputs this name to chat using llSay. 
+This can be useful for diagnostic purposes or to determine which script engine features are available in the current environment.
 */
 
-
-// ----------------------------------------------------------------
-// Example / Sample Script to show function use.
-//
-// Script Title:    osGetScriptEngineName.lsl
 // Script Author:   WSM
-// Threat Level:    High
-// Script Source:   http://opensimulator.org/wiki/OsGetScriptEngineName
-//
-// Notes: See Script Source reference for more detailed information
-// This sample is full opensource and available to use as you see fit and desire.
-// Threat Levels only apply to OSSL & AA Functions
-// See http://opensimulator.org/wiki/Threat_level
-// ================================================================
-// Inworld Script Line:    string osGetScriptEngineName();
-//
 // Example of osGetScriptEngineName()
-//
+
 default
 {
     state_entry()
     {
-        llSay(0,"Touch to get Script Engine Name");
+        llSay(0, "Touch to get Script Engine Name");
     }
+    
     touch_end(integer total_num)
     {
-        llSay(0,"The Script Engine Name is: "+osGetScriptEngineName());
+        // Get the name of the script engine
+        string scriptEngineName = osGetScriptEngineName();
+        
+        // Output the name of the script engine to chat
+        llSay(0, "The Script Engine Name is: " + scriptEngineName);
     }
 }
