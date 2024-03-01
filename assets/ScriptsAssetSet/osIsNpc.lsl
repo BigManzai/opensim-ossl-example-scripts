@@ -1,50 +1,49 @@
 /*
-integer osIsNpc(key npc)
-Returns NPC status on the provided key
-
-    Returns TRUE (1) / FALSE (0) if key provided is an NPC
-    Returns FALSE (0) if the key provided doesn't exist in the scene. 
-
-Threat Level 	This function does not do a threat level check
-Permissions 	Use of this function is always allowed by default
-Delay 	0 seconds
-Example(s)
+This script listens for messages on channel 1 and processes them to determine if the provided key represents an NPC (non-player character) or an agent (avatar). 
+It uses osIsNpc to check if the key represents an NPC and llGetAgentSize to check if the key represents an agent. 
+Based on the result, it informs the owner of the object about the nature of the key (NPC, agent, or not existing).
 */
 
-// Test For NPC
 // Author: mewtwo0641
-// Date: 8-5-13
  
-// This script listens for a key on channel 1 which will then
-// tell you if the specified key is an NPC or not.
- 
+// Default event handler
 default
 {
     state_entry()
     {
+        // Start listening on channel 1 for messages from the owner
         llListen(1, "", llGetOwner(), "");    
     }
  
+    // Listen event handler
     listen(integer channel , string name, key id, string message)
     {
+        // Check if the message was sent on channel 1
         if(channel == 1)
         {
-            integer isNPC = osIsNpc((key)message); //Get information on the key.
-            string keyInfo = llKey2Name((key)message) + " (" + message + ")";
+            // Get information about the key sent in the message
+            integer isNPC = osIsNpc((key)message); // Check if the key represents an NPC
+            string keyInfo = llKey2Name((key)message) + " (" + message + ")"; // Get the name and key information
  
-            if(isNPC) //Supplied key is an NPC
-                llOwnerSay(keyInfo + " is an NPC.");
- 
-            else if(!isNPC)
+            // Check if the key represents an NPC
+            if(isNPC)
             {
-                //We now know that the supplied key isn't an NPC.
-                //Let's find out if the key exists as an agent or not.
- 
-                if(llGetAgentSize((key)message) != ZERO_VECTOR) //Supplied key is an agent and not an npc
+                // Inform the owner that the key represents an NPC
+                llOwnerSay(keyInfo + " is an NPC.");
+            }
+            else // The key does not represent an NPC
+            {
+                // Check if the key represents an agent (avatar)
+                if(llGetAgentSize((key)message) != ZERO_VECTOR)
+                {
+                    // Inform the owner that the key represents an agent and not an NPC
                     llOwnerSay(keyInfo + " is an AGENT and not an NPC");
- 
-                else //Supplied key is either not an NPC or the NPC doesn't exist
+                }
+                else
+                {
+                    // Inform the owner that the key is either not an NPC or the NPC does not exist
                     llOwnerSay(keyInfo + " is either not an NPC or the NPC does not exist.");
+                }
             } 
         }   
     }
