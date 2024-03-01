@@ -1451,25 +1451,25 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osParticleSystem.lsl" />
   </Section>
-  <Section Name="osAESDecrypt" />
+  <Section Name="osAESDecrypt">
     <Key Name="assetID" Value="81305554-2421-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osAESDecrypt" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osAESDecrypt.lsl" />
   </Section>
-  <Section Name="osAESDecryptFrom" />
+  <Section Name="osAESDecryptFrom">
     <Key Name="assetID" Value="81305554-2422-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osAESDecryptFrom" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osAESDecryptFrom.lsl" />
   </Section>
-  <Section Name="osAESEncrypt" />
+  <Section Name="osAESEncrypt">
     <Key Name="assetID" Value="81305554-2423-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osAESEncrypt" />
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osAESEncrypt.lsl" />
   </Section>
-  <Section Name="osAESEncryptTo" />
+  <Section Name="osAESEncryptTo">
     <Key Name="assetID" Value="81305554-2424-9e0a-69a4-76ed57df0c8f" />
     <Key Name="name" Value="osAESEncryptTo" />
     <Key Name="assetType" Value="10" />
