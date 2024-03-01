@@ -1,14 +1,8 @@
 /*
 void osKickAvatar(string FirstName,string SurName, string alert)
-
-void osKickAvatar(key agentId, string alert)
-Kicks the selected avatar, closing its connection.
-
-Agent key argument version added February 20, 2019
-Threat Level 	Severe
-Permissions 	${OSSL|osslParcelO}ESTATE_MANAGER,ESTATE_OWNER
-Delay 	0 seconds
-Example(s)
+This script, when placed inside an object in an OpenSim region, will execute state_entry() when the object is initialized. 
+Inside this function, it uses the osKickAvatar() function to kick the avatar with the first name "AvatarFirst" 
+and the last name "AvatarLast", providing a custom kick message of "You have been kicked!".
 */
 
 //
@@ -16,9 +10,11 @@ Example(s)
 //
  
 default
-  {
-     state_entry()
-     {
-         osKickAvatar("AvatarFirst","AvatarLast","You have been kicked!");
-     }
-  }
+{
+    state_entry()
+    {
+        // Kick the avatar with the specified first name ("AvatarFirst"),
+        // last name ("AvatarLast"), and provide a kick message.
+        osKickAvatar("AvatarFirst", "AvatarLast", "You have been kicked!");
+    }
+}
