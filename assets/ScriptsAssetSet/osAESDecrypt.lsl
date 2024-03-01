@@ -7,7 +7,7 @@ As before, note that the secret key is hardcoded in the script for demonstration
 string Secret = "MySecretKey";
 
 // Encrypted text to be decrypted
-string encryptedText = "EncryptedTextHere";
+string encryptedText = "19655484356E7241D4FED3E3446932D8:fe43377edfeecb104dea2059c1d68724"; // Hello, World!
 
 // Event handler for script start
 default
