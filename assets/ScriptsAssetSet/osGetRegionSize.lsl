@@ -1,14 +1,10 @@
 /*
 vector osGetRegionSize()
-Returns the size of the region in meters.
-
-Usually this function returns: Region size: <256.000000, 256.000000, 0.000000>. However, when called in a var/mega region it returns the size of the entire simulator.
-Threat Level 	This function does not do a threat level check
-Permissions 	Use of this function is always allowed by default
-Delay 	0 seconds
-Example(s)
+When an avatar touches the object containing this script, 
+it will trigger the touch_start event. Within this event, the script calls osGetRegionSize to retrieve the size of the region where the object is located, 
+and then it outputs this size to chat using llSay. 
+The size is represented as a vector, which typically consists of three values representing the length, width, and height of the region.
 */
-
 
 //Example osGetRegionSize
 
@@ -16,6 +12,10 @@ default
 {
     touch_start(integer t)
     {
-        llSay(0, "Region size: " + (string)osGetRegionSize());
+        // Get the size of the region
+        vector regionSize = osGetRegionSize();
+        
+        // Output the size of the region to chat
+        llSay(0, "Region size: " + (string)regionSize);
     }
 }
