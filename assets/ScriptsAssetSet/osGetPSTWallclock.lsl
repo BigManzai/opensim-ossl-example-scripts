@@ -1,10 +1,7 @@
 /*
 float osGetPSTWallclock()
-returns the current PST or PDT time in seconds since midnight
-Threat Level 	No threat level specified
-Permissions 	No permissions specified
-Delay 	0 seconds
-Example(s)
+When this script is executed, it will output the current time in Pacific Standard Time (PST) to the chat. 
+This can be useful for various applications where time synchronization or conversion to a specific time zone is necessary in OpenSimulator environments.
 */
 
 // Example of osGetPSTWallclock
@@ -12,6 +9,7 @@ default
 {
     state_entry()
     {
-        llSay(0, "started at at " + (string)osGetPSTWallclock());
+        // Get the current time in Pacific Standard Time (PST)
+        llSay(0, "Started at " + (string)osGetPSTWallclock());
     }
 }
