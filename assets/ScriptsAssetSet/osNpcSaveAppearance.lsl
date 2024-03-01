@@ -1,104 +1,49 @@
 /*
 key osNpcSaveAppearance(key npc, string notecard)
-
-key osNpcSaveAppearance(key npc, string notecard, integer includeHuds)
-Save the NPC's current appearance to a notecard in the prim's inventory. This includes body part data, clothing items and attachments. If a notecard with the same name already exists then it is replaced. The avatar must be present in the region when this function is invoked. The baked textures for the avatar (necessary to recreate appearance) are saved permanently.
-
-first variant will include huds on the save appearence. Second variant alloes control of that. incluceHuds 1 (TRUE) will include 0(FALSE) will not
-Threat Level 	High
-Permissions 	${OSSL|osslNPC}
-Delay 	0 seconds
-Notes
-This function was added in 0.7.2-post-fixes, huds control added in 0.9.2.0 
+When an NPC collides with the object containing this script, it attempts to save its appearance into a notecard. If the save operation is successful, 
+the NPC is informed about the successful save operation. 
+If not successful, the NPC is informed about the unsuccessful save operation. If the collider is not an NPC, users are informed that only NPCs can trigger this functionality.
 */
 
-//
 // osNpcSaveAppearance Script Exemple
 // Author: djphil
-//
  
 default
 {
     state_entry()
     {
-        llSay(PUBLIC_CHANNEL, "Collide a NPC with this primitive to see osNpcSaveAppearance usage.");
+        // Sends a message to the public channel instructing users to collide an NPC with the object
+        // to see the usage of osNpcSaveAppearance.
+        llSay(PUBLIC_CHANNEL, "Collide an NPC with this primitive to see osNpcSaveAppearance usage.");
     }
- 
+
     collision_start(integer number)
     {
+        // Get the key of the collider
         key collider = llDetectedKey(0);
- 
+
+        // Check if the collider is an NPC
         if (osIsNpc(collider))
         {
+            // Attempt to save the appearance of the NPC into a notecard
             key result = osNpcSaveAppearance(collider, (string)collider);
- 
+
+            // Check if the save operation was successful
             if (result && result != NULL_KEY)
             {
-                osNpcSay(collider, "Notecard \"" + (string)collider + "\" saved with success.");
+                // If successful, inform the NPC about the successful save operation
+                osNpcSay(collider, "Notecard \"" + (string)collider + "\" saved successfully.");
             }
- 
             else
             {
-                osNpcSay(collider, "Notecard \"" + (string)collider + "\" saved without success.");
+                // If not successful, inform the NPC about the unsuccessful save operation
+                osNpcSay(collider, "Notecard \"" + (string)collider + "\" not saved successfully.");
             }
         }
- 
         else
         {
-            llSay(PUBLIC_CHANNEL, "Only NPC's can collide with me and save their appearance in a notecard ...");
+            // If the collider is not an NPC, inform users that only NPCs can trigger this functionality
+            llSay(PUBLIC_CHANNEL, "Only NPCs can collide with this object and save their appearance in a notecard.");
         }
     }
 }
-
-/* And with "includeHuds"
-
-//
-// osNpcSaveAppearance Script Exemple
-// Author: djphil
-//
- 
-integer includeHuds = TRUE;
- 
-default
-{
-    state_entry()
-    {
-        llSay(PUBLIC_CHANNEL, "Collide a NPC with this primitive to see osNpcSaveAppearance usage.");
-    }
- 
-    collision_start(integer number)
-    {
-        key collider = llDetectedKey(0);
- 
-        if (osIsNpc(collider))
-        {
-            key result;
- 
-            if (includeHuds == TRUE)
-            {
-                result = osNpcSaveAppearance(collider, (string)collider, TRUE);
-            }
- 
-            else
-            {
-                result = osNpcSaveAppearance(collider, (string)collider, FALSE);
-            }
- 
-            if (result && result != NULL_KEY)
-            {
-                osNpcSay(collider, "Notecard \"" + (string)collider + "\" saved with success.");
-            }
- 
-            else
-            {
-                osNpcSay(collider, "Notecard \"" + (string)collider + "\" saved without success.");
-            }
-        }
- 
-        else
-        {
-            llSay(PUBLIC_CHANNEL, "Only NPC's can collide with me and save their appearance in a notecard ...");
-        }
-    }
-}
-*/
