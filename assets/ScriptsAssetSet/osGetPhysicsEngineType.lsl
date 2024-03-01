@@ -1,10 +1,7 @@
 /*
 string osGetPhysicsEngineType()
-This function returns a string containing the name of the Physics Engine.
-Threat Level 	High
-Permissions 	Use of this function is always allowed by default
-Delay 	0 seconds
-Example(s)
+When an avatar touches the object containing this script, it will output a message in the chat channel prompting to see the usage of osGetPhysicsEngineType. 
+Upon touching the object, it will then retrieve the type of the physics engine currently in use and output a message indicating whether the specified physics engine type is detected or not.
 */
 
 
@@ -17,21 +14,23 @@ default
 {
     state_entry()
     {
+        // Output a message prompting touch to see the usage of osGetPhysicsEngineType
         llSay(PUBLIC_CHANNEL, "Touch to see osGetPhysicsEngineType usage.");
     }
- 
+
     touch_start(integer number)
     {
-        string physics_engine_type = osGetPhysicsEngineType();
- 
-        if (physics_engine_type == "ubODE")
+        // Get the type of the physics engine
+        string physicsEngineType = osGetPhysicsEngineType();
+
+        // Check the type of the physics engine and output a message accordingly
+        if (physicsEngineType == "ubODE")
         {
-            llSay(PUBLIC_CHANNEL, physics_engine_type + " is detected ...");
+            llSay(PUBLIC_CHANNEL, physicsEngineType + " is detected ...");
         }
- 
         else
         {
-            llSay(PUBLIC_CHANNEL, physics_engine_type + " is not detected ...");
+            llSay(PUBLIC_CHANNEL, physicsEngineType + " is not detected ...");
         }
     }
 }
