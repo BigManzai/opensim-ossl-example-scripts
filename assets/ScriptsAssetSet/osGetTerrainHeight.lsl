@@ -1,55 +1,48 @@
 /*
 float osGetTerrainHeight(integer x, integer y)
-NOTE : This function replaces the deprecated OsTerrainGetHeight function.
-Threat Level 	This function does not do a threat level check
-Permissions 	Use of this function is always allowed by default
-Delay 	0 seconds
-Example(s)
+This script allows users to manipulate the terrain height in an OpenSim environment by touching an object. When touched, it increases the terrain height by 4.5 units, and when touched again, 
+it restores the terrain height to its original value at the specified coordinates (iX, iY). The script demonstrates the use of osSetTerrainHeight and osGetTerrainHeight functions for terrain manipulation.
 */
 
-// ----------------------------------------------------------------
-// Example / Sample Script to show function use.
-//
 // Script Title:    osSetTerrainHeight_osGetTerrainHeight.lsl
 // Script Author:   WhiteStar Magic
-// Threat Level:    High
-// Script Source:   
-//
-// Notes: See Script Source reference for more detailed information
-// This sample is full opensource and available to use as you see fit and desire.
-// Threat Levels only apply to OSSL & AA Functions
-// 
-// ================================================================
-// C# Source Line:      public LSL_Integer    osSetTerrainHeight(int x, int y, double val)
-// Inworld Script Line: osSetTerrainHeight(int X, int Y, float value); 
-//
-// C# Source Line:      public LSL_Float    osGetTerrainHeight(int x, int y)
-// Inworld Script Line: osGetTerrainHeight(int x, int y);
-//
-// Example of osSetTerrainHeight & osGetTerrainHeight
-//
+
+// Flag to track if the object has been touched
 integer touched = FALSE;
+
+// Coordinates for terrain manipulation
 integer iX = 128;
 integer iY = 128;
+
+// Variable to store current terrain height
 float CurValue;
-//
+
+// Default event handler
 default
 {
     state_entry()
     {
+        // Display instructions when the script initializes
         llSay(0,"Touch to see osSetTerrainHeight & osGetTerrainHeight work.");
+        
+        // Get the current terrain height at the specified coordinates
         CurValue = osGetTerrainHeight(iX, iY);
     }
+    
+    // Event handler for touch end
     touch_end(integer num)
     {
+        // Check if the object has been touched
         if(touched)
         {
+            // Restore original terrain height
             touched = FALSE;
             osSetTerrainHeight(iX, iY, CurValue);
             llOwnerSay("osSetTerrainHeight @ coordinates X-["+(string)iX+"] Y-["+(string)iY+"] set to ["+(string)osGetTerrainHeight(iX, iY)+"]");
         }
         else
         {
+            // Increase terrain height
             touched = TRUE;
             float NewValue = CurValue + 4.5;
             osSetTerrainHeight(iX, iY, NewValue);
