@@ -28,8 +28,11 @@ Version 0.3.019 - 255 scripts
     git clone https://github.com/BigManzai/opensim-ossl-example-scripts
     cp -r /opensim/opensim-ossl-example-scripts/assets /opensim/bin/assets
     cp -r /opensim/opensim-ossl-example-scripts/inventory/ScriptsLibrary /opensim/bin/inventory
+
+## Status
+    Status Works +11 functions
     
-## Todo   
+## Todo
     Working 2024 
     I'm currently adding a new Remark documentation that is intended for beginners.
     Status 30%
