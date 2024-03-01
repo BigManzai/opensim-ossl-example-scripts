@@ -1,18 +1,21 @@
 /*
 key osGetRegionMapTexture(string regionNameOrID)
-This function retrieves the key of the texture used to represent a region on the world map. regionNameOrID can be the region UUID or its name. If empty string, will return the current region map texture key, but in that case you should use osGetMapTexture().
-Threat Level 	High
-Permissions 	${OSSL|osslParcelO}ESTATE_MANAGER,ESTATE_OWNER
-Delay 	1 seconds
-Example(s)
+When this script is executed, it retrieves the texture representing the map of the region where the object is located using osGetRegionMapTexture. 
+Then, it sets this retrieved map texture as the texture of the object by using llSetTexture. 
+This can be useful for creating objects that visually represent the map of the region they are placed in within the OpenSimulator environment.
 */
 
 
 //Example osGetRegionMapTexture
 
-default {
-    state_entry() {
+default
+{
+    state_entry()
+    {
+        // Get the texture representing the map of the region
         key map = osGetRegionMapTexture(llGetRegionName());
+        
+        // Set the retrieved map texture as the texture of the object
         llSetTexture(map, 0);
     }
 }
