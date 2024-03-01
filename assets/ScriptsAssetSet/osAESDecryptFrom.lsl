@@ -11,7 +11,7 @@ and should be securely stored in a real scenario.
 string Secret = "MySecretKey";
 
 // Encrypted text to be decrypted
-string encryptedText = "EncryptedTextHere";
+string encryptedText = "8012BDD1AA6B988CD125570B3C98DE05:49d75c2a039cb01b55a3e5aa45e134dd"; // Hello, World!
 
 // Initialization Vector (IV)
 string ivString = "MyIVString";
