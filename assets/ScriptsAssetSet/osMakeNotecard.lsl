@@ -1,12 +1,11 @@
 /*
 osMakeNotecard(string notecardName, list contents)
-
-osMakeNotecard(string notecardName, string contents)
-Creates a notecard with text in the prim that contains the script. Contents can be either a list or a string.
-Threat Level 	High
-Permissions 	${OSSL|osslParcelO}ESTATE_MANAGER,ESTATE_OWNER
-Delay 	0 seconds
-Example(s)
+    When the object is touched (touch_start event), it retrieves the key (UUID) of the avatar touching it using llDetectedKey(0).
+    It then converts the avatar's key into their name using llKey2Name(id).
+    Information about the avatar (name, key, position, and rotation) is added to a list named contents.
+    The osMakeNotecard function is used to create a notecard with the avatar's name and the contents list.
+    The created notecard is given to the avatar using llGiveInventory(id, name).
+    Finally, the notecard is removed from the object's inventory using llRemoveInventory(name).
 */
 
 // osMakeNotecard example by Tom Earth
@@ -15,17 +14,28 @@ default
 {
     touch_start(integer n)
     {
+        // Get the key (UUID) of the avatar touching the object
         key id = llDetectedKey(0);
+        
+        // Convert the avatar's key into their name
         string name = llKey2Name(id);
-        list contents; //The variable we are going to use for the contents of the notecard.
+        
+        // Create a list to store the contents of the notecard
+        list contents;
+        
+        // Add information about the avatar to the contents list
         contents += ["Name: "+name+"\n"];
         contents += ["Key: "+(string)id+"\n"];
         contents += ["Pos: "+(string)llDetectedPos(0)+"\n"];
         contents += ["Rotation: "+(string)llDetectedRot(0)+"\n"];
  
-        osMakeNotecard(name,contents); //Makes the notecard.
+        // Create a notecard with the avatar's name and the contents list
+        osMakeNotecard(name,contents);
  
-        llGiveInventory(id,name); //Gives the notecard to the person.
+        // Give the created notecard to the avatar
+        llGiveInventory(id,name);
+        
+        // Remove the notecard from the object's inventory
         llRemoveInventory(name);
     }
 }
