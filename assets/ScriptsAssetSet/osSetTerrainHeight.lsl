@@ -1,23 +1,21 @@
 /*
 integer osSetTerrainHeight(integer x, integer y, float val)
-NOTE' : This function replaces the deprecated OsTerrainSetHeight function.
+    default: This is a default event handler in OpenSim scripts.
+    touch_start(): This event is triggered when an object associated with this script is touched.
+    osSetTerrainHeight(40, 101, 21.4);: This function sets the height of the terrain at the specified coordinates (40, 101) to 21.4 meters. 
+    The coordinates are specified in the form of (X, Y) where X represents the east-west direction and Y represents the north-south direction.
+    osTerrainFlush();: This function flushes the terrain changes, effectively applying the height modifications made using osSetTerrainHeight().
 
-Sets terrain height X & Y Values. Returns TRUE(1) if success, FALSE(0) if failed
-
-osTerrainFlush should be called after all the terrain-changes have been done to update Terrain Data.
-Threat Level 	High
-Permissions 	ESTATE_MANAGER,ESTATE_OWNER
-Delay 	0 seconds
-Example(s)
+In summary, when the object associated with this script is touched, it modifies the height of the terrain at the specified coordinates and then refreshes the terrain to apply the changes.
 */
 
 // Example osSetTerrainHeight
 
 default
- {
+{
     touch_start()
     {
-       osSetTerrainHeight(40, 101, 21.4);
-       osTerrainFlush();
+        osSetTerrainHeight(40, 101, 21.4); // Sets the height of the terrain at coordinates (40, 101) to 21.4 meters
+        osTerrainFlush(); // Refreshes the terrain to apply the height changes
     }
- }
+}
