@@ -1,51 +1,30 @@
 /*
 osSetParcelSIPAddress(string SIPAddress)
-No descriptions provided
-Threat Level 	VeryLow
-Permissions 	${OSSL|osslParcelOG}ESTATE_MANAGER,ESTATE_OWNER
-Delay 	0 seconds
-Example(s)
+    In the state_entry() event, a message is displayed indicating to touch the object to see how osSetParcelSIPAddress works.
+    In the touch_start event, the script displays the SIP address being set to the parcel.
+    It then calls the osSetParcelSIPAddress function with the specified SIP address to set it for the parcel. This SIP address is typically used for communication protocols like VoIP (Voice over Internet Protocol).
 */
 
 //
 // osSetParcelSIPAddress Script Example
 //
 
-// ----------------------------------------------------------------
-// Example / Sample Script to show function use.
-//
-// Script Title:    osSetParcelSIPAddress.lsl
-// Script Author:
-// Threat Level:    VeryLow
-// Script Source:   SUPPLEMENTAL http://opensimulator.org/wiki/osSetParcelSIPAddress
-//
-// Notes: See Script Source reference for more detailed information
-// This sample is full opensource and available to use as you see fit and desire.
-// Threat Levels only apply to OSSL & AA Functions
-// See http://opensimulator.org/wiki/Threat_level
-// ================================================================
-// C# Source Line:      public void osSetParcelSIPAddress(string SIPAddress)
-// Inworld Script Line: osSetParcelSIPAddress(string sSIPAddress);
-//
-// Example of osSetParcelSIPAddress
-//
-/// Set the SIP url to be used by a parcel, this will allow manual setting of a SIP address
-/// for a particular piece of land, allowing region owners to use preconfigured SIP conference channels.
-/// This is used by osSetParcelSIPAddress
-// --- SEE freeswitch_sip_proxy = ip.address.of.freeswitch.server:5060
-// --- SEE vivox_sip_uri = foobar.vivox.com
- 
-string sSIPAddress = "ip.address.of.freeswitch.server:5060"; //The SIP address we are setting
-//
+string sSIPAddress = "ip.address.of.freeswitch.server:5060"; // The SIP address we are setting
+
 default
 {
     state_entry()
     {
+        // Display a message indicating to touch the object to see how osSetParcelSIPAddress works
         llSay(0, "Touch to see how osSetParcelSIPAddress works");
     }
+
     touch_start(integer num)
     {
-        llSay(0,"SIP Address being set :"+sSIPAddress);
-        osSetParcelSIPAddress( sSIPAddress);
+        // Display the SIP address being set to the parcel
+        llSay(0, "SIP Address being set: " + sSIPAddress);
+        
+        // Set the SIP address for the parcel using osSetParcelSIPAddress
+        osSetParcelSIPAddress(sSIPAddress);
     }
 }
