@@ -1,118 +1,60 @@
 /*
 osNpcSit(key npc, key target, integer options)
+touch_start(integer number): This event is triggered when an object is touched by an avatar. 
+It retrieves the key of the touching avatar, calculates the position for the NPC, saves the appearance of the touching avatar, 
+creates an NPC with the given appearance, and transitions to the 'hasNPC' state.
 
-    Makes an NPC sit on an object.
-    Options - OS_NPC_SIT_NOW. Makes the npc instantly sit on the prim if possible. This is the only option available and is currently always on no matter what is actually specified in the options field.
-        If the prim has a sit target then sit always succeeds no matter the distance between the NPC and the prim.
-        If the prim has no sit target then
-            If the prim is within 10 meters of the NPC then the sit will always succeed.
-            At OpenSimulator 0.7.5 and later, if the prim is further than 10 meters away then nothing will happen.
-            Before OpenSimulator 0.7.5, if the prim is further than 10 meters away then the avatar will attempt to walk over to the prim but will not sit when it reaches it. 
+state hasNPC: This state is entered when an NPC exists. It sets a timer event for 5 seconds. 
+When the timer event triggers, it makes the NPC sit down without specifying a sit target using osNpcSit, and makes the NPC say "Hello world!" using osNpcSay. 
+If the NPC is touched, it makes the NPC say "Goodbye!", makes the NPC stand up using osNpcStand, removes the NPC, resets the 'npc' variable, and transitions back to the 'default' state.
 
-Threat Level 	High
-Permissions 	${OSSL|osslNPC}
-Delay 	0 seconds
-Example(s)
+This script demonstrates the creation, manipulation, and removal of an NPC, 
+as well as the usage of osNpcSit and osNpcStand to make the NPC sit and stand up respectively without specifying a sit target.
 */
 
-//
 // osNpcSit (without llSitTarget) Script Exemple
 // Author: djphil
-//
  
-key npc;
- 
+key npc; // Declares a key variable named 'npc'.
+
 default
 {
     state_entry()
     {
-        llSay(PUBLIC_CHANNEL, "Touch to see osNpcSit (without llSitTarget) usage.");
+        llSay(PUBLIC_CHANNEL, "Touch to see osNpcSit (without llSitTarget) usage."); // Sends a message to the public channel.
     }
- 
+
     touch_start(integer number)
     {
-        key toucher = llDetectedKey(0);
-        vector npcPos = llGetPos() + <1.0, 0.0, 1.0>;
-        osAgentSaveAppearance(toucher, "appearance");
-        npc = osNpcCreate("ImYour", "Clone", npcPos, "appearance");
-        state hasNPC;
+        key toucher = llDetectedKey(0); // Retrieves the key of the touching avatar.
+        vector npcPos = llGetPos() + <1.0, 0.0, 1.0>; // Calculates the position for the NPC.
+        osAgentSaveAppearance(toucher, "appearance"); // Saves the appearance of the touching avatar.
+        npc = osNpcCreate("ImYour", "Clone", npcPos, "appearance"); // Creates an NPC with the given appearance.
+        state hasNPC; // Transitions to the 'hasNPC' state.
     }
 }
- 
+
 state hasNPC
 {
     state_entry()
     {
-        llSetTimerEvent(5.0);
+        llSetTimerEvent(5.0); // Sets a timer event for 5 seconds.
     }
- 
+
     timer()
     {
-        llSetTimerEvent(0.0);
-        osNpcSit(npc, llGetKey(), OS_NPC_SIT_NOW);
-        osNpcSay(npc, "Hello world!");
+        llSetTimerEvent(0.0); // Resets the timer event.
+        osNpcSit(npc, llGetKey(), OS_NPC_SIT_NOW); // Makes the NPC sit down without specifying a sit target.
+        osNpcSay(npc, "Hello world!"); // Makes the NPC say "Hello world!".
     }
- 
-    touch_start(integer number)
-    {
-        osNpcSay(npc, "Goodbye!");
-        llSetTimerEvent(0.0);
-        osNpcStand(npc);
-        osNpcRemove(npc);
-        npc = NULL_KEY;
-        state default;
-    }
-}
 
-/* With llSitTarget:
-
-//
-// osNpcSit (with llSitTarget) Script Exemple
-// Author: djphil
-//
- 
-key npc;
- 
-default
-{
-    state_entry()
-    {
-        llSay(PUBLIC_CHANNEL, "Touch to see osNpcSit (with llSitTarget) usage.");
-        llSitTarget(<0.3, 0.0, 0.55>, ZERO_ROTATION);
-    }
- 
     touch_start(integer number)
     {
-        key toucher = llDetectedKey(0);
-        vector npcPos = llGetPos() + <1.0, 0.0, 1.0>;
-        osAgentSaveAppearance(toucher, "appearance");
-        npc = osNpcCreate("ImYour", "Clone", npcPos, "appearance");
-        state hasNPC;
+        osNpcSay(npc, "Goodbye!"); // Makes the NPC say "Goodbye!".
+        llSetTimerEvent(0.0); // Resets the timer event.
+        osNpcStand(npc); // Makes the NPC stand up.
+        osNpcRemove(npc); // Removes the NPC.
+        npc = NULL_KEY; // Resets the 'npc' variable.
+        state default; // Transitions back to the 'default' state.
     }
 }
- 
-state hasNPC
-{
-    state_entry()
-    {
-        llSetTimerEvent(5.0);
-    }
- 
-    timer()
-    {
-        llSetTimerEvent(0.0);
-        osNpcSit(npc, llGetKey(), OS_NPC_SIT_NOW);
-        osNpcSay(npc, "Hello world!");
-    }
- 
-    touch_start(integer number)
-    {
-        osNpcSay(npc, "Goodbye!");
-        llSetTimerEvent(0.0);
-        osNpcStand(npc);
-        osNpcRemove(npc);
-        npc = NULL_KEY;
-        state default;
-    }
-}
-*/
