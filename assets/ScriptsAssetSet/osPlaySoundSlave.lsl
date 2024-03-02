@@ -1,59 +1,50 @@
 /*
 osPlaySoundSlave(integer linknum, string sound, float volume)
-Play the specified sound at the specified volume and loop it indefinitely.
+    string sound_master and string sound_slave: Variables to store the UUIDs of the master and slave sounds, respectively.
 
-This sound will be set as a slave sound. The playing of a slave sound will be synchronized to the playing of the same sound declared in another prim as the master sound.
+    float volume = 1.0;: Variable to set the volume level for both sounds.
 
-The sound parameter can be the UUID of a sound or the name of a sound that is in the inventory of the target prim.
-Threat Level 	This function does not do a threat level check
-Permissions 	Use of this function is always allowed by default
-Delay 	0 seconds
-Example(s)
+    integer switch;: Variable to control the state of playing or stopping sounds.
 
-osPlaySoundSlave(linknum, "c98100c4-6a2a-456c-a5ba-3cfdb5c14715", volume);
-osPlaySoundSlave(linknum, "Name of sound in prim inventory", volume);
+    state_entry(): An event handler that is triggered when the script is initialized or reset. It preloads both the master and slave sounds and informs users to touch for demonstration.
 
-Notes
-A prim can only have one active sound. The osPlaySoundSlave() function should refer to a different prim than the one that was defined as a master or it will remove the master sound and there will be no master sound to which the slave can be synchronized.
+    touch_start(integer number): An event handler triggered when an object is touched. It toggles the switch variable to alternate between playing and stopping sounds. If switch is true, it plays the master sound in a loop using osLoopSoundMaster and plays the slave sound once using osPlaySoundSlave. If switch is false, it stops both sounds using osStopSound.
 
-This function was added in 0.9.0.1
-
-Since 0.9.1 if target prim inventory does not contain the sound, the inventory of the prim containing the script calling this function is also checked 
+Overall, this script demonstrates the usage of osPlaySoundSlave and osLoopSoundMaster functions in OpenSim to control two sounds independently. When touched, it plays the master sound in a loop and the slave sound once, and touching again stops both sounds.
 */
 
-//
+
 // osPlaySoundSlave
 // Author: djphil
-//
+
  
 // Can be sound's name in object's inventory or the sound uuid
 string sound_master = "f4a0660f-5446-dea2-80b7-6482a082803c";
 string sound_slave = "d7a9a565-a013-2a69-797d-5332baa1a947";
- 
+
 float volume = 1.0;
 integer switch;
- 
+
 default
 {
     state_entry()
     {
-        llPreloadSound(sound_master);
-        llPreloadSound(sound_slave);
-        llSay(PUBLIC_CHANNEL, "Touch to see osPlaySoundSlave usage.");
+        llPreloadSound(sound_master); // Preload the master sound.
+        llPreloadSound(sound_slave); // Preload the slave sound.
+        llSay(PUBLIC_CHANNEL, "Touch to see osPlaySoundSlave usage."); // Notify users to touch for demonstration.
     }
- 
+
     touch_start(integer number)
     {
-        if (switch = !switch)
+        if (switch = !switch) // Toggle switch to alternate between playing and stopping sounds.
         {
-            osLoopSoundMaster(1, sound_master, volume);
-            osPlaySoundSlave(2, sound_slave, volume);
+            osLoopSoundMaster(1, sound_master, volume); // Play master sound in a loop.
+            osPlaySoundSlave(2, sound_slave, volume); // Play slave sound once.
         }
- 
         else
         {
-            osStopSound(1);
-            osStopSound(2);
+            osStopSound(1); // Stop playing the master sound.
+            osStopSound(2); // Stop playing the slave sound.
         }
     }
 }
