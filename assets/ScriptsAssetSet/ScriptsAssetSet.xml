@@ -1517,4 +1517,28 @@
     <Key Name="assetType" Value="10" />
     <Key Name="fileName" Value="osGetLinkInventoryNames.lsl" />
   </Section>
+  <Section Name="llGetRenderMaterial">
+    <Key Name="assetID" Value="81305554-2425-9e0a-69a4-76ed57df0c8f" />
+    <Key Name="name" Value="llGetRenderMaterial" />
+    <Key Name="assetType" Value="10" />
+    <Key Name="fileName" Value="llGetRenderMaterial.lsl" />
+  </Section>
+  <Section Name="llSetRenderMaterial">
+    <Key Name="assetID" Value="81305554-2426-9e0a-69a4-76ed57df0c8f" />
+    <Key Name="name" Value="llSetRenderMaterial" />
+    <Key Name="assetType" Value="10" />
+    <Key Name="fileName" Value="llSetRenderMaterial.lsl" />
+  </Section>
+  <Section Name="osGetSitTargetPos">
+    <Key Name="assetID" Value="81305554-2427-9e0a-69a4-76ed57df0c8f" />
+    <Key Name="name" Value="osGetSitTargetPos" />
+    <Key Name="assetType" Value="10" />
+    <Key Name="fileName" Value="osGetSitTargetPos.lsl" />
+  </Section>
+  <Section Name="osGetSitTargetRot">
+    <Key Name="assetID" Value="81305554-2428-9e0a-69a4-76ed57df0c8f" />
+    <Key Name="name" Value="osGetSitTargetRot" />
+    <Key Name="assetType" Value="10" />
+    <Key Name="fileName" Value="osGetSitTargetRot.lsl" />
+  </Section>
 </Nini>
