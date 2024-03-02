@@ -1,16 +1,17 @@
 /*
 integer osRegexIsMatch(string input, string pattern)
-Returns 1 if the input string matches the regular expression pattern. Wraps to Regex.IsMatch()
-Threat Level 	Low
-Permissions 	Use of this function is always allowed by default
-Delay 	0 seconds
-Example(s)
+    string check_string(string input, string pattern): This function takes two string parameters: input (the string to be checked) and pattern (the regular expression pattern to match against). It uses the osRegexIsMatch function to determine if the input string matches the specified pattern. If there's a match, it returns a message indicating success; otherwise, it returns a message indicating failure.
+
+    default: This is the default state where the script starts. In the state_entry event, it sends a message to the public channel instructing users to touch for demonstrating the usage of osRegexIsMatch.
+
+    touch_start: This event is triggered when the object is touched by an avatar. In this script, it calls the check_string function multiple times with different input strings and regular expression patterns to demonstrate various matching scenarios for lowercase letters (a-z), uppercase letters (A-Z), and numbers (0-9).
+
+Overall, this script illustrates how to use the osRegexIsMatch function to perform regular expression matching in OpenSim.
 */
 
-//
 // osRegexIsMatch Script Example
 // Author: djphil
-//
+
  
 string check_string(string input, string pattern)
 {
