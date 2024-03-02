@@ -1,25 +1,9 @@
 /*
 osTeleportAgent(key agent, integer regionX, integer regionY, vector position, vector lookat)
-
 osTeleportAgent(key agent, string regionName, vector position, vector lookat)
 osTeleportAgent(key agent, vector position, vector lookat)
-Teleports an agent to the specified location.
-
-The first variant is able to teleport to any addressable region, including hypergrid destinations.
-
-The second variant teleports to a region in the local grid; the region coordinates are specified as region cells (not as global coordinates based on meters).
-
-The third variant teleports within the current region.
-
-For osTeleportAgent() to work, the owner of the prim containing the script must be the same as the parcel that the avatar is currently on.
-
-If this isn't the case then the function fails silently.
-
-See also osTeleportOwner, and if you receive an error see how to enable OS functions.
-Threat Level 	Severe
-Permissions 	${OSSL|osslParcelO}ESTATE_MANAGER,ESTATE_OWNER
-Extra Delay 	0.5 seconds
-Example(s)
+This comment provides a breakdown of each section of the script and explains what each part does, making it easier for others (or yourself) to understand the purpose and functionality of the code. 
+Note: You'll need to define the variables Destination, LandingPoint, and LookAt somewhere in your script or prior to using them.
 */
 
 // Example osTeleportAgent Script
@@ -40,27 +24,51 @@ string Destination = "LBSA Plaza"; // your target destination here (SEE NEXT LIN
 vector LandingPoint = <128.0, 128.0, 50.0>; // X,Y,Z landing point for avatar to arrive at
 vector LookAt = <0.0, 1.0, 0.0>; // which way they look at when arriving
 //
+// This script implements a teleportal in OpenSim.
+
 default
 {
-  on_rez(integer start_param)
-  {
-    llResetScript();
-  }
-  changed(integer change) // something changed, take action
-  {
-    if(change & CHANGED_OWNER)
-      llResetScript();
-    else if (change & 256) // that bit is set during a region restart
-      llResetScript();
-  }
-  state_entry()
-  {
-    llWhisper(0, "OS Teleportal Active");
-  }
-  touch_start(integer num_detected) 
-  {
-    key avatar = llDetectedKey(0);
-    llInstantMessage(avatar, "Teleporting you to : "+Destination);
-    osTeleportAgent(avatar, Destination, LandingPoint, LookAt); 
-  }
+    // This event is triggered when the object is rezzed in-world
+    on_rez(integer start_param)
+    {
+        // Reset the script to its initial state
+        llResetScript();
+    }
+
+    // This event is triggered when there is a change in the object's properties
+    changed(integer change)
+    {
+        // Check if the owner of the object has changed
+        if (change & CHANGED_OWNER)
+        {
+            // Reset the script if the owner has changed
+            llResetScript();
+        }
+        // Check if the region is undergoing a restart (bit 8 is set during a region restart)
+        else if (change & 256)
+        {
+            // Reset the script during a region restart
+            llResetScript();
+        }
+    }
+
+    // This event is triggered when the script starts running
+    state_entry()
+    {
+        // Send a whisper message to the owner indicating that the teleportal is active
+        llWhisper(0, "OS Teleportal Active");
+    }
+
+    // This event is triggered when an avatar touches the object
+    touch_start(integer num_detected) 
+    {
+        // Get the key of the avatar who touched the object
+        key avatar = llDetectedKey(0);
+        
+        // Send an instant message to the avatar indicating teleportation destination
+        llInstantMessage(avatar, "Teleporting you to: " + Destination);
+        
+        // Teleport the avatar to the specified destination, landing point, and look-at position
+        osTeleportAgent(avatar, Destination, LandingPoint, LookAt); 
+    }
 }
