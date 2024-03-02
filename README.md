@@ -6,7 +6,7 @@ Attention: Some scripts only work on the latest OpenSimulator version.
 
 This is a mix for X-Engine, Y-Engine, UBODE, Bullet, etc.
 
-Version 0.3.0.21 - 255 scripts
+Version 0.3.0.21 - 259 scripts
 
 **Copy the directories into your opensim/bin directory, restart opensim and clear your viewer cache.**
 
