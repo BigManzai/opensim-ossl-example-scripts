@@ -1,20 +1,13 @@
 /*
 osSetWindParam(string plugin, string param, float value)
-Sets value of param property for plugin module.
+    float newStrength = 30.0;: Declares a variable to hold the new wind strength value.
+    float newAvgStrength = 15.0;, float newAvgDirection = 10.0;, float newVarStrength = 7.0;, float newVarDirection = -30.0;, float newRateChange = 8.0;: Declare variables to hold new values for various wind parameters.
+    touch_start(integer number): Event handler triggered when the object associated with the script is touched.
+    string activePluginName = osWindActiveModelPluginName();: Retrieves the name of the active wind model plugin.
+    if(activePluginName == "SimpleRandomWind"): Checks if the active wind model is "SimpleRandomWind". If true, it sets the new wind strength parameter for this model.
+    else if(activePluginName == "ConfigurableWind"): Checks if the active wind model is "ConfigurableWind". If true, it sets new values for various wind parameters such as average strength, average direction, variance in strength, variance in direction, and rate of change.
 
-Available parameters:
-plugin 	param 	description 	default 	OpenSim.inisetting
-SimpleRandomWind 	strength 	wind strength 	1.0f 	strength
-ConfigurableWind 	avgStrength 	average wind strength 	5.0f 	avg_strength
-avgDirection 	average wind direction in degrees 	0.0f 	avg_direction
-varStrength 	allowable variance in wind strength 	5.0f 	var_strength
-varDirection 	allowable variance in wind direction in +/- degrees 	30.0f 	var_direction
-rateChange 	rate of change 	1.0f 	rate_change
-Threat Level 	VeryLow
-Permissions 	${OSSL|osslParcelOG}ESTATE_MANAGER,ESTATE_OWNER
-Delay 	0 seconds
-Example(s)
-Sets all available parameters of current active wind plugin module:
+In summary, this script allows users to adjust wind parameters in an OpenSim environment based on the currently active wind model. It provides feedback messages indicating the changes made to the wind parameters.
 */
 
 // osSetWindParam() sample
@@ -27,21 +20,25 @@ float newAvgDirection = 10.0;
 float newVarStrength = 7.0;
 float newVarDirection = -30.0;
 float newRateChange = 8.0;
- 
+
 default
 {
     touch_start(integer number)
     {
-        string activePluginName = osWindActiveModelPluginName();
+        string activePluginName = osWindActiveModelPluginName(); // Get the name of the active wind model plugin
+
+        // Check if the active wind model is SimpleRandomWind
         if(activePluginName == "SimpleRandomWind")
         {
-            llSay(0, "[SimpleRandomWind]");
-            osSetWindParam("SimpleRandomWind", "strength", newStrength);
-            llSay(0, "wind strength(strength) is changed to " + (string)newStrength);
+            llSay(0, "[SimpleRandomWind]"); // Output the active wind model name
+            osSetWindParam("SimpleRandomWind", "strength", newStrength); // Set wind strength parameter
+            llSay(0, "wind strength(strength) is changed to " + (string)newStrength); // Output the change
         }
+        // Check if the active wind model is ConfigurableWind
         else if(activePluginName == "ConfigurableWind")
         {
-            llSay(0, "[ConfigurableWind]");
+            llSay(0, "[ConfigurableWind]"); // Output the active wind model name
+            // Set various parameters for ConfigurableWind model
             osSetWindParam("ConfigurableWind", "avgStrength", newAvgStrength);
             llSay(0, "average wind strength(avg_strength) is changed to " + (string)newAvgStrength);
             osSetWindParam("ConfigurableWind", "avgDirection", newAvgDirection);
