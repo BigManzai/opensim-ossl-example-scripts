@@ -1,83 +1,40 @@
 /*
 osPreloadSound(integer linknum, string sound)
-Preload the specified sound in viewers of nearby avatars.
+    string sound;: Declares a string variable named sound to store the name of the sound from the object's inventory.
 
-The sound parameter can be the UUID of a sound or the name of a sound that is in the inventory of the target prim.
-Threat Level 	This function does not do a threat level check
-Permissions 	Use of this function is always allowed by default
-Delay 	1 seconds
-Example(s)
+    state_entry(): This is an event handler that is called automatically when the script is initialized or reset. In this case, it retrieves the name of the first sound in the object's inventory using llGetInventoryName function. If the sound is missing (i.e., sound is an empty string), it sends a message to the public channel indicating that the inventory sound is missing. Otherwise, it sends messages indicating that the sound is being preloaded and then ready to play.
 
-osPreloadSound(linknum, "c98100c4-6a2a-456c-a5ba-3cfdb5c14715");
-osPreloadSound(linknum, "Name of sound in this prim");
+    touch_start(integer number): This event is triggered when the object is touched by an avatar. In this script, it plays the preloaded sound stored in the sound variable using the osPlaySound function with the specified handle (1) and volume (1.0).
 
-Notes
-This function was added in 0.9.0.1
-
-Since 0.9.1 if target prim inventory does not contain the sound, the inventory of the prim containing the script calling this function is also checked 
+Overall, this script allows users to preload and play a sound by touching an object with this script inside Second Life. However, please note that this script utilizes OpenSim-specific functions (osPreloadSound and osPlaySound) and may not work in other virtual world platforms or grids. Additionally, it's important to ensure that the object contains a sound in its inventory for this script to work properly.
 */
 
-//
 // osPreloadSound Script Example
 // Author: djphil
-//
+
  
-string sound;
- 
+string sound; // Declares a string variable to store the name of the sound.
+
 default
 {
     state_entry()
     {
-        sound = llGetInventoryName(INVENTORY_SOUND, 0);
- 
+        sound = llGetInventoryName(INVENTORY_SOUND, 0); // Retrieves the name of the first sound in the object's inventory.
+
         if (sound == "")
         {
-            llSay(PUBLIC_CHANNEL, "Inventory sound missing ...");
+            llSay(PUBLIC_CHANNEL, "Inventory sound missing ..."); // Sends a message to the public channel if the inventory sound is missing.
         }
- 
         else
         {
-            llSay(PUBLIC_CHANNEL, "Preloading sound ...");
-            osPreloadSound(1, sound);
-            llSay(PUBLIC_CHANNEL, "Sound ready to play!");
+            llSay(PUBLIC_CHANNEL, "Preloading sound ..."); // Sends a message to the public channel indicating that the sound is being preloaded.
+            osPreloadSound(1, sound); // Preloads the sound with the specified handle (1).
+            llSay(PUBLIC_CHANNEL, "Sound ready to play!"); // Sends a message to the public channel indicating that the sound is ready to play.
         }
     }
- 
+
     touch_start(integer number)
     {
-        osPlaySound(1, sound, 1.0);
+        osPlaySound(1, sound, 1.0); // Plays the preloaded sound with a volume of 1.0 when touched.
     }
 }
-
-/* And with uuid:
-
-//
-// osPreloadSound Script Example
-// Author: djphil
-//
- 
-string sound = "ed124764-705d-d497-167a-182cd9fa2e6c";
- 
-default
-{
-    state_entry()
-    {
-        if (osIsUUID(sound))
-        {
-            llSay(PUBLIC_CHANNEL, "Preloading sound ...");
-            osPreloadSound(1, sound);
-            llSay(PUBLIC_CHANNEL, "Sound ready to play!");
-        }
- 
-        else
-        {
-            llSay(PUBLIC_CHANNEL, "Invalid uuid detected ...");
-        }
-    }
- 
-    touch_start(integer number)
-    {
-        osPlaySound(1, sound, 1.0);
-    }
-
-*/
