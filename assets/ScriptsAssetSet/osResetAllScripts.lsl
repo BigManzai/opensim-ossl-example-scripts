@@ -11,12 +11,18 @@ Overall, this script allows users to reset all scripts within the linked set of 
 
 // osResetAllScripts Script Example
  
+// This line declares an integer variable named AllLinkSet and initializes it with a value of 0.
 integer AllLinkSet = 0;
- 
+
+// This is the default event handler block.
 default
 {
+    // This is the touch_start event function, which is triggered when an object is touched.
     touch_start(integer total_number)
     {
+        // This line calls the osResetAllScripts function and passes the AllLinkSet variable as an argument.
+        // This function resets all scripts within the same linkset as the object that was touched.
         osResetAllScripts(AllLinkSet);
     }
 }
+
