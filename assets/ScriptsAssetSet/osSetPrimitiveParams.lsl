@@ -1,46 +1,54 @@
 /*
 osSetPrimitiveParams(key prim, list rules)
-
-    Sets the parameters for the prim specified by prim_uuid according to rules.
-    This function has the same behave as llSetPrimitiveParams except you can specify target prim anywhere in the scene.
-    For general information about rules, see llSetPrimitiveParams in SecondLife Wiki.
-    If there is no prim with id prim_uuid in the scene, or the owner of the target prim is different from the owner of the scripted prim, it will fail without error. 
-
-Threat Level 	None
-Permissions 	Use of this function is always disabled by default
-Delay 	0 seconds
-Example(s)
+This script defines two states ('default' and 'alpha') and transitions between them based on touch events. 
+In the 'default' state, the primitive is hidden when touched, and in the 'alpha' state, it becomes visible again when touched. 
+The default color of the primitive is stored and reused when setting its parameters.
 */
 
-// 
 // Example osSetPrimitiveParams
-//
-// change target_uuid to any uuid of the prim you wish to change visibility by clicking.
+
+
+// Define the UUID of the target primitive
 string target_uuid = "69031c69-36a5-4031-bdc8-8ca8c37f8eda";
+
+// Declare a vector variable to store the default color of the primitive
 vector default_color;
- 
+
+// Default state
 default
 {
+    // Event handler called when the script enters the default state
     state_entry()
     {
+        // Retrieve the primitive parameters of the target primitive (e.g., color)
         list prim_params = osGetPrimitiveParams(target_uuid, [PRIM_COLOR, ALL_SIDES]);
+        // Extract the color from the parameters and store it in default_color
         default_color = llList2Vector(prim_params, 0);
     }     
- 
+
+    // Event handler called when the primitive is touched
     touch_start(integer number)
     {
+        // Define the rules for the primitive (e.g., name, color, visibility)
         list rules = [PRIM_NAME, "HIDDEN", PRIM_COLOR, ALL_SIDES, default_color, 0.0];
+        // Set the primitive parameters based on the defined rules
         osSetPrimitiveParams(target_uuid, rules);
+        // Transition to the 'alpha' state
         state alpha;
     }
 }
- 
+
+// Alpha state
 state alpha
 {
+    // Event handler called when the primitive is touched in the alpha state
     touch_start(integer number)
     {
+        // Define the rules for the primitive (e.g., name, color, visibility)
         list rules = [PRIM_NAME, "VISIBLE", PRIM_COLOR, ALL_SIDES, default_color, 1.0];
+        // Set the primitive parameters based on the defined rules
         osSetPrimitiveParams(target_uuid, rules);
+        // Transition back to the 'default' state
         state default;
     }
 }
