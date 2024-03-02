@@ -39,4 +39,4 @@ Version 0.3.0.21 - 255 scripts
 ## Todo
     Working 2024 
     I'm currently adding a new Remark documentation that is intended for beginners.
-    Status 45%
+    Status 60%
