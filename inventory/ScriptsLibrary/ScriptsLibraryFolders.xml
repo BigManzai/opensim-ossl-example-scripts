@@ -1,15 +1,11 @@
-<Nini>
-  
+<Nini>  
 	  <Section Name="Scripts Library">
 		<Key Name="folderID" Value="30000112-000f-0000-0000-000100bba002"/>
 		<Key Name="parentFolderID" Value="00000112-000f-0000-0000-000100bba000"/>
 		<Key Name="name" Value="Scripts Library"/>
 		<Key Name="type" Value="10"/>
 	  </Section>
-	  
-	  <!-- Subfolders under "Scripts Library" -->
-	  
-	  <Section Name="Examples">
+ 	  <Section Name="Examples">
 		<Key Name="folderID" Value="30000112-001f-0000-0000-000100bba000"/>
 		<Key Name="parentFolderID" Value="30000112-000f-0000-0000-000100bba002"/>
 		<Key Name="name" Value="Examples"/>
@@ -21,9 +17,6 @@
 		<Key Name="name" Value="OpenSim Specific"/>
 		<Key Name="type" Value="10"/>
 	  </Section>
-  
-	  <!-- Test -->
-
 	 <Section Name="Avatars">
 	   <Key Name="folderID" Value="30000112-001f-0000-0001-000100bba000"/>
 	   <Key Name="parentFolderID" Value="30000112-001f-0000-0000-000100bba001"/>
@@ -114,7 +107,10 @@
 	   <Key Name="name" Value="Misc"/>
 	   <Key Name="type" Value="10"/>
 	 </Section>
-  
+	 <Section Name="Material">
+	   <Key Name="folderID" Value="30000112-001f-0000-0016-000100bba000"/>
+	   <Key Name="parentFolderID" Value="30000112-001f-0000-0000-000100bba001"/>
+	   <Key Name="name" Value="Material"/>
+	   <Key Name="type" Value="10"/>
+	 </Section>  
 </Nini>
-
-
