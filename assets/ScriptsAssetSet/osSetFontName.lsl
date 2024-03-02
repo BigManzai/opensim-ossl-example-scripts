@@ -1,83 +1,77 @@
 /*
 string osSetFontName(string drawList, string fontName)
-Set the name of the font that will be used by osDrawText.
-Threat Level 	This function does not do a threat level check
-Permissions 	Use of this function is always allowed by default
-Delay 	0 seconds
-Example(s)
+    The script initializes variables for controlling text properties such as font name, font size, and text position.
+    The DrawText() function is defined to draw text using the specified font name and font size.
+    In the state_entry() event, the script sets up the default text to be displayed with the default font settings and calls DrawText() to render the text.
+    When an avatar touches the object (touch_start() event), the script toggles between different font settings based on the value of the iFlag variable and updates the text accordingly using the DrawText() function.
 */
 
-// ----------------------------------------------------------------
-// Example / Sample Script to show function use.
-//
-// Script Title:    osSetFontName_osSetFontSize.lsl
-// Script Author:
-// Threat Level:    None
-// Script Source:   SUPPLEMENTAL http://opensimulator.org/wiki/osSetFontName
-//                  SUPPLEMENTAL http://opensimulator.org/wiki/osSetFontSize
-//
-// Notes: See Script Source reference for more detailed information
-// This sample is full opensource and available to use as you see fit and desire.
-// Threat Levels only apply to OSSL & AA Functions
-// See http://opensimulator.org/wiki/Threat_level
-// ================================================================
-// C# Source Line:      public string osSetFontName(string drawList, string fontName)
-// C# Source Line:      public string osSetFontSize(string drawList, int fontSize)
-// Inworld Script Line: osSetFontName(string sCommandList, string sFontName);
-// Inworld Script Line: osSetFontSize(string sCommandList, integer iFontSize);
-//
-// Example of osSetFontName & osSetFontSize
-//
-// Example of osDrawText - Highlighting osSetFontName & osSetFontSize
-// For font families which can be used SEE:  http://www.w3schools.com/css/css_websafe_fonts.asp
-//
-integer iFlag = TRUE;
-string sCommandList = "";   // Storage for our drawing commands
-string sFontName = "Arial"; // Arial is the default font used, if unspecified
-integer iFontSize = 14;     // default to 24 point for sample
-integer iX = 10;            // used for osMovePen (X coord) from Top Left In
-integer iY = 10;            // used for osMovePen (Y coord) from Top Left Down
-string sText;
-//
+
+integer iFlag = TRUE;           // Flag to control the state of the text
+string sCommandList = "";      // Storage for drawing commands
+string sFontName = "Arial";    // Default font name
+integer iFontSize = 14;        // Default font size
+integer iX = 10;               // X-coordinate for text positioning
+integer iY = 10;               // Y-coordinate for text positioning
+string sText;                  // Text to display
+
+// Function to draw text using specified font name and font size
 DrawText()
 {
+    // Set the font name for drawing
     sCommandList = osSetFontName(sCommandList, sFontName);
+    
+    // Set the font size for drawing
     sCommandList = osSetFontSize(sCommandList, iFontSize);
-    sCommandList = osMovePen( sCommandList, iX, iY );       // Upper left corner at <pixels in, pixels down>
-    sCommandList = osDrawText( sCommandList, sText);        // The Text to Display
-    // Now draw the image
-    llWhisper(0,"FontName = "+sFontName+" FontSize = "+(string)iFontSize);
-    osSetDynamicTextureData( "", "vector", sCommandList, "width:512,height:512", 0 );
+    
+    // Move the pen to the specified coordinates
+    sCommandList = osMovePen(sCommandList, iX, iY);
+    
+    // Draw the text
+    sCommandList = osDrawText(sCommandList, sText);
+    
+    // Draw the image with the specified drawing commands
+    osSetDynamicTextureData("", "vector", sCommandList, "width:512,height:512", 0);
 }
+
 default
 {
+    // This function is called when the script starts or resets
     state_entry()
     {
+        // Say a message in local chat to prompt avatars to touch the object
         llSay(0, "Touch to see how changing osSetFontName & osSetFontName work");
-        sText = "FontName = "+sFontName+"\nFontSize = "+(string)iFontSize;
+        
+        // Initialize the text to be displayed
+        sText = "FontName = " + sFontName + "\nFontSize = " + (string)iFontSize;
+        
+        // Call the function to draw text with the default font
         DrawText();
     }
+
+    // This function is called when an avatar touches the object containing the script
     touch_start(integer num)
     {
+        // Toggle between different font settings based on the flag value
         if(iFlag)
         {
             iX = 10;
             iY = 50;
             iFlag = FALSE;
-            sFontName = "Times";
-            iFontSize = 18;
-            sText = "FontName = "+sFontName+"\nFontSize = "+(string)iFontSize;
-            DrawText();
+            sFontName = "Times";  // Change font name
+            iFontSize = 18;       // Change font size
+            sText = "FontName = " + sFontName + "\nFontSize = " + (string)iFontSize;
+            DrawText();           // Call the function to draw text with new font settings
         }
         else
         {
             iX = 10;
             iY = 100;
             iFlag = TRUE;
-            sFontName = "Courier";
-            iFontSize = 22;
-            sText = "FontName = "+sFontName+"\nFontSize = "+(string)iFontSize;
-            DrawText();
+            sFontName = "Courier"; // Change font name
+            iFontSize = 22;       // Change font size
+            sText = "FontName = " + sFontName + "\nFontSize = " + (string)iFontSize;
+            DrawText();           // Call the function to draw text with new font settings
         }
     }
 }
