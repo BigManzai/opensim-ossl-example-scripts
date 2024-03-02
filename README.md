@@ -6,7 +6,7 @@ Attention: Some scripts only work on the latest OpenSimulator version.
 
 This is a mix for X-Engine, Y-Engine, UBODE, Bullet, etc.
 
-Version 0.3.0.22 - 259 scripts
+Version 0.3.0.23 - 259 scripts
 
 **Copy the directories into your opensim/bin directory, restart opensim and clear your viewer cache.**
 
@@ -39,4 +39,4 @@ Version 0.3.0.22 - 259 scripts
 ## Todo
     Working 2024 
     I'm currently adding a new Remark documentation that is intended for beginners.
-    Status 60%
+    Status 80%
