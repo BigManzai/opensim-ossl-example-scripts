@@ -1,18 +1,8 @@
 /*
 string osSetFontSize(string drawList, integer fontSize)
-Appends a FontSize drawing command to the string provided in drawList and returns the result.
-
-Sets the size of the font used by subsequent osDrawTextText() calls. The fontSize parameter represents the font height in points.
-
-Please note that the font height is given in points, not in pixels. The resulting size of the font in pixels may vary depending on the system settings, specifically the display system's "dots per inch" metric. A system set to 96dpi will produce differently sized text than a system set to 120dpi. If precise text size is required, consider using the osGetDrawStringSize() function to help calculate the proper fontSize value to use.
-
-If a negative fontSize parameter is specified, any text subsequently added will be displayed upside down and to the right of the point of origin.
-
-Please note that the pen position is not updated after this call.
-Threat Level 	This function does not do a threat level check
-Permissions 	Use of this function is always allowed by default
-Delay 	0 seconds
-Example(s)
+    The script initializes a string variable CommandList to store drawing commands.
+    It then sets the drawing commands to position and draw three lines of text with different font sizes and positions using the osMovePen, osSetFontSize, and osDrawText functions.
+    Finally, it renders the text as a dynamic texture on the prim using the osSetDynamicTextureData function with the specified width and height.
 */
 
 // Example of osDrawText
@@ -21,18 +11,23 @@ default
     state_entry()
     {
         string CommandList = ""; // Storage for our drawing commands
- 
-        CommandList = osMovePen( CommandList, 10, 10 );             // Upper left corner at <10,10>
-        CommandList = osSetFontSize( CommandList, 10 );             // Use 10-point text
-        CommandList = osDrawText( CommandList, "Ten points!" );     // Place some text
-        CommandList = osMovePen( CommandList, 10, 27 );             // New text placement
-        CommandList = osSetFontSize( CommandList, 15 );             // Use 10-point text
-        CommandList = osDrawText( CommandList, "Fifteen points!" ); // Place some text
-        CommandList = osMovePen( CommandList, 10, 50 );             // New text placement
-        CommandList = osSetFontSize( CommandList, 20 );             // Use 10-point text
-        CommandList = osDrawText( CommandList, "Twenty points!" );  // Place some text
- 
-        // Now draw the image
-        osSetDynamicTextureData( "", "vector", CommandList, "width:256,height:256", 0 );
+
+        // Define the drawing commands to position and draw the first line of text
+        CommandList = osMovePen(CommandList, 10, 10);               // Set pen position to (10, 10)
+        CommandList = osSetFontSize(CommandList, 10);              // Set font size to 10
+        CommandList = osDrawText(CommandList, "Ten points!");      // Draw text "Ten points!"
+
+        // Define the drawing commands to position and draw the second line of text
+        CommandList = osMovePen(CommandList, 10, 27);               // Set pen position to (10, 27)
+        CommandList = osSetFontSize(CommandList, 15);              // Set font size to 15
+        CommandList = osDrawText(CommandList, "Fifteen points!");  // Draw text "Fifteen points!"
+
+        // Define the drawing commands to position and draw the third line of text
+        CommandList = osMovePen(CommandList, 10, 50);               // Set pen position to (10, 50)
+        CommandList = osSetFontSize(CommandList, 20);              // Set font size to 20
+        CommandList = osDrawText(CommandList, "Twenty points!");   // Draw text "Twenty points!"
+
+        // Now draw the image by applying the drawing commands as a dynamic texture on the prim
+        osSetDynamicTextureData("", "vector", CommandList, "width:256,height:256", 0);
     }
 }
