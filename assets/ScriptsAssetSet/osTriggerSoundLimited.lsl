@@ -24,62 +24,39 @@ Since 0.9.1 if target prim inventory does not contain the sound, the inventory o
 // Author: djphil
 //
  
+// Define vectors to represent the coordinates of the north-east and south-west corners
 vector north_east_corner = <30.0, 30.0, 22.0>;
 vector south_west_corner = <50.0, 50.0, 30.0>;
+
+// Define a variable to hold the name of the sound inventory item
 string sound;
- 
+
+// Default state for the object
 default
 {
+    // This event is triggered when the script starts running
     state_entry()
     {
+        // Get the name of the first sound inventory item
         sound = llGetInventoryName(INVENTORY_SOUND, 0);
  
+        // Check if the sound inventory item is missing
         if (sound == "")
         {
+            // Send a message to the public chat channel indicating that the inventory sound is missing
             llSay(PUBLIC_CHANNEL, "Inventory sound missing ...");
         }
- 
         else
         {
+            // Send a message to the public chat channel indicating that the object is ready to trigger the sound
             llSay(PUBLIC_CHANNEL, "Touch to hear osTriggerSoundLimited running.");
         }
     }
  
+    // This event is triggered when an avatar touches the object
     touch_start(integer number)
     {
+        // Trigger the sound within the limited area defined by the north-east and south-west corners
         osTriggerSoundLimited(1, sound, 1.0, north_east_corner, south_west_corner);
     }
 }
-
-/* And with uuid:
-
-//
-// osTriggerSoundLimited Script Example
-// Author: djphil
-//
- 
-string sound = "d7a9a565-a013-2a69-797d-5332baa1a947";
-vector north_east_corner = <30.0, 30.0, 22.0>;
-vector south_west_corner = <50.0, 50.0, 30.0>;
- 
-default
-{
-    state_entry()
-    {
-        if (osIsUUID(sound))
-        {
-            llSay(PUBLIC_CHANNEL, "Touch to hear osTriggerSoundLimited running.");
-        }
- 
-        else
-        {
-            llSay(PUBLIC_CHANNEL, "Invalid uuid detected ...");
-        }
-    }
- 
-    touch_start(integer number)
-    {
-        osTriggerSoundLimited(1, sound, 1.0, north_east_corner, south_west_corner);
-    }
-}
-*/
