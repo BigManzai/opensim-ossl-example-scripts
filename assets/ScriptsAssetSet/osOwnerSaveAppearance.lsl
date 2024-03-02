@@ -1,29 +1,26 @@
 /*
 key osOwnerSaveAppearance(string notecard)
+    state_entry(): This is an event handler that is called automatically when the script is initialized or reset.
 
-key osOwnerSaveAppearance(string notecard, integer includeHuds)
-Save the owner's current appearance to a notecard in the prim's inventory. This includes body part data, clothing items and attachments. If a notecard with the same name already exists then it is replaced. The owner must be present in the region when this function is invoked. The baked textures for the owner (necessary to recreate appearance on the NPC) are saved permanently.
+    string ownername = llKey2Name(llGetOwner());: This line retrieves the owner's key using llGetOwner() function and then converts it into the owner's name using llKey2Name() function. The owner's name is stored in the variable ownername.
 
-The first variant will include HUDs, the second variant allows control that. incluceHuds 1 (TRUE) will include 0(FALSE) will not
-Threat Level 	High
-Permissions 	${OSSL|osslParcelO}ESTATE_MANAGER,ESTATE_OWNER
-Delay 	0 seconds
-Example(s)
+    string date = (string)llGetDate();: This line retrieves the current date using llGetDate() function, converts it into a string, and stores it in the variable date.
+
+    string notecard_name = ownername + " " + date;: This line concatenates the owner's name and the current date with a space in between, and stores the result in the variable notecard_name. This combined string will be used as the name of the notecard.
+
+    osOwnerSaveAppearance(notecard_name);: This line uses the osOwnerSaveAppearance() function to create a notecard with the name stored in the variable notecard_name.
+
+Overall, this script creates a notecard named after the owner's name and the current date when it is initialized or reset.
 */
 
-// 
-// osOwnerSaveAppearance exxample.
-// This example creates the notecard with the user's appearance in the inventory of a prim.
-// You will find the notecard in the contents of the prim after the script has run.
-//
  
 default
 {
     state_entry()
     {
-        string ownername = llKey2Name(llGetOwner());    // Retrieve the owner's key, and find out his/her name.
+        string ownername = llKey2Name(llGetOwner());    // Retrieve the owner's key and find out his/her name.
         string date = (string)llGetDate();              // Store the date in a string.
-        string notecard_name = ownername+" "+date;      // Combine the name and the date for use as a notecard name.
+        string notecard_name = ownername + " " + date;  // Combine the name and the date for use as a notecard name.
         osOwnerSaveAppearance(notecard_name);           // Make the notecard.
     }
 }
