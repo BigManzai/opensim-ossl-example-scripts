@@ -530,6 +530,26 @@
     <Key Name="assetType" Value="10" />
     <Key Name="inventoryType" Value="10" />
   </Section>
+  
+  <Section Name="osGetSitTargetPos">
+    <Key Name="inventoryID" Value="81305554-2427-9e0a-69a4-76ed57df0c8f" />
+    <Key Name="assetID" Value="81305554-2427-9e0a-69a4-76ed57df0c8f" />
+    <Key Name="folderID" Value="30000112-001f-0000-0001-000100bba000"/>
+    <Key Name="description" Value="osGetSitTargetPos" />
+    <Key Name="name" Value="osGetSitTargetPos" />
+    <Key Name="assetType" Value="10" />
+    <Key Name="inventoryType" Value="10" />
+  </Section>
+  <Section Name="osGetSitTargetRot">
+    <Key Name="inventoryID" Value="81305554-2428-9e0a-69a4-76ed57df0c8f" />
+    <Key Name="assetID" Value="81305554-2428-9e0a-69a4-76ed57df0c8f" />
+    <Key Name="folderID" Value="30000112-001f-0000-0001-000100bba000"/>
+    <Key Name="description" Value="osGetSitTargetRot" />
+    <Key Name="name" Value="osGetSitTargetRot" />
+    <Key Name="assetType" Value="10" />
+    <Key Name="inventoryType" Value="10" />
+  </Section>
+
   <Section Name="osIsNpc">
     <Key Name="inventoryID" Value="81305ee4-1101-9e0a-69a4-76ed57df0c8f" />
     <Key Name="assetID" Value="81305ee4-1101-9e0a-69a4-76ed57df0c8f" />
@@ -2300,24 +2320,6 @@
     <Key Name="folderID" Value="30000112-001f-0000-0016-000100bba000"/>
     <Key Name="description" Value="llSetRenderMaterial" />
     <Key Name="name" Value="llSetRenderMaterial" />
-    <Key Name="assetType" Value="10" />
-    <Key Name="inventoryType" Value="10" />
-  </Section>
-  <Section Name="osGetSitTargetPos">
-    <Key Name="inventoryID" Value="81305554-2427-9e0a-69a4-76ed57df0c8f" />
-    <Key Name="assetID" Value="81305554-2427-9e0a-69a4-76ed57df0c8f" />
-    <Key Name="folderID" Value="30000112-001f-0000-0001-000100bba000"/>
-    <Key Name="description" Value="osGetSitTargetPos" />
-    <Key Name="name" Value="osGetSitTargetPos" />
-    <Key Name="assetType" Value="10" />
-    <Key Name="inventoryType" Value="10" />
-  </Section>
-  <Section Name="osGetSitTargetRot">
-    <Key Name="inventoryID" Value="81305554-2428-9e0a-69a4-76ed57df0c8f" />
-    <Key Name="assetID" Value="81305554-2428-9e0a-69a4-76ed57df0c8f" />
-    <Key Name="folderID" Value="30000112-001f-0000-0001-000100bba000"/>
-    <Key Name="description" Value="osGetSitTargetRot" />
-    <Key Name="name" Value="osGetSitTargetRot" />
     <Key Name="assetType" Value="10" />
     <Key Name="inventoryType" Value="10" />
   </Section>
