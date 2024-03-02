@@ -1,15 +1,13 @@
 /*
 integer osResetEnvironment(integer ParcelOrRegion, integer transition)
-Resets parcel or region environment.
+    The script initializes two integer variables: transition with a value of 3, and switch without an initial value specified.
+    Inside the default state, in the state_entry() event handler, it sends messages to the public channel indicating how to use the script and the value of the transition variable.
+    Inside the touch_start() event handler, it first declares an integer variable result.
+    It then checks if the value of switch is not equal to its current value using the expression if (switch = !switch). This appears to be a toggle mechanism, switching the value of switch between 0 and 1.
+    Depending on the value of switch, it calls the osResetEnvironment() function with appropriate arguments (switch and transition).
+    It then checks the value of result and the value of switch to determine success or failure of the operation and sends corresponding messages to the public channel.
 
-    if ParcelOrRegion == 1 parcel environment is removed, region will be used, else region environment is set to the default.
-    transition should be the viewer transition time to the new one. May not work on most viewers. 
-
-if return is negative the operation failed.
-Threat Level 	This function does not do a threat level check
-Permissions 	Prim owner must have estate manager rights or parcel and parcel environment change rights
-Delay 	0 seconds
-Example(s)
+Overall, this script seems to handle toggling and resetting environment settings in a virtual environment, providing feedback to users through public channel messages.
 */
 
 //
@@ -17,127 +15,46 @@ Example(s)
 // Author: djphil
 //
  
-integer transition = 3;
-integer switch;
+integer transition = 3;  // Declaring and initializing an integer variable named transition with a value of 3
+integer switch;          // Declaring an integer variable named switch
  
 default
 {
-    state_entry()
+    state_entry()  // Event handler for when the script enters its default state
     {
-        llSay(PUBLIC_CHANNEL, "Touch to see osResetEnvironment usage.");
-        llSay(PUBLIC_CHANNEL, "Transition: " + (string)transition + " second(s).");
+        llSay(PUBLIC_CHANNEL, "Touch to see osResetEnvironment usage.");  // Sends a message to the public channel
+        llSay(PUBLIC_CHANNEL, "Transition: " + (string)transition + " second(s).");  // Sends a message with the value of transition variable to the public channel
     }
  
-    touch_start(integer number)
+    touch_start(integer number)  // Event handler for when an object is touched
     {
-        integer result;
+        integer result;  // Declaring an integer variable named result
  
-        if (switch = !switch)
+        if (switch = !switch)  // Checks if the value of switch is not equal to its current value
         {
-            result = osResetEnvironment(switch, transition);
+            result = osResetEnvironment(switch, transition);  // Calls the osResetEnvironment function with the current value of switch and the transition variable
         }
- 
         else
         {
-            result = osResetEnvironment(switch, transition);
+            result = osResetEnvironment(switch, transition);  // Calls the osResetEnvironment function with the current value of switch and the transition variable
         }
  
-        if (switch == 1 && result > 0)
+        if (switch == 1 && result > 0)  // Checks if switch is equal to 1 and result is greater than 0
         {
-            llSay(PUBLIC_CHANNEL, "The parcel environment was removed with success.");
-            llSay(PUBLIC_CHANNEL, "The region environment is now used.");
+            llSay(PUBLIC_CHANNEL, "The parcel environment was removed with success.");  // Sends a success message to the public channel
+            llSay(PUBLIC_CHANNEL, "The region environment is now used.");  // Sends a message indicating the region environment is now used
         }
- 
-        else if (switch == 1 && result < 0)
+        else if (switch == 1 && result < 0)  // Checks if switch is equal to 1 and result is less than 0
         {
-            llSay(PUBLIC_CHANNEL, "The parcel environment was removed without success.");
+            llSay(PUBLIC_CHANNEL, "The parcel environment was removed without success.");  // Sends a failure message to the public channel
         }
- 
-        else if (switch == 0 && result > 0)
+        else if (switch == 0 && result > 0)  // Checks if switch is equal to 0 and result is greater than 0
         {
-            llSay(PUBLIC_CHANNEL, "The region environment was set to the default with success.");
+            llSay(PUBLIC_CHANNEL, "The region environment was set to the default with success.");  // Sends a success message to the public channel
         }
- 
-        else if (switch == 0 && result < 0)
+        else if (switch == 0 && result < 0)  // Checks if switch is equal to 0 and result is less than 0
         {
-            llSay(PUBLIC_CHANNEL, "The region environment was set to the default without success.");
+            llSay(PUBLIC_CHANNEL, "The region environment was set to the default without success.");  // Sends a failure message to the public channel
         }
     }
 }
-
-/* With all errors message:
-
-//
-// osResetEnvironment Script Example
-// Author: djphil
-//
- 
-integer transition = 3;
-integer switch;
- 
-default
-{
-    state_entry()
-    {
-        llSay(PUBLIC_CHANNEL, "Touch to see osResetEnvironment usage.");
-        llSay(PUBLIC_CHANNEL, "Transition: " + (string)transition + " second(s).");
-    }
- 
-    touch_start(integer number)
-    {
-        integer result;
- 
-        if (switch = !switch)
-        {
-            result = osResetEnvironment(switch, transition);
-        }
- 
-        else
-        {
-            result = osResetEnvironment(switch, transition);
-        }
- 
-        if (switch == 1 && result > 0)
-        {
-            llSay(PUBLIC_CHANNEL, "The parcel environment was removed with success.");
-            llSay(PUBLIC_CHANNEL, "The region environment is now used.");
-        }
- 
-        else if (switch == 1 && result < 0)
-        {
-            llSay(PUBLIC_CHANNEL, "The parcel environment was removed without success.");
- 
-            if (result == -1)
-            {
-                llSay(PUBLIC_CHANNEL, "The \"Parcel Owners May Override Environment\" isn't checked ...");
-                llSay(PUBLIC_CHANNEL, "(See menu \"World/Region Details\" on tab \"Environment\")");
-            }
- 
-            if (result == -2)
-            {
-                llSay(PUBLIC_CHANNEL, "The parcel is not found (This is a bad thingy) ...");
-            }
- 
-            if (result == -3)
-            {
-                llSay(PUBLIC_CHANNEL, "You have no rights to edit parcel ...");
-            }
-        }
- 
-        else if (switch == 0 && result > 0)
-        {
-            llSay(PUBLIC_CHANNEL, "The region environment was set to the default with success.");
-        }
- 
-        else if (switch == 0 && result < 0)
-        {
-            llSay(PUBLIC_CHANNEL, "The region environment was set to the default without success.");
- 
-            if (result == -3)
-            {
-                llSay(PUBLIC_CHANNEL, "You have no rights to edit region ...");
-            }
-        }
-    }
-}
-*/
