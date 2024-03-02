@@ -1,10 +1,27 @@
 /*
 osParticleSystem(list rules)
-No descriptions provided
-Threat Level 	No threat level specified
-Permissions 	No permissions specified
-Extra Delay 	No function delay specified
-Example(s) */
+    burst_radius: Radius within which particles are emitted.
+    angle_begin, angle_end: Angles defining the cone within which particles are emitted.
+    target: Key of the target object for particle emission.
+    start_color, end_color: Starting and ending colors of particles.
+    start_alpha, end_alpha: Starting and ending alpha values (transparency) of particles.
+    start_scale, end_scale: Starting and ending scale of particles.
+    texture: UUID of the texture applied to particles.
+    start_glow, end_glow: Starting and ending glow values of particles.
+    source_max_age: Maximum age of the particle emitter.
+    particle_max_age: Maximum age of individual particles.
+    burst_rate: Rate at which bursts of particles are emitted.
+    burst_particle_count: Number of particles emitted in each burst.
+    acceleration: Acceleration applied to particles.
+    omega: Angular velocity applied to particles.
+    speed_min, speed_max: Minimum and maximum speeds of particles.
+
+The Particles() function defines the parameters for the particle system and calls osParticleSystem to create it. The various PSYS_ constants and their corresponding values configure the behavior, appearance, blending, flow, and motion of the particle system.
+
+The default state calls the Particles() function in its state_entry() event, effectively creating the particle system when the script is initialized or reset.
+
+Overall, this script generates a customizable particle effect within a defined area, emitting particles with specific colors, transparency, scale, texture, and motion characteristics.
+*/
 
 //Written By Draconis Neurocam
 //You are free:
