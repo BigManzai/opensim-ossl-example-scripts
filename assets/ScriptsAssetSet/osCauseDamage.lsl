@@ -10,10 +10,14 @@ osCauseDamage(key avatar, float damage)
 So, when this script is initialized or enters the default state, it immediately causes 50 points of damage to the owner of the object where the script is located.
 */
 
+// This is the default state definition
 default
 {
-   state_entry()
-   {
-       osCauseDamage(llGetOwner(), 50);
-   }
+    // This function is called when the script enters the default state
+    state_entry()
+    {
+        // This line causes damage to the owner of the script, reducing their health by 50 points
+        osCauseDamage(llGetOwner(), 50);
+    }
 }
+
